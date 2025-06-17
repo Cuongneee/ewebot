@@ -88,7 +88,12 @@
                     </a>
                     <div class="collapse" id="news">
                         <ul class="nav nav-collapse">
-                            {{-- <li class="nav-item {{ activeMenu('admin.news.index') }}">
+                            <li class="nav-item {{ activeMenu('admin.categories.index') }}">
+                                <a href="{{ route('admin.categories.index') }}">
+                                    <span class="sub-item">Quản lý danh mục</span>
+                                </a>
+                            </li>
+                            <li class="nav-item {{ activeMenu('admin.news.index') }}">
                                 <a href="{{ route('admin.news.index') }}">
                                     <span class="sub-item">Danh sách bài viết</span>
                                 </a>
@@ -97,7 +102,7 @@
                                 <a href="{{ route('admin.news.create') }}">
                                     <span class="sub-item">Thêm bài viết</span>
                                 </a>
-                            </li> --}}
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -186,7 +191,7 @@
                         </ul>
                     </div>
                 </li>
-               <li class="nav-item {{ activeMenu('admin.contacts.index') }}">
+                <li class="nav-item {{ activeMenu('admin.contacts.index') }}">
                     {{-- <a href="{{ route('admin.contacts.index') }}" class="collapsed">
                         <i class="fa-solid fa-headphones-simple"></i>
                         <p>Yêu cầu tư vấn</p>
