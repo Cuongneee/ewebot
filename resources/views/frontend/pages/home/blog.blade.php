@@ -55,231 +55,86 @@
                     <div class="elementor-widget-container">
                         <div class="gt3_module_blogboxed items3 post_content_front_visible module_type1"
                             data-settings='{"slick":false}'>
+
                             <div class="blogboxed_grid">
-                                <div class="boxed_block_item">
-                                    <div class="item_wrapper gt3_center_mode has_post_meta">
-                                        <div class="blogboxed_img_block"
-                                            style="
-                                          background-image: url(/frontend/assets/img/blog_img_01-300x300.jpg);
+                                @foreach ($highViewNews as $news)
+                                    <div class="boxed_block_item">
+                                        <div class="item_wrapper gt3_center_mode has_post_meta">
+                                            <div class="blogboxed_img_block"
+                                                style="
+                                          background-image: url({{asset($news->image)}});
                                         ">
-                                        </div>
-                                        <div class="blogboxed_content without_bordered has_img_block">
-                                            <div class="gt3blogboxed_block_wrap">
-                                                <div class="listing_meta">
-                                                    <span class="post_date">August 2,
-                                                        2023</span>
-                                                </div>
-                                                <h2 class="blog_post_title">
-                                                    <a
-                                                        href="https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/">How
-                                                        to Increase Your ROI Through
-                                                        scientific SEM?</a>
-                                                </h2>
-                                                <div class="blogboxed_info_box">
-                                                    <div class="clear"></div>
-                                                    <div class="gt3_post_footer">
-                                                        <div class="gt3_module_button_list">
-                                                            <a
-                                                                href="https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/">Read
-                                                                More</a>
-                                                        </div>
-                                                        <div class="blog_post_info">
-                                                            <!-- post share block -->
-                                                            <div class="post_share_block">
-                                                                <a href="javascript:void(0)"><span
-                                                                        class="sharing_title">Share</span></a>
-                                                                <div class="post_share_wrap">
-                                                                    <ul>
-                                                                        <li class="post_share-facebook">
-                                                                            <a target="_blank"
-                                                                                href="https://www.facebook.com/share.php?u=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/"
-                                                                                data-title="Facebook"><span
-                                                                                    class="fa fa-facebook"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-twitter">
-                                                                            <a target="_blank"
-                                                                                href="https://twitter.com/intent/tweet?text=How%20to%20Increase%20Your%20ROI%20Through%20scientific%20SEM?&amp;url=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/"
-                                                                                data-title="Twitter"><span
-                                                                                    class="fa fa-twitter"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-pinterest">
-                                                                            <a target="_blank"
-                                                                                href="https://pinterest.com/pin/create/button/?url=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/&amp;media=https://ewebotwp.com/wp-content/uploads/2019/07/blog_img_01.jpg"
-                                                                                data-elementor-open-lightbox="no"
-                                                                                data-title="Pinterest"><span
-                                                                                    class="fa fa-pinterest"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-linkedin">
-                                                                            <a target="_blank"
-                                                                                href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/&amp;title=How%20to%20Increase%20Your%20ROI%20Through%20scientific%20SEM?&amp;source=Ewebot"
-                                                                                data-title="Linkedin"><span
-                                                                                    class="fa fa-linkedin"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-mail">
-                                                                            <a target="_blank"
-                                                                                href="mailto:?subject=How+to+Increase+Your+ROI+Through+scientific+SEM%3F&amp;body=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/"
-                                                                                data-title="Email"><span
-                                                                                    class="fa fa-envelope"></span></a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <!-- //post share block -->
-                                                        </div>
+                                            </div>
+                                            <div class="blogboxed_content without_bordered has_img_block">
+                                                <div class="gt3blogboxed_block_wrap">
+                                                    <div class="listing_meta">
+                                                        <span
+                                                            class="post_date">{{ $news->created_at->format('d/m/Y') }}</span>
                                                     </div>
-                                                    <div class="clear"></div>
+                                                    <h2 class="blog_post_title">
+                                                        <a
+                                                            href="https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/">
+                                                           {{$news->title}}</a>
+                                                    </h2>
+                                                    <div class="blogboxed_info_box">
+                                                        <div class="clear"></div>
+                                                        <div class="gt3_post_footer">
+                                                            <div class="gt3_module_button_list">
+                                                                <a
+                                                                    href="https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/">Read
+                                                                    More</a>
+                                                            </div>
+                                                            <div class="blog_post_info">
+                                                                <!-- post share block -->
+                                                                <div class="post_share_block">
+                                                                    <a href="javascript:void(0)"><span
+                                                                            class="sharing_title">Share</span></a>
+                                                                    <div class="post_share_wrap">
+                                                                        <ul>
+                                                                            <li class="post_share-facebook">
+                                                                                <a target="_blank"
+                                                                                    href="https://www.facebook.com/share.php?u=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/"
+                                                                                    data-title="Facebook"><span
+                                                                                        class="fa fa-facebook"></span></a>
+                                                                            </li>
+                                                                            <li class="post_share-twitter">
+                                                                                <a target="_blank"
+                                                                                    href="https://twitter.com/intent/tweet?text=How%20to%20Increase%20Your%20ROI%20Through%20scientific%20SEM?&amp;url=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/"
+                                                                                    data-title="Twitter"><span
+                                                                                        class="fa fa-twitter"></span></a>
+                                                                            </li>
+                                                                            <li class="post_share-pinterest">
+                                                                                <a target="_blank"
+                                                                                    href="https://pinterest.com/pin/create/button/?url=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/&amp;media=https://ewebotwp.com/wp-content/uploads/2019/07/blog_img_01.jpg"
+                                                                                    data-elementor-open-lightbox="no"
+                                                                                    data-title="Pinterest"><span
+                                                                                        class="fa fa-pinterest"></span></a>
+                                                                            </li>
+                                                                            <li class="post_share-linkedin">
+                                                                                <a target="_blank"
+                                                                                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/&amp;title=How%20to%20Increase%20Your%20ROI%20Through%20scientific%20SEM?&amp;source=Ewebot"
+                                                                                    data-title="Linkedin"><span
+                                                                                        class="fa fa-linkedin"></span></a>
+                                                                            </li>
+                                                                            <li class="post_share-mail">
+                                                                                <a target="_blank"
+                                                                                    href="mailto:?subject=How+to+Increase+Your+ROI+Through+scientific+SEM%3F&amp;body=https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/"
+                                                                                    data-title="Email"><span
+                                                                                        class="fa fa-envelope"></span></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- //post share block -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="clear"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="boxed_block_item">
-                                    <div class="item_wrapper gt3_center_mode has_post_meta">
-                                        <div class="blogboxed_img_block"
-                                            style="
-                                          background-image: url(/frontend/assets/img/home5_blog_img-300x300.jpg);
-                                        ">
-                                        </div>
-                                        <div class="blogboxed_content without_bordered has_img_block">
-                                            <div class="gt3blogboxed_block_wrap">
-                                                <div class="listing_meta">
-                                                    <span class="post_date">August 1,
-                                                        2023</span>
-                                                </div>
-                                                <h2 class="blog_post_title">
-                                                    <a href="https://ewebotwp.com/image-post/">Simple
-                                                        Ways To Optimize Your
-                                                        Website For SEO</a>
-                                                </h2>
-                                                <div class="blogboxed_info_box">
-                                                    <div class="clear"></div>
-                                                    <div class="gt3_post_footer">
-                                                        <div class="gt3_module_button_list">
-                                                            <a href="https://ewebotwp.com/image-post/">Read
-                                                                More</a>
-                                                        </div>
-                                                        <div class="blog_post_info">
-                                                            <!-- post share block -->
-                                                            <div class="post_share_block">
-                                                                <a href="javascript:void(0)"><span
-                                                                        class="sharing_title">Share</span></a>
-                                                                <div class="post_share_wrap">
-                                                                    <ul>
-                                                                        <li class="post_share-facebook">
-                                                                            <a target="_blank" href="#"
-                                                                                data-title="Facebook"><span
-                                                                                    class="fa fa-facebook"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-twitter">
-                                                                            <a target="_blank" href="#"
-                                                                                data-title="Twitter"><span
-                                                                                    class="fa fa-twitter"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-pinterest">
-                                                                            <a target="_blank" href=""
-                                                                                data-elementor-open-lightbox="no"
-                                                                                data-title="Pinterest"><span
-                                                                                    class="fa fa-pinterest"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-linkedin">
-                                                                            <a target="_blank"
-                                                                                href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ewebotwp.com/image-post/&amp;title=Simple%20Ways%20To%20Optimize%20Your%20Website%20For%20SEO&amp;source=Ewebot"
-                                                                                data-title="Linkedin"><span
-                                                                                    class="fa fa-linkedin"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-mail">
-                                                                            <a target="_blank"
-                                                                                href="mailto:?subject=Simple+Ways+To+Optimize+Your+Website+For+SEO&amp;body=https://ewebotwp.com/image-post/"
-                                                                                data-title="Email"><span
-                                                                                    class="fa fa-envelope"></span></a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <!-- //post share block -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="boxed_block_item">
-                                    <div class="item_wrapper gt3_center_mode has_post_meta">
-                                        <div class="blogboxed_img_block"
-                                            style="
-                                          background-image: url(/frontend/assets/img/blog_post_02-300x300.jpg);
-                                        ">
-                                        </div>
-                                        <div class="blogboxed_content without_bordered has_img_block">
-                                            <div class="gt3blogboxed_block_wrap">
-                                                <div class="listing_meta">
-                                                    <span class="post_date">August 1,
-                                                        2023</span>
-                                                </div>
-                                                <h2 class="blog_post_title">
-                                                    <a href="https://ewebotwp.com/standart-post/">The
-                                                        Basics of Blogging Search
-                                                        Optimization</a>
-                                                </h2>
-                                                <div class="blogboxed_info_box">
-                                                    <div class="clear"></div>
-                                                    <div class="gt3_post_footer">
-                                                        <div class="gt3_module_button_list">
-                                                            <a href="https://ewebotwp.com/standart-post/">Read
-                                                                More</a>
-                                                        </div>
-                                                        <div class="blog_post_info">
-                                                            <!-- post share block -->
-                                                            <div class="post_share_block">
-                                                                <a href="javascript:void(0)"><span
-                                                                        class="sharing_title">Share</span></a>
-                                                                <div class="post_share_wrap">
-                                                                    <ul>
-                                                                        <li class="post_share-facebook">
-                                                                            <a target="_blank"
-                                                                                href="https://www.facebook.com/share.php?u=https://ewebotwp.com/standart-post/"
-                                                                                data-title="Facebook"><span
-                                                                                    class="fa fa-facebook"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-twitter">
-                                                                            <a target="_blank"
-                                                                                href="https://twitter.com/intent/tweet?text=The%20Basics%20of%20Blogging%20Search%20Optimization&amp;url=https://ewebotwp.com/standart-post/"
-                                                                                data-title="Twitter"><span
-                                                                                    class="fa fa-twitter"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-pinterest">
-                                                                            <a target="_blank"
-                                                                                href="https://pinterest.com/pin/create/button/?url=https://ewebotwp.com/standart-post/&amp;media=/frontend/assets/img/blog_post_02-300x300.jpg"
-                                                                                data-elementor-open-lightbox="no"
-                                                                                data-title="Pinterest"><span
-                                                                                    class="fa fa-pinterest"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-linkedin">
-                                                                            <a target="_blank"
-                                                                                href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ewebotwp.com/standart-post/&amp;title=The%20Basics%20of%20Blogging%20Search%20Optimization&amp;source=Ewebot"
-                                                                                data-title="Linkedin"><span
-                                                                                    class="fa fa-linkedin"></span></a>
-                                                                        </li>
-                                                                        <li class="post_share-mail">
-                                                                            <a target="_blank"
-                                                                                href="mailto:?subject=The+Basics+of+Blogging+Search+Optimization&amp;body=https://ewebotwp.com/standart-post/"
-                                                                                data-title="Email"><span
-                                                                                    class="fa fa-envelope"></span></a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <!-- //post share block -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
