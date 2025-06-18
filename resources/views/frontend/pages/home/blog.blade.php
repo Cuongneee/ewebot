@@ -69,7 +69,7 @@
                                                 <div class="gt3blogboxed_block_wrap">
                                                     <div class="listing_meta">
                                                         <span
-                                                            class="post_date">{{ $news->created_at->format('d/m/Y') }}</span>
+                                                            class="post_date">{{ $news->created_at->format('d-m-Y') }}</span>
                                                     </div>
                                                     <h2 class="blog_post_title">
                                                         <a

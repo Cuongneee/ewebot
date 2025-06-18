@@ -757,7 +757,7 @@
     display: none
 }
 
-.elementor-widget-wpda-builder-search .wpda-search_inner form:after,
+/* .elementor-widget-wpda-builder-search .wpda-search_inner form:after,
 .elementor-widget-wpda-builder-woosearch .wpda-search_inner form:after {
     position: absolute;
     right: 15px;
@@ -771,7 +771,7 @@
     opacity: 1;
     transition: opacity .3s;
     color: #3e3e3e
-}
+} */
 
 .elementor-widget-wpda-builder-search .wpda-search_inner form.wpda-hover_btn:after,
 .elementor-widget-wpda-builder-woosearch .wpda-search_inner form.wpda-hover_btn:after {
