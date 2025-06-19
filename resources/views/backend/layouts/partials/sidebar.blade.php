@@ -33,27 +33,18 @@
 
                 <li class="nav-item">
                     <a data-bs-toggle="collapse" class="has-children" href="#product">
-                        <i class="fas fa-box-open"></i>
-                        <p>Sản phẩm</p>
+                        <i class="fas fa-handshake"></i>
+                        <p>Dịch vụ</p>
                         <span class="caret"></span>
                     </a>
                     <div class="collapse" id="product">
                         <ul class="nav nav-collapse">
-                            {{-- <li class="nav-item {{ activeMenu('admin.products.index') }}">
-                                <a href="{{ route('admin.products.index') }}">
-                                    <span class="sub-item">Quản lý sản phẩm</span>
+                            <li class="nav-item {{ activeMenu('admin.services.index') }}">
+                                <a href="{{ route('admin.services.index') }}">
+                                    <span class="sub-item">Quản lý dịch vụ báo giá</span>
                                 </a>
                             </li>
-                            <li class="nav-item {{ activeMenu('admin.categories.index') }}">
-                                <a href="{{ route('admin.categories.index') }}">
-                                    <span class="sub-item">Quản lý danh mục</span>
-                                </a>
-                            </li>
-                            <li class="nav-item {{ activeMenu('admin.attributes.index') }}">
-                                <a href="{{ route('admin.attributes.index') }}">
-                                    <span class="sub-item">Quản lý thuộc tính</span>
-                                </a>
-                            </li> --}}
+                           
                         </ul>
                     </div>
                 </li>
@@ -161,16 +152,16 @@
                     </a>
                     <div class="collapse" id="promotion">
                         <ul class="nav nav-collapse">
-                            {{-- <li class="nav-item {{ activeMenu('admin.config.index') }}">
+                            <li class="nav-item {{ activeMenu('admin.config.index') }}">
                                 <a href="{{ route('admin.config.index') }}">
                                     <span class="sub-item">Cấu hình chung</span>
                                 </a>
                             </li>
-                            <li class="nav-item {{ activeMenu('admin.config.slider') }}">
+                            {{-- <li class="nav-item {{ activeMenu('admin.config.slider') }}">
                                 <a href="{{ route('admin.config.slider') }}">
                                     <span class="sub-item">Cấu hình Slider</span>
                                 </a>
-                            </li>
+                            </li> --}}
 
                             <li class="nav-item {{ activeMenu('admin.reviews.index') }}">
                                 <a href="{{ route('admin.reviews.index') }}">
@@ -183,7 +174,7 @@
                                     <span class="sub-item">Về chúng tôi</span>
                                 </a>
                             </li>
-                            <li class="nav-item {{ activeMenu('admin.advertisement.index') }}">
+                            {{-- <li class="nav-item {{ activeMenu('admin.advertisement.index') }}">
                                 <a href="{{ route('admin.advertisement.index') }}">
                                     <span class="sub-item">Quảng cáo</span>
                                 </a>

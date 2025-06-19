@@ -1,3 +1,5 @@
+<link rel="icon" href="{{ showImage($setting->icon) }}" sizes="32x32" />
+<link rel="icon" href="{{ showImage($setting->icon) }}" sizes="192x192" />
 <style id="gt3-dynamic-handle-inline-css" type="text/css">
     .back_to_top_container {
         position: fixed;

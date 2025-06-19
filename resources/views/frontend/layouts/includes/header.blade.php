@@ -17,10 +17,10 @@
                                     data-widget_type="wpda-header-logo.default">
                                     <div class="elementor-widget-container">
                                         <div class="wpda-builder-logo_container">
-                                            <a aria-label="Logo" href="https://ewebotwp.com/">
-                                                <img class="wpda-builder-logo"
-                                                    src="/frontend/assets/img/logo_retinablack.png" alt=""
-                                                    title="logo_retina(black)" width="298" height="96" />
+                                            <a aria-label="Logo" href="{{ route('home') }}">
+                                                <img class="wpda-builder-logo" src="{{ showImage($setting->logo) }}"
+                                                    alt="" title="logo_retina(black)" width="298"
+                                                    height="96" />
                                             </a>
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@
                                         <div class="wpda-navbar-collapse">
                                             <nav class="wpda-builder-menu">
                                                 <ul id="menu-main-menu" class="wpda-menu">
-                                                   <li id="menu-item-12047"
+                                                    <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a href="{{ route('home') }}">Home</a>
                                                     </li>
@@ -52,13 +52,13 @@
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="">Services</a>
+                                                        <a href="{{ route('services') }}">Services</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a href="{{ route('listNews') }}">Blog</a>
                                                     </li>
-                                                   
+
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a href="https://ewebotwp.com/contact-us/">Contacts</a>
@@ -92,10 +92,9 @@
                                         <div class="wpda-builder-search">
                                             <div class="wpda-search_icon"><i></i></div>
                                             <div class="wpda-search_inner">
-                                                <form role="search" method="get"
-                                                    class="search_form gt3_search_form" action="#">
-                                                    <label for="search-form-6822b2fd5bb42"
-                                                        class="">Search</label>
+                                                <form role="search" method="get" class="search_form gt3_search_form"
+                                                    action="#">
+                                                    <label for="search-form-6822b2fd5bb42" class="">Search</label>
                                                     <input class="search_text" id="search-form-6822b2fd5bb42"
                                                         type="text" name="s" placeholder="Search">
                                                     <input class="search_submit" type="submit" value="Search">

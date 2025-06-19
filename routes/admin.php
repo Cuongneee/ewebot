@@ -1,12 +1,16 @@
 <?php
 
 
+use App\Http\Controllers\Backend\AboutUsController;
+use App\Http\Controllers\Backend\ConfigController;
+use App\Http\Controllers\Backend\ReviewController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\Auth\AuthController;
 use App\Http\Controllers\Backend\BulkActionController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\NewsController;
+use App\Http\Controllers\Backend\ServiceController;
 
 Route::name('admin.')->group(function () {
     Route::middleware(\App\Http\Middleware\AdminAuthenticate::class)->group(function () {
@@ -15,6 +19,15 @@ Route::name('admin.')->group(function () {
 
         Route::get('/', [DashboardController::class, 'getRevenueChart'])->name('dashboard');
         Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+
+        Route::prefix('services')->name('services.')->group(function () {
+            Route::get('', [ServiceController::class, 'index'])->name('index');
+            Route::get('create', [ServiceController::class, 'create'])->name('create');
+            Route::post('/', [ServiceController::class, 'store'])->name('store');
+            Route::get('{id}', [ServiceController::class, 'edit'])->name('edit');
+            Route::put('{id}', [ServiceController::class, 'update'])->name('update');
+
+        });
 
         Route::prefix('categories')->name('categories.')->group(function () {
             Route::get('/', [CategoryController::class, 'index'])->name('index');
@@ -33,8 +46,20 @@ Route::name('admin.')->group(function () {
             // SEO 
             Route::post('{id}/seo-analysis', [NewsController::class, 'getSeoAnalysis'])->name('seo.analysis');
             Route::post('seo-analysis-live', [NewsController::class, 'getSeoAnalysisLive'])->name('seo.analysis.live');
-
         });
+
+        Route::prefix('configs')->name('config.')->group(function () {
+            Route::get('/', [ConfigController::class, 'index'])->name('index');
+            Route::post('update', [ConfigController::class, 'store'])->name('update');
+            Route::get('seo', [ConfigController::class, 'seo'])->name('seo');
+            Route::post('seo', [ConfigController::class, 'storeSeo'])->name('store');
+            Route::get('slider', [ConfigController::class, 'slider'])->name('slider');
+            Route::post('slider', [ConfigController::class, 'sliderUpdate'])->name('slider.update');
+        });
+
+        Route::resource('reviews', ReviewController::class);
+        Route::resource('aboutus', AboutUsController::class);
+
     });
 
     Route::middleware(\App\Http\Middleware\AdminRedirectIfAuthenticated::class)->group(function () {

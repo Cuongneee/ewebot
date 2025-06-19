@@ -31,7 +31,8 @@
                  <div class="elementor-element-custom_font_size elementor-element-custom_font_size_tablet elementor-element-custom_font_family elementor-element-custom_font_weight elementor-element-custom_color elementor-element elementor-element-8b1270f elementor-widget elementor-widget-text-editor"
                      data-id="8b1270f" data-element_type="widget" data-widget_type="text-editor.default">
                      <div class="elementor-widget-container">
-                         <a href="tel:8002563123">800 2563 123</a>
+                         <a
+                             href="tel:{{ preg_replace('/[^0-9+]/', '', $setting->hotline) }}">{{ $setting->hotline }}</a>
                      </div>
                  </div>
                  <div class="gt3-core-button--alignment_center elementor-element elementor-element-89b3d94 elementor-widget elementor-widget-gt3-core-button"
