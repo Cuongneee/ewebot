@@ -41,8 +41,7 @@
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
                                         <p>
-                                            We focus on the needs of small to middle market
-                                            businesses to improve and grow their return.
+                                           {{$setting->small_text_footer}}
                                         </p>
                                     </div>
                                 </div>
@@ -265,9 +264,7 @@
                     data-id="1d26260d" data-element_type="widget" data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
                         <p>
-                            © 2025 – Ewebot by
-                            <a href="https://gt3themes.com/">GT3Themes</a>. All Rights
-                            Reserved.
+                            © <a href="">{{$setting->footer}}</a>
                         </p>
                     </div>
                 </div>

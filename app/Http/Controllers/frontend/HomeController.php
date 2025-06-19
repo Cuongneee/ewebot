@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\CustomerReview;
 use App\Models\News;
 use Carbon\Carbon;
 
@@ -16,7 +17,10 @@ class HomeController extends Controller
             ->where('status', '=', '1')
             ->take(3)
             ->get();
-        // dd($highViewNews);
-        return view('frontend.pages.home.home', compact('highViewNews'));
+
+        $customerReviews = CustomerReview::query()->get();
+        // dd($customerReviews);
+
+        return view('frontend.pages.home.home', compact('highViewNews', 'customerReviews'));
     }
 }

@@ -213,11 +213,12 @@
                                             <div class="gt3-core-imagebox-content">
                                                 <div class="gt3-core-imagebox-title">
                                                     <h2 class="gt3-core-imagebox-title">
-                                                        <a href="#">800-123-4567</a>
+                                                        <a
+                                                            href="tel:{{ preg_replace('/[^0-9+]/', '', $setting->hotline) }}">{{ $setting->hotline }}</a>
                                                     </h2>
                                                 </div>
                                                 <p class="gt3-core-imagebox-description">
-                                                    info@company.com
+                                                    {{ $setting->email }}
                                                 </p>
                                             </div>
                                         </div>

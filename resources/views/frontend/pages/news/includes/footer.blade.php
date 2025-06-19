@@ -329,8 +329,7 @@
                 <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element-custom_color elementor-element elementor-element-c1bb69e elementor-widget elementor-widget-text-editor"
                     data-id="c1bb69e" data-element_type="widget" data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
-                        <p style="text-align: left;">© 2025 — Ewebot by <a href="https://gt3themes.com">GT3Themes</a>.
-                            All Rights Reserved.</p>
+                        <p style="text-align: left;">© <a href="">{{$setting->footer}}</a></p>
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-d3f3aab elementor-widget elementor-widget-spacer"

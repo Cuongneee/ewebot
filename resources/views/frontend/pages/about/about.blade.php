@@ -46,8 +46,6 @@
 
                                 @include('frontend.pages.about.choose-us')
 
-                                @include('frontend.pages.about.slide')
-
                             </div>
                             <div class="clear"></div>
 
