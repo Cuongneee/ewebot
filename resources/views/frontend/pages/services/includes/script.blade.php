@@ -54,7 +54,7 @@
         jQuery(function() {
             gt3_parallax();
         });
-    })(jQuery);
+    });
 
     /*
     jQuery Parallax 1.1.3
@@ -189,8 +189,10 @@
 
 
 
-
 <script type="text/javascript" src="/frontend/assets/js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+
 <script type="text/javascript" src="/frontend/assets/js/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/core.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/column.js"></script>

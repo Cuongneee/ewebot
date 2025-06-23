@@ -54,7 +54,7 @@
         jQuery(function() {
             gt3_parallax();
         });
-    })(jQuery);
+    });
 
     /*
     jQuery Parallax 1.1.3

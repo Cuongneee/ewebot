@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\EmailController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\NewsController;
 use App\Http\Controllers\Frontend\ServiceController;
@@ -20,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'about'])->name('about');
 Route::get('/services', [ServiceController::class, 'services'])->name('services');
+
+Route::post('/send-contact', [EmailController::class, 'sendContactMail'])->name('contact.send');
+
 Route::get('/blog-new/category/{slug}', [NewsController::class, 'listNewsByCategory'])->name('listNewsByCategory');
 Route::get('/blog-new', [NewsController::class, 'listNews'])->name('listNews');
 Route::get('/blog-new/{slug}', [NewsController::class, 'detailNews'])->name('detailNews');
