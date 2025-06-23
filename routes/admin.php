@@ -3,12 +3,14 @@
 
 use App\Http\Controllers\Backend\AboutUsController;
 use App\Http\Controllers\Backend\ConfigController;
+use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\ReviewController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\Auth\AuthController;
 use App\Http\Controllers\Backend\BulkActionController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\EmailController;
 use App\Http\Controllers\Backend\NewsController;
 use App\Http\Controllers\Backend\ServiceController;
 
@@ -59,6 +61,8 @@ Route::name('admin.')->group(function () {
 
         Route::resource('reviews', ReviewController::class);
         Route::resource('aboutus', AboutUsController::class);
+        Route::resource('contacts', ContactController::class);
+        Route::post('update-mail-env', [EmailController::class, 'updateMailEnv'])->name('update-mail-env');
 
     });
 

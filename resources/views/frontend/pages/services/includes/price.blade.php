@@ -119,14 +119,21 @@
                                                                          <a class="button_size_elementor_custom alignment_inline border_icon_none hover_type5 btn_icon_position_left {{ $service->is_featured ? 'btn-featured' : '' }}"
                                                                              href="#">
 
-                                                                             <span class="gt3_module_button__container">
+                                                                             <!-- services/price.blade.php -->
+
+                                                                             <!-- Nút bấm gọi form -->
+                                                                             <span data-service_id='{{ $service->id }}'
+                                                                                 class="gt3_module_button__container"
+                                                                                 style="cursor: pointer;">
                                                                                  <span
-                                                                                     class="elementor_gt3_btn_text">Register</span>
+                                                                                     class="elementor_gt3_btn_text">Đăng
+                                                                                     kí nhận tư vấn</span>
                                                                                  <span
                                                                                      class="gt3_module_button__cover front"></span>
                                                                                  <span
                                                                                      class="gt3_module_button__cover back"></span>
                                                                              </span>
+
                                                                          </a>
                                                                      </div>
 

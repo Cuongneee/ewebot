@@ -25,10 +25,10 @@
             <div class='gt3-page-title__inner '>
                 <div class='container'>
                     <div class='gt3-page-title__content'>
-                        <div class='page_title'>
+                        <div class='page_title ms-5'>
                             <h1>PPC Services</h1>
                         </div>
-                        <div class='gt3_breadcrumb'>
+                        <div class='gt3_breadcrumb ms-5'>
                             <div class="breadcrumbs"><a href="https://ewebotwp.com/">Home</a><span
                                     class="gt3_pagination_delimiter"></span><span class="current">PPC
                                     Services</span></div>
@@ -79,9 +79,9 @@
         </div>
     </div>
 
-    
-    
-    
+
+
+
     <div id="yith-quick-view-modal" class="yith-quick-view yith-modal">
         <div class="yith-quick-view-overlay"></div>
         <div id=""class="yith-wcqv-wrapper">
@@ -98,10 +98,10 @@
             </div>
         </div>
     </div>
-    
+
     <div class='back_to_top_container'><a href='javascript:void(0)' class='gt3_back2top' id='back_to_top'>Back
             to top</a></div>
-    
+
 
     <div class="pswp" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="pswp__bg"></div>
@@ -137,9 +137,10 @@
             </div>
         </div>
     </div>
-	
-    
+
     @include('frontend.pages.services.includes.script')
+    @include('frontend.pages.popup.index')
+
 </body>
 
 </html>

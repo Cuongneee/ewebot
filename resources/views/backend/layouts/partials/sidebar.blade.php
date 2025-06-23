@@ -188,10 +188,10 @@
                     </div>
                 </li>
                 <li class="nav-item {{ activeMenu('admin.contacts.index') }}">
-                    {{-- <a href="{{ route('admin.contacts.index') }}" class="collapsed">
+                    <a href="{{ route('admin.contacts.index') }}" class="collapsed">
                         <i class="fa-solid fa-headphones-simple"></i>
                         <p>Yêu cầu tư vấn</p>
-                    </a> --}}
+                    </a>
                 </li>
             </ul>
         </div>

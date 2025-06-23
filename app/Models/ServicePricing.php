@@ -45,4 +45,10 @@ class ServicePricing extends Model
     {
         return $this->belongsTo(Category::class, 'category_id');
     }
+
+    public function contacts()
+{
+    return $this->hasMany(Contact::class);
+}
+
 }

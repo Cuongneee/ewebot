@@ -842,3 +842,127 @@
         padding: 0px 0px 0px 0px;
     }
 }
+
+/* Existing CSS remains the same... */
+
+/* Featured service styling - when is_featured = 1 */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured>.elementor-element-populated {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .price_item_title-elementor h3 {
+    color: #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .gt3_price_item-cost-elementor {
+    color: #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .price_item_prefix-elementor,
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .price_item_suffix-elementor {
+    color: #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-6c664961 {
+    color: #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-7b68579a {
+    color: #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-66971121 {
+    --divider-color: rgba(218, 227, 233, 0.37) !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .gt3_styled_list li {
+    color: #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .gt3_list__icon {
+    color: #55e1cf !important;
+}
+
+/* Default state for featured button - nền trắng, chữ đen */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor:not(.hover_type2):not(.hover_type4):not(.hover_type5) a {
+    background-color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+    color: #000000 !important;
+    transition: all 0.3s ease !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .elementor_gt3_btn_text {
+    color: #000000 !important;
+    transition: color 0.3s ease !important;
+}
+
+/* Hover state for featured button - nền đen, chữ trắng, viền trắng */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor:not(.hover_type2) a:hover {
+    background-color: #000000 !important;
+    border: 1px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa a:not(.hover_type2):hover .elementor_gt3_btn_text {
+    color: #FFFFFF !important;
+}
+
+/* For hover_type5 buttons - default state */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type5 .gt3_module_button__container {
+    background-color: #FFFFFF !important;
+    transition: all 0.3s ease !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type5 .gt3_module_button__container .gt3_module_button__cover.front:before,
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type5 .gt3_module_button__container .gt3_module_button__cover.front:after {
+    background-color: #FFFFFF !important;
+}
+
+/* For hover_type5 buttons - hover state */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type5 .gt3_module_button__container:hover {
+    background-color: #000000 !important;
+    border: 1px solid #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type5 .gt3_module_button__container:hover .gt3_module_button__cover.front:before,
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type5 .gt3_module_button__container:hover .gt3_module_button__cover.front:after {
+    background-color: #000000 !important;
+}
+
+/* For hover_type2 buttons - default state */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type2 .gt3_module_button__container span.gt3_module_button__cover.front {
+    background-color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+    color: #000000 !important;
+    transition: all 0.3s ease !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type2 .gt3_module_button__container .gt3_module_button__cover.front .elementor_gt3_btn_text {
+    color: #000000 !important;
+}
+
+/* For hover_type2 buttons - hover state */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type2 .gt3_module_button__container span.gt3_module_button__cover.back {
+    background-color: #000000 !important;
+    border: 1px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor .hover_type2 .gt3_module_button__container .gt3_module_button__cover.back .elementor_gt3_btn_text {
+    color: #FFFFFF !important;
+}
+
+/* Ensure border properties */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured .elementor-element-317eeefa .gt3_module_button_elementor a {
+    border-width: 1px !important;
+    border-style: solid !important;
+}
+
+/* Mobile responsive for featured */
+@media(max-width:767px) {
+    .elementor-14367 .elementor-element.elementor-element-4fb3f01a.featured>.elementor-element-populated {
+        background-color: #000000 !important;
+        border-color: #000000 !important;
+    }
+}

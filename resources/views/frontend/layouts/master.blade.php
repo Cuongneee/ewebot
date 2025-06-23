@@ -102,8 +102,6 @@
         </div>
     </div>
 
-
-
     {{-- JS --}}
     @include('frontend.layouts.includes.script')
 </body>
