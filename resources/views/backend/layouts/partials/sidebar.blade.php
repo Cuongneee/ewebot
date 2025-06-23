@@ -44,7 +44,12 @@
                                     <span class="sub-item">Quản lý dịch vụ báo giá</span>
                                 </a>
                             </li>
-                           
+                            <li class="nav-item {{ activeMenu('admin.services.create') }}">
+                                <a href="{{ route('admin.services.create') }}">
+                                    <span class="sub-item">Thêm dịch vụ báo giá</span>
+                                </a>
+                            </li>
+
                         </ul>
                     </div>
                 </li>

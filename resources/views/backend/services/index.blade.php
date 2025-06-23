@@ -33,6 +33,7 @@
                             <th>STT</th>
                             <th>Tên dịch vụ</th>
                             <th>Đường dẫn</th>
+                            <th>Danh mục</th>
                             <th>Giá tiền</th>
                             <th>Thời gian</th>
                             <th>Ngày tạo</th>
@@ -88,6 +89,12 @@
                 {
                     data: 'slug',
                     name: 'slug',
+                },
+                {
+                    data: 'category',
+                    name: 'category',
+                    orderable: false,
+                    searchable: false,
                 },
                 {
                     data: 'price',

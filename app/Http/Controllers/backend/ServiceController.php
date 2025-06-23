@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\ServicePricing;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -16,12 +17,15 @@ class ServiceController extends Controller
     {
         if ($request->ajax()) {
 
-            $query = ServicePricing::query()->orderBy('order');
+            $query = ServicePricing::query()->latest();
 
 
             return DataTables::of($query)
                 ->addColumn('checkbox', function ($row) {
                     return '<input type="checkbox" class="select-item" value="' . $row->id . '">';
+                })
+                ->addColumn('category', function ($row) {
+                    return !empty($row->category) ? $row->category->name : 'N/A';
                 })
                 ->editColumn('price', function ($row) {
                     return number_format($row->price, 0, ',', '.') . 'đ';
@@ -81,8 +85,10 @@ class ServiceController extends Controller
         $page = 'Dịch vụ';
         $title = 'Thêm Dịch Vụ';
         $services = null;
+        $categories = Category::where('type', 'product')->get();
+        // dd($categories);
 
-        return view('backend.services.form', compact('title', 'page', 'services', 'isEdit'));
+        return view('backend.services.form', compact('title', 'page', 'services', 'isEdit', 'categories'));
     }
 
     public function edit(Request $request, $id)
@@ -91,35 +97,40 @@ class ServiceController extends Controller
         $page = 'Dịch Vụ';
         $title = 'Sửa Dịch Vụ';
         $services = ServicePricing::findOrFail($id);
+        $categories = Category::where('type', 'product')->get();
 
-        return view('backend.services.form', compact('services', 'title', 'page', 'isEdit'));
+        return view('backend.services.form', compact('services', 'title', 'page', 'isEdit', 'categories'));
     }
 
     public function validationServices($id = null)
-{
-    request()->merge([
-        'price' => str_replace(['.', ','], '', request('price')),
-    ]);
+    {
+        request()->merge([
+            'price' => str_replace(['.', ','], '', request('price')),
+        ]);
 
-    return request()->validate([
-        'name' => 'required|string|max:255',
-        'slug' => [
-            'required',
-            'string',
-            Rule::unique('service_pricings', 'slug')->ignore($id),
-        ],
-        'price' => 'required|numeric|min:0',
-        'duration' => 'required|string|max:255',
-        'description' => 'nullable|string',
-        'features' => 'nullable|string',
-        'is_featured' => 'nullable|boolean',
-        'order' => 'nullable|integer',
-        'seo_title' => 'nullable|string|max:255',
-        'seo_description' => 'nullable|string|max:255',
-        'seo_keywords' => 'nullable|string',
-        'status' => 'nullable|boolean',
-    ]);
-}
+        return request()->validate([
+            'name' => 'required|string|max:255',
+            'slug' => [
+                'required',
+                'string',
+                Rule::unique('service_pricings', 'slug')->ignore($id),
+            ],
+            'category_id' => 'required|integer|exists:categories,id',
+            'price' => 'required|numeric|min:0',
+            'duration' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'features' => 'nullable|string',
+            'is_featured' => 'nullable|boolean',
+            'order' => 'nullable|integer',
+            'seo_title' => 'nullable|string|max:255',
+            'seo_description' => 'nullable|string|max:255',
+            'seo_keywords' => 'nullable|string',
+            'status' => 'nullable|boolean',
+            'posted_at' => 'nullable',
+            'remove_at' => 'nullable',
+
+        ]);
+    }
 
 
     public function store(Request $request)
@@ -148,27 +159,27 @@ class ServiceController extends Controller
     }
 
 
-   public function update(Request $request, $id)
-{
-    $service = ServicePricing::findOrFail($id);
+    public function update(Request $request, $id)
+    {
+        $service = ServicePricing::findOrFail($id);
 
-    $request->merge([
-        'slug' => Str::slug($request->name)
-    ]);
+        $request->merge([
+            'slug' => Str::slug($request->name)
+        ]);
 
-    $data = $this->validationServices($id);
+        $data = $this->validationServices($id);
 
-    $featuresArray = array_filter(array_map('trim', explode("\n", $request->input('features'))));
-    $data['features'] = array_values($featuresArray);
-    $data['price'] = (float) str_replace(['.', ','], '', $request->price);
-    if (!empty($data['seo_keywords'])) {
+        $featuresArray = array_filter(array_map('trim', explode("\n", $request->input('features'))));
+        $data['features'] = array_values($featuresArray);
+        $data['price'] = (float) str_replace(['.', ','], '', $request->price);
+        if (!empty($data['seo_keywords'])) {
             $keywords = explode(',', $data['seo_keywords']);
             $keywords = array_map('trim', $keywords);
             $data['seo_keywords'] = $keywords;
         }
 
-    $service->update($data);
-    return redirect()->route('admin.services.index')->with('success', 'Cập nhật dịch vụ thành công!');
-}
+        $service->update($data);
+        return redirect()->route('admin.services.index')->with('success', 'Cập nhật dịch vụ thành công!');
+    }
 
 }

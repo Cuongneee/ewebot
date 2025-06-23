@@ -1,7 +1,7 @@
 @extends('backend.layouts.master')
 
 
-@section('title', 'Form thêm và chỉnh sửa bài viết')
+@section('title', 'Form thêm và chỉnh sửa dịch vụ')
 @section('content')
     <div class="container-fluid">
 
@@ -45,8 +45,7 @@
                             <div class="form-group mb-3">
                                 <label for="price">Giá tiền <span class="text-danger">*</span></label>
                                 <input type="text" name="price" class="form-control"
-                                    value="{{ old('price', number_format($services->price ?? 0, 0, ',', '.')) }}"
->
+                                    value="{{ old('price', number_format($services->price ?? 0, 0, ',', '.')) }}">
 
                                 @error('price')
                                     <div class="invalid-feedback">{{ $message }}</div>
@@ -146,6 +145,21 @@
                                     <i class="fa fa-sign-out-alt me-1"></i> Lưu & Thoát
                                 </button>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Catalogue -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label class="mb-2 fw-semibold">Danh mục <span class="text-danger">*</span></label>
+                            <select class="form-select select2" name="category_id" required>
+                                <option value="">-- Chọn danh mục --</option>
+                                @foreach ($categories as $category)
+                                    <option value="{{ $category->id }}" @selected(isset($services->category) && $category->id == $services->category->id)>
+                                        {{ $category->name }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
 
@@ -394,23 +408,32 @@
                 // $('#seo-desc').slideToggle(200);
             });
 
+            $('#name').on('input', function() {
+                const nameValue = $(this).val();
+                const slugValue = slugify(nameValue);
+                $('#slug').val(slugValue);
+                $('#slug-preview').text(slugValue); // cập nhật preview luôn
+            });
+
+            $('.select2').select2({
+                placeholder: "-- Chọn danh mục --",
+                allowClear: true
+            });
+
             $('#edit-seo-btn-error').on('click', function(e) {
                 e.preventDefault();
                 $('#seo-form-error').slideToggle(200);
                 $('#seo-desc-error').slideToggle(200);
             });
 
-            // Google Snippet Preview
-            function updateSnippetPreview() {
-                let seoTitle = $('#seo_title').val() || 'Tiêu đề bài viết';
-                let slug = $('#slug').val() || 'slug-bai-viet';
-                let seoDescription = $('#seo_description').val() || 'Mô tả ngắn của bài viết sẽ hiển thị ở đây.';
-                $('#gsp-title').text(seoTitle);
-                $('#gsp-slug').text(slug);
-                $('#gsp-desc').text(seoDescription);
-            }
-            $('#seo_title, #slug, #seo_description').on('input', updateSnippetPreview);
-            updateSnippetPreview();
+            // Xử lý form submit
+            document.querySelector('form').addEventListener('submit', function(e) {
+                const checkedRadio = document.querySelector('input[name="category_id"]:checked');
+                if (!checkedRadio) {
+                    e.preventDefault();
+                    alert('Vui lòng chọn một danh mục');
+                }
+            });
 
             // Selectize từ khóa SEO
             $(document).ready(function() {
@@ -426,6 +449,16 @@
                     }
                 });
             });
+
+            function slugify(str) {
+                str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); // Bỏ dấu
+                str = str.toLowerCase()
+                    .trim()
+                    .replace(/[^a-z0-9\s-]/g, '') // Bỏ ký tự đặc biệt
+                    .replace(/\s+/g, '-') // Thay khoảng trắng bằng -
+                    .replace(/-+/g, '-'); // Loại bỏ dấu - lặp
+                return str;
+            }
 
             // Gửi form bằng AJAX
             $('#myForm').on('submit', function(e) {
