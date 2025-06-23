@@ -11,11 +11,12 @@ class ServicePricing extends Model
 
 
 
-    protected $table = 'service_pricings'; 
+    protected $table = 'service_pricings';
 
 
     protected $fillable = [
         'name',
+        'category_id',
         'slug',
         'price',
         'duration',
@@ -35,7 +36,13 @@ class ServicePricing extends Model
         'features' => 'array',
         'is_featured' => 'boolean',
         'seo_keywords' => 'array',
+        'posted_at' => 'datetime',
+        'remove_at' => 'datetime'
+
     ];
 
-
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
 }

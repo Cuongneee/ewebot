@@ -27,9 +27,8 @@
                                         <div class="wpda-builder-logo_container ">
                                             <a aria-label="Logo" href="https://ewebotwp.com/">
                                                 <img class="wpda-builder-logo"
-                                                    src="/frontend/assets/img/logo-agency-footer.png"
-                                                    alt="" title="logo-agency-footer.png" width="304"
-                                                    height="96" /> </a>
+                                                    src="{{ showImage($setting->logo_footer) }}" alt=""
+                                                    title="logo-agency-footer.png" width="304" height="96" /> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -65,9 +64,9 @@
                                                     decoding="async" title="agency-bubble.png" /></figure>
                                             <div class="gt3-core-imagebox-content">
                                                 <div class="gt3-core-imagebox-title">
-                                                    <h6 class="gt3-core-imagebox-title">800 2534 236</h6>
+                                                    <h6 class="gt3-core-imagebox-title">{{ $setting->hotline }}</h6>
                                                 </div>
-                                                <p class="gt3-core-imagebox-description">email@yoursite.com
+                                                <p class="gt3-core-imagebox-description">{{ $setting->email }}
                                                 </p>
                                             </div>
                                         </div>
@@ -82,10 +81,17 @@
                                                     src="/frontend/assets/img/agency-map.png"
                                                     class="attachment-full size-full wp-image-12654" alt=""
                                                     decoding="async" title="agency-map.png" /></figure>
+                                            @php
+                                                $addresses = json_decode($setting->address, true) ?: [];
+                                            @endphp
                                             <div class="gt3-core-imagebox-content">
-                                                <p class="gt3-core-imagebox-description">27 Division St, New
-                                                    York, NY<br>
-                                                    10002, United States</p>
+                                                @foreach ($addresses as $line)
+                                                    <p class="gt3-core-imagebox-description">
+                                                        @foreach (explode(',', $line) as $part)
+                                                            {{ trim($part) }}<br>
+                                                        @endforeach
+                                                    </p>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -329,7 +335,7 @@
                 <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element-custom_color elementor-element elementor-element-c1bb69e elementor-widget elementor-widget-text-editor"
                     data-id="c1bb69e" data-element_type="widget" data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
-                        <p style="text-align: left;">© <a href="">{{$setting->footer}}</a></p>
+                        <p style="text-align: left;">© <a href="">{{ $setting->footer }}</a></p>
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-d3f3aab elementor-widget elementor-widget-spacer"

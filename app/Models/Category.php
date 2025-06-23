@@ -30,6 +30,11 @@ class Category extends Model
         return $this->hasMany(News::class, 'category_id');
     }
 
+    public function services()
+    {
+        return $this->hasMany(ServicePricing::class, 'category_id');
+    }
+
     protected $casts = [
         'status' => 'boolean',
         'seo_keywords' => 'array'
