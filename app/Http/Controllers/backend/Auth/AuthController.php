@@ -36,6 +36,7 @@ class AuthController extends Controller
                 session()->flash('error', 'Bạn không có quyền truy cập vào trang quản lý!');
                 return back();
             }
+            // dd(123);
 
             return redirect()->route('admin.dashboard')->with('success', 'Đăng nhập thành công.');
         } else {

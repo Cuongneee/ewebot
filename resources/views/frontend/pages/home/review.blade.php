@@ -17,7 +17,7 @@
                                     data-settings='{"_animation":"gt3-slideup-animation"}'
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <h5>Testimonials</h5>
+                                        <h5>Chứng nhận</h5>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-3f39cf7 elementor-widget elementor-widget-heading animated gt3-slideup-animation"
@@ -26,7 +26,7 @@
                                     data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">
-                                            What Our Clients Say
+                                            Khách hàng nói gì về chúng tôi
                                         </h2>
                                     </div>
                                 </div>
@@ -34,8 +34,7 @@
                                     data-id="c7c3368" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
                                         <p>
-                                            Ewebot stays ahead of the curve with
-                                            digital marketing trends.
+                                           Sgo cung cấp các dịch vụ từ website, SEO, marketing
                                         </p>
                                     </div>
                                 </div>

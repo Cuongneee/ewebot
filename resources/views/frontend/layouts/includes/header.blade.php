@@ -44,65 +44,29 @@
                                                 <ul id="menu-main-menu" class="wpda-menu">
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('home') }}">Home</a>
+                                                        <a href="{{ route('home') }}">Trang chủ</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('about') }}">About Us</a>
+                                                        <a href="{{ route('about') }}">Giới thiệu</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('services') }}">Services</a>
+                                                        <a href="{{ route('services') }}">Dịch vụ</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a href="{{ route('listNews') }}">Blog</a>
                                                     </li>
 
-                                                    <li id="menu-item-12047"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="https://ewebotwp.com/contact-us/">Contacts</a>
-                                                    </li>
+                                                   
                                                 </ul>
                                             </nav>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="gt3-core-button--alignment_center elementor-element elementor-element-48a0292 elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-gt3-core-button"
-                                    data-id="48a0292" data-element_type="widget"
-                                    data-widget_type="gt3-core-button.default">
-                                    <div class="elementor-widget-container">
-                                        <div
-                                            class="gt3_module_button_elementor size_custom alignment_center button_icon_none hover_type5 rounded">
-                                            <a class="button_size_elementor_custom alignment_center border_icon_none hover_type5 btn_icon_position_left"
-                                                href="#">
-                                                <span class="gt3_module_button__container">
-                                                    <span class="elementor_gt3_btn_text">Get in touch</span>
-                                                    <span class="gt3_module_button__cover front"></span>
-                                                    <span class="gt3_module_button__cover back"></span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-da910fb elementor-widget__width-auto elementor-widget-tablet__width-auto alignment-right elementor-hidden-mobile elementor-widget elementor-widget-wpda-builder-search"
-                                    data-id="da910fb" data-element_type="widget"
-                                    data-widget_type="wpda-builder-search.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="wpda-builder-search">
-                                            <div class="wpda-search_icon"><i></i></div>
-                                            <div class="wpda-search_inner">
-                                                <form role="search" method="get" class="search_form gt3_search_form"
-                                                    action="#">
-                                                    <label for="search-form-6822b2fd5bb42" class="">Search</label>
-                                                    <input class="search_text" id="search-form-6822b2fd5bb42"
-                                                        type="text" name="s" placeholder="Search">
-                                                    <input class="search_submit" type="submit" value="Search">
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
+                                
                             </div>
                         </div>
                     </div>

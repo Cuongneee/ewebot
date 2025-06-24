@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\CustomerReview;
 use App\Models\News;
 use Carbon\Carbon;
@@ -18,9 +19,20 @@ class HomeController extends Controller
             ->take(3)
             ->get();
 
-        $customerReviews = CustomerReview::query()->get();
-        // dd($customerReviews);
+        $categoryService = Category::where('type', 'product')
+            ->where('status', 1)
+            ->orderByDesc('location')
+            ->get();
 
-        return view('frontend.pages.home.home', compact('highViewNews', 'customerReviews'));
+        $customerReviews = CustomerReview::query()->get();
+
+        $categoryBlog = Category::query()
+            ->where('status', 1)
+            ->where('type', 'blog')
+            ->get();
+
+        // dd(vars: $categoryService);
+
+        return view('frontend.pages.home.home', compact('highViewNews', 'customerReviews', 'categoryService', 'categoryBlog'));
     }
 }

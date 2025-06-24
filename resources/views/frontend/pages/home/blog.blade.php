@@ -73,7 +73,7 @@
                                                     </div>
                                                     <h2 class="blog_post_title">
                                                         <a
-                                                            href="https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/">
+                                                            href="{{route('detailNews', $news->slug)}}">
                                                            {{$news->title}}</a>
                                                     </h2>
                                                     <div class="blogboxed_info_box">
@@ -81,7 +81,7 @@
                                                         <div class="gt3_post_footer">
                                                             <div class="gt3_module_button_list">
                                                                 <a
-                                                                    href="https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem/">Read
+                                                                    href="{{route('listNews')}}">Read
                                                                     More</a>
                                                             </div>
                                                             <div class="blog_post_info">

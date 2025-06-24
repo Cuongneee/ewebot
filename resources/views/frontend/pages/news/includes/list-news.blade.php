@@ -13,7 +13,8 @@
                                     class="blog_post_preview isotope_item isotope-item  format-standard-image new packery_blog_item_1  ">
                                     <div class="item_wrapper">
                                         <div class="blog_content">
-                                            <div class="blog_post_media"><a href="{{route('detailNews', $news->slug)}}"><img decoding="async"
+                                            <div class="blog_post_media"><a
+                                                    href="{{ route('detailNews', $news->slug) }}"><img decoding="async"
                                                         srcset="" src="{{ $news->image }}"
                                                         sizes="(min-width: 1200px) 1600px, (min-width: 992px) 1200px, (min-width: 768px) 992px, (min-width: 600px) 768px, (min-width: 420px) 600px, (max-width: 600px) 420px"
                                                         alt="How to Increase Your ROI Through scientific SEM?" /></a>
@@ -27,7 +28,7 @@
                                                 </div>
                                             </div>
                                             <h2 class="blogpost_title"><a
-                                                    href="https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem-2/">{{ $news->title }}</a>
+                                                    href="{{ route('detailNews', $news->slug) }}">{{ $news->title }}</a>
                                             </h2>
                                             <div class="blog_item_description">
                                                 {{ \Illuminate\Support\Str::limit($news->short_description, 160) }}
@@ -36,7 +37,7 @@
                                             <div class="clear post_clear"></div>
                                             <div class="gt3_post_footer">
                                                 <div class="gt3_module_button_list"><a
-                                                        href="https://ewebotwp.com/how-to-increase-your-roi-through-scientific-sem-2/">Read
+                                                        href="{{ route('detailNews', $news->slug) }}">Read
                                                         More</a></div>
                                                 <div class="blog_post_info">
                                                     <!-- post share block -->

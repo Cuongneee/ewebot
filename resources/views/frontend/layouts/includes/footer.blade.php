@@ -41,7 +41,7 @@
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
                                         <p>
-                                           {{$setting->small_text_footer}}
+                                            {{ $setting->small_text_footer }}
                                         </p>
                                     </div>
                                 </div>
@@ -53,24 +53,22 @@
 
                                             <span class="elementor-grid-item">
                                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-5ffa149"
-                                                    href="#" target="_blank">
+                                                    href="{{$setting->facebook_link}}" target="_blank">
                                                     <span class="elementor-screen-only">Facebook-f</span>
                                                     <i class="fa-brands fa-facebook-f"></i>
                                                 </a>
                                             </span>
                                             <span class="elementor-grid-item">
                                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-pinterest-p elementor-repeater-item-473615c"
-                                                    href="#" target="_blank">
-                                                    <span class="elementor-screen-only">Pinterest-p</span>
-                                                    <i class="fa-brands fa-pinterest-p"></i>
-                                                </a>
+                                                    href="{{$setting->youtube_link}}" target="_blank">
+                                                    <span class="elementor-screen-only">YouTube-p</span>
+                                                    <i class="fa-brands fa-youtube"></i> </a>
                                             </span>
                                             <span class="elementor-grid-item">
-                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-ababeec"
-                                                    href="#" target="_blank">
-                                                    <span class="elementor-screen-only">Linkedin-in</span>
-                                                    <i class="fa-brands fa-linkedin-in"></i>
-                                                </a>
+                                                <a class="elementor-icon elementor-social-icon elementor-social-icon-pinterest-p elementor-repeater-item-473615c"
+                                                    href="{{$setting->ig_link}}" target="_blank">
+                                                    <span class="elementor-screen-only">Instagram-p</span>
+                                                    <i class="fa-brands fa-instagram"></i> </a>
                                             </span>
                                         </div>
                                     </div>
@@ -92,7 +90,7 @@
                                     data-id="3c04219b" data-element_type="widget"
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <h4>Services</h4>
+                                        <h4>Dịch vụ</h4>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-2e2cb06f wpda_alignment-left elementor-widget elementor-widget-wpda-builder-menu"
@@ -107,26 +105,12 @@
                                         <div class="wpda-navbar-collapse">
                                             <nav class="wpda-builder-menu">
                                                 <ul id="menu-services" class="wpda-menu">
-                                                    <li id="menu-item-12026"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12026">
-                                                        <a href="#">SEO Marketing</a>
-                                                    </li>
-                                                    <li id="menu-item-12027"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12027">
-                                                        <a href="#">SEO Services</a>
-                                                    </li>
-                                                    <li id="menu-item-12028"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12028">
-                                                        <a href="#">Pay Per Click</a>
-                                                    </li>
-                                                    <li id="menu-item-12029"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12029">
-                                                        <a href="#">Social Media</a>
-                                                    </li>
-                                                    <li id="menu-item-12030"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12030">
-                                                        <a href="#">SEO Audit</a>
-                                                    </li>
+                                                    @foreach ($categoryService as $category)
+                                                        <li id="menu-item-12026"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12026">
+                                                            <a href="#">{{ $category->name }}</a>
+                                                        </li>
+                                                    @endforeach
                                                 </ul>
                                             </nav>
                                         </div>
@@ -149,7 +133,7 @@
                                     data-id="7ec1e2c2" data-element_type="widget"
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <h4>Community</h4>
+                                        <h4>Blogs</h4>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-35f524d1 wpda_alignment-left elementor-widget elementor-widget-wpda-builder-menu"
@@ -164,26 +148,13 @@
                                         <div class="wpda-navbar-collapse">
                                             <nav class="wpda-builder-menu">
                                                 <ul id="menu-community" class="wpda-menu">
-                                                    <li id="menu-item-12031"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12031">
-                                                        <a href="#">Our Product</a>
-                                                    </li>
-                                                    <li id="menu-item-12032"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12032">
-                                                        <a href="#">Documentation</a>
-                                                    </li>
-                                                    <li id="menu-item-12033"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12033">
-                                                        <a href="#">Our Services</a>
-                                                    </li>
-                                                    <li id="menu-item-12034"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12034">
-                                                        <a href="#">Company</a>
-                                                    </li>
-                                                    <li id="menu-item-12035"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12035">
-                                                        <a href="#">What We Do?</a>
-                                                    </li>
+                                                    @foreach ($categoryBlog as $category)
+                                                        <li id="menu-item-12031"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12031">
+                                                            <a href="#">{{ $category->name }}</a>
+                                                        </li>
+                                                    @endforeach
+
                                                 </ul>
                                             </nav>
                                         </div>
@@ -206,7 +177,7 @@
                                     data-id="2db723de" data-element_type="widget"
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <h4>Quick Links</h4>
+                                        <h4>Đường dẫn nhanh</h4>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-4773ffed wpda_alignment-left elementor-widget elementor-widget-wpda-builder-menu"
@@ -223,26 +194,17 @@
                                                 <ul id="menu-quick-links" class="wpda-menu">
                                                     <li id="menu-item-12023"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12023">
-                                                        <a href="https://ewebotwp.com/home-02/">Home</a>
+                                                        <a href="{{ route('home') }}">Trang chủ</a>
                                                     </li>
                                                     <li id="menu-item-12024"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12024">
-                                                        <a href="https://ewebotwp.com/about-us/">About Us</a>
-                                                    </li>
-                                                    <li id="menu-item-12025"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12025">
-                                                        <a href="https://ewebotwp.com/services/">Main
-                                                            Services</a>
+                                                        <a href="{{ route(name: 'about') }}">Giới thiệu</a>
                                                     </li>
                                                     <li id="menu-item-12021"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12021">
-                                                        <a href="https://ewebotwp.com/pricing-plans/">Pricing</a>
+                                                        <a href="{{ route('services') }}">Dịch vụ</a>
                                                     </li>
-                                                    <li id="menu-item-12022"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12022">
-                                                        <a href="https://ewebotwp.com/our-case-studies/">Our
-                                                            Cases</a>
-                                                    </li>
+
                                                 </ul>
                                             </nav>
                                         </div>
@@ -264,7 +226,7 @@
                     data-id="1d26260d" data-element_type="widget" data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
                         <p>
-                            © <a href="">{{$setting->footer}}</a>
+                            © <a href="">{{ $setting->footer }}</a>
                         </p>
                     </div>
                 </div>
