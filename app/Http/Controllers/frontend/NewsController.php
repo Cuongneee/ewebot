@@ -62,7 +62,20 @@ class NewsController extends Controller
             ->latest('posted_at')
             ->take(3)
             ->get();
-        return view('frontend.pages.news.news-detail', compact('allCategory', 'latestNews'));
+
+        $news = News::where('slug', $slug)->firstOrFail();
+        $news->increment('view_count');
+        
+        $relatedNews = News::where('category_id', $news->category_id)
+            ->where('id', '!=', $news->id) // Không lấy chính nó
+            ->where('status', 1)
+            ->where('posted_at', '<=', Carbon::now())
+            ->latest('posted_at')
+            ->take(4)
+            ->get();
+        // dd($news);
+
+        return view('frontend.pages.news.news-detail', compact('allCategory', 'latestNews', 'news', 'relatedNews'));
     }
 
 }

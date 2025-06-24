@@ -6,8 +6,6 @@
     @include('frontend.pages.home.pay-traffic')
     @include('frontend.pages.home.feautured-project')
     @include('frontend.pages.home.offer')
-    @include('frontend.pages.home.form')
     @include('frontend.pages.home.blog')
-    @include('frontend.pages.home.contact')
     @include('frontend.pages.home.review')
 @endsection

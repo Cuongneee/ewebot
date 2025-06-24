@@ -9,6 +9,7 @@ use App\Models\News;
 use App\Models\SeoScoreNews;
 use App\RankmathSEOForLaravel\Services\SeoAnalyzer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -115,6 +116,7 @@ class NewsController extends Controller
         // dd($request->all());
 
         try {
+            DB::beginTransaction();
 
             // Tạo slug nếu không có
             if (empty($credentials['slug'])) {
@@ -143,7 +145,7 @@ class NewsController extends Controller
 
             $analyzer = app(SeoAnalyzer::class);
             $analysisResult = $analyzer->analyze(
-                $credentials['seo_title'],
+                $credentials['seo_title'] ?? '',
                 $credentials['content'],
                 $focusKeyword,
                 $credentials['seo_description'] ?? '',
@@ -157,11 +159,19 @@ class NewsController extends Controller
             $new = News::create($credentials);
 
             // Lưu điểm SEO
-            $this->saveSEOScore($new, $seoScoreValue);
             session()->flash('success', 'Thêm bài viết thành công!');
 
+            DB::commit();
+            return response()->json(
+                [
+                    'success' => true,
+                    'message' => 'Thêm bài viết thành công!'
+                ],
+                201
+            );
         } catch (\Exception $e) {
             Log::error('News store error: ' . $e->getMessage());
+            DB::rollBack();
             Log::error($e->getTraceAsString());
             return response()->json([
                 'success' => false,
@@ -235,7 +245,7 @@ class NewsController extends Controller
     }
 
     // Tính điểm
-    private function calculateSeoScore($analysis, $suggestions) 
+    private function calculateSeoScore($analysis, $suggestions)
     {
         $allItems = collect($analysis)->merge($suggestions);
 

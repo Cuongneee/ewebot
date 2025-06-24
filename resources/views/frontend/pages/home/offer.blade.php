@@ -25,7 +25,7 @@
                     data-id="33707e2" data-element_type="widget" data-settings='{"_animation":"gt3-slideup-animation"}'
                     data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
-                        <h5>Why Choose Us</h5>
+                        <h5>Tại sao nên chọn chúng tôi</h5>
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-71b4482 elementor-widget elementor-widget-heading animated gt3-slideup-animation"
@@ -33,7 +33,7 @@
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            What We Offer
+                            Chúng tôi cung cấp các dịch vụ
                         </h2>
                     </div>
                 </div>
@@ -95,223 +95,53 @@
                 <section
                     class="elementor-section elementor-inner-section elementor-element elementor-element-303ac15 gt3_cycled_animation elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="303ac15" data-element_type="section">
+
                     <div class="elementor-container elementor-column-gap-extended">
-                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5e4e7f8"
-                            data-id="5e4e7f8" data-element_type="column"
-                            data-settings='{"background_background":"classic"}'>
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-a2aa2a0 elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                    data-id="a2aa2a0" data-element_type="widget"
-                                    data-widget_type="gt3-core-imagebox.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-beside">
-                                            <div class="gt3-core-imagebox-content">
-                                                <div class="gt3-core-imagebox-title">
-                                                    <figure class="gt3-core-imagebox-img gt3-core-imagebox-img_hover">
-                                                        <a href="#"><img loading="lazy" decoding="async"
-                                                                width="152" height="142"
-                                                                src="/frontend/assets/img/home10_service1.png"
-                                                                class="attachment-full size-full wp-image-7930"
-                                                                alt="" title="home10_service1" /><img
-                                                                loading="lazy" decoding="async" width="152"
-                                                                height="142"
-                                                                src="/frontend/assets/img/home10_service1-active.png"
-                                                                class="attachment-full size-full wp-image-7931"
-                                                                alt="" title="home10_service1-active" /></a>
-                                                    </figure>
-                                                    <h3 class="gt3-core-imagebox-title">
-                                                        <a href="#">SEO</a>
-                                                    </h3>
+                        @foreach ($categoryService as $category)
+                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5e4e7f8"
+                                data-id="5e4e7f8" data-element_type="column"
+                                data-settings='{"background_background":"classic"}'>
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-a2aa2a0 elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
+                                        data-id="a2aa2a0" data-element_type="widget"
+                                        data-widget_type="gt3-core-imagebox.default">
+                                        <div class="elementor-widget-container">
+                                            <div
+                                                class="gt3-core-imagebox-wrapper elementor-image_icon-position-beside">
+                                                <div class="gt3-core-imagebox-content">
+                                                    <div class="gt3-core-imagebox-title">
+                                                        <figure
+                                                            class="gt3-core-imagebox-img gt3-core-imagebox-img_hover">
+                                                            <a href="#"><img loading="lazy" decoding="async"
+                                                                    width="152" height="142"
+                                                                    src="{{ asset('storage/' . $category->logo) }}"
+                                                                    class="attachment-full size-full wp-banner-7930"
+                                                                    alt="" title="home10_service1" /><img
+                                                                    loading="lazy" decoding="async" width="152"
+                                                                    height="142"
+                                                                    src="{{ showImage($category->logo) }}"
+                                                                    class="attachment-full size-full wp-image-7931"
+                                                                    alt=""
+                                                                    title="home10_service1-active" /></a>
+                                                        </figure>
+                                                        <h3 class="gt3-core-imagebox-title">
+                                                            <a href="#">{{ $category->name }}</a>
+                                                        </h3>
+                                                    </div>
+                                                    <p class="gt3-core-imagebox-description">
+                                                        {!! $category->description !!}
+                                                    </p>
                                                 </div>
-                                                <p class="gt3-core-imagebox-description">
-                                                    Maecenas elementum sapien in metus
-                                                    placerat finibus. Lorem ipsum dolor
-                                                    sit amet, vix an.
-                                                </p>
                                             </div>
+                                            <a href="#"></a>
                                         </div>
-                                        <a href="#"></a>
                                     </div>
-                                </div>
-                                <div class="elementor-element elementor-element-cfabd60 elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                    data-id="cfabd60" data-element_type="widget"
-                                    data-widget_type="gt3-core-imagebox.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-beside">
-                                            <div class="gt3-core-imagebox-content">
-                                                <div class="gt3-core-imagebox-title">
-                                                    <figure class="gt3-core-imagebox-img gt3-core-imagebox-img_hover">
-                                                        <a href="#"><img loading="lazy" decoding="async"
-                                                                width="152" height="142"
-                                                                src="/frontend/assets/img/home10_service4.png"
-                                                                class="attachment-full size-full wp-image-7936"
-                                                                alt="" title="home10_service4" /><img
-                                                                loading="lazy" decoding="async" width="152"
-                                                                height="142"
-                                                                src="/frontend/assets/img/home10_service4-active.png"
-                                                                class="attachment-full size-full wp-image-7937"
-                                                                alt="" title="home10_service4-active" /></a>
-                                                    </figure>
-                                                    <h3 class="gt3-core-imagebox-title">
-                                                        <a href="#">CMS</a>
-                                                    </h3>
-                                                </div>
-                                                <p class="gt3-core-imagebox-description">
-                                                    Maecenas elementum sapien in metus
-                                                    placerat finibus. Lorem ipsum dolor
-                                                    sit amet, vix an.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="#"></a>
-                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8dfa260"
-                            data-id="8dfa260" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-0d58de1 elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                    data-id="0d58de1" data-element_type="widget"
-                                    data-widget_type="gt3-core-imagebox.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-beside">
-                                            <div class="gt3-core-imagebox-content">
-                                                <div class="gt3-core-imagebox-title">
-                                                    <figure class="gt3-core-imagebox-img gt3-core-imagebox-img_hover">
-                                                        <a href="#"><img loading="lazy" decoding="async"
-                                                                width="152" height="142"
-                                                                src="/frontend/assets/img/home10_service2.png"
-                                                                class="attachment-full size-full wp-image-7932"
-                                                                alt="" title="home10_service2" /><img
-                                                                loading="lazy" decoding="async" width="152"
-                                                                height="142"
-                                                                src="/frontend/assets/img/home10_service2-active.png"
-                                                                class="attachment-full size-full wp-image-7933"
-                                                                alt="" title="home10_service2-active" /></a>
-                                                    </figure>
-                                                    <h3 class="gt3-core-imagebox-title">
-                                                        <a href="#">Development</a>
-                                                    </h3>
-                                                </div>
-                                                <p class="gt3-core-imagebox-description">
-                                                    Maecenas elementum sapien in metus
-                                                    placerat finibus. Lorem ipsum dolor
-                                                    sit amet, vix an.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="#"></a>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-5837fb8 elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                    data-id="5837fb8" data-element_type="widget"
-                                    data-widget_type="gt3-core-imagebox.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-beside">
-                                            <div class="gt3-core-imagebox-content">
-                                                <div class="gt3-core-imagebox-title">
-                                                    <figure class="gt3-core-imagebox-img gt3-core-imagebox-img_hover">
-                                                        <a href="#"><img loading="lazy" decoding="async"
-                                                                width="152" height="142"
-                                                                src="/frontend/assets/img/home10_service5.png"
-                                                                class="attachment-full size-full wp-image-7938"
-                                                                alt="" title="home10_service5" /><img
-                                                                loading="lazy" decoding="async" width="152"
-                                                                height="142"
-                                                                src="/frontend/assets/img/home10_service5-active.png"
-                                                                class="attachment-full size-full wp-image-7939"
-                                                                alt="" title="home10_service5-active" /></a>
-                                                    </figure>
-                                                    <h3 class="gt3-core-imagebox-title">
-                                                        <a href="#">Maintenance</a>
-                                                    </h3>
-                                                </div>
-                                                <p class="gt3-core-imagebox-description">
-                                                    Maecenas elementum sapien in metus
-                                                    placerat finibus. Lorem ipsum dolor
-                                                    sit amet, vix an.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c60d4d7"
-                            data-id="c60d4d7" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-f36da1d elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                    data-id="f36da1d" data-element_type="widget"
-                                    data-widget_type="gt3-core-imagebox.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-beside">
-                                            <div class="gt3-core-imagebox-content">
-                                                <div class="gt3-core-imagebox-title">
-                                                    <figure class="gt3-core-imagebox-img gt3-core-imagebox-img_hover">
-                                                        <a href="#"><img loading="lazy" decoding="async"
-                                                                width="152" height="142"
-                                                                src="/frontend/assets/img/home10_service3.png"
-                                                                class="attachment-full size-full wp-image-7934"
-                                                                alt="" title="home10_service3" /><img
-                                                                loading="lazy" decoding="async" width="152"
-                                                                height="142"
-                                                                src="/frontend/assets/img/home10_service3-active.png"
-                                                                class="attachment-full size-full wp-image-7935"
-                                                                alt="" title="home10_service3-active" /></a>
-                                                    </figure>
-                                                    <h3 class="gt3-core-imagebox-title">
-                                                        <a href="#">Web
-                                                            Design</a>
-                                                    </h3>
-                                                </div>
-                                                <p class="gt3-core-imagebox-description">
-                                                    Maecenas elementum sapien in metus
-                                                    placerat finibus. Lorem ipsum dolor
-                                                    sit amet, vix an.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="#"></a>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-b0f3198 elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                    data-id="b0f3198" data-element_type="widget"
-                                    data-widget_type="gt3-core-imagebox.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-beside">
-                                            <div class="gt3-core-imagebox-content">
-                                                <div class="gt3-core-imagebox-title">
-                                                    <figure class="gt3-core-imagebox-img gt3-core-imagebox-img_hover">
-                                                        <a href="#"><img loading="lazy" decoding="async"
-                                                                width="152" height="142"
-                                                                src="/frontend/assets/img/home10_service6.png"
-                                                                class="attachment-full size-full wp-image-7940"
-                                                                alt="" title="home10_service6" /><img
-                                                                loading="lazy" decoding="async" width="152"
-                                                                height="142"
-                                                                src="/frontend/assets/img/home10_service6-active.png"
-                                                                class="attachment-full size-full wp-image-7941"
-                                                                alt="" title="home10_service6-active" /></a>
-                                                    </figure>
-                                                    <h3 class="gt3-core-imagebox-title">
-                                                        <a href="#">Hosting</a>
-                                                    </h3>
-                                                </div>
-                                                <p class="gt3-core-imagebox-description">
-                                                    Maecenas elementum sapien in metus
-                                                    placerat finibus. Lorem ipsum dolor
-                                                    sit amet, vix an.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
+
                 </section>
             </div>
         </div>

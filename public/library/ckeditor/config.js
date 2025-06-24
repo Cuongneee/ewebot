@@ -4,9 +4,9 @@
  */
 
 CKEDITOR.editorConfig = function (config) {
-    config.filebrowserBrowseUrl = "/laravel-filemanager?type=Files";
-    config.filebrowserImageBrowseUrl = "/laravel-filemanager?type=Images";
-    config.filebrowserUploadUrl = "/laravel-filemanager/upload?type=Files";
+    config.filebrowserBrowseUrl = "/admin/laravel-filemanager?type=Files";
+    config.filebrowserImageBrowseUrl = "/admin/laravel-filemanager?type=Images";
+    config.filebrowserUploadUrl = "/admin/laravel-filemanager/upload?type=Files";
     config.filebrowserImageUploadUrl =
-        "/laravel-filemanager/upload?type=Images";
+        "/admin/laravel-filemanager/upload?type=Images";
 };
