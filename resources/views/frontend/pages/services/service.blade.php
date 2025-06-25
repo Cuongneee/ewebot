@@ -26,12 +26,12 @@
                 <div class='container'>
                     <div class='gt3-page-title__content'>
                         <div class='page_title ms-5'>
-                            <h1>PPC Services</h1>
+                            <h1>Dịch vụ</h1>
                         </div>
                         <div class='gt3_breadcrumb ms-5'>
-                            <div class="breadcrumbs"><a href="https://ewebotwp.com/">Home</a><span
-                                    class="gt3_pagination_delimiter"></span><span class="current">PPC
-                                    Services</span></div>
+                            <div class="breadcrumbs"><a href="{{route('home')}}">Trang chủ</a><span
+                                    class="gt3_pagination_delimiter"></span><span class="current">
+                                    Dịch vụ </span></div>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,6 @@
                             <div data-elementor-type="wp-page" data-elementor-id="14335"
                                 class="elementor elementor-14335">
                                 @include('frontend.pages.services.includes.provided-ppc')
-
-                                @include('frontend.pages.services.includes.out-case')
 
                                 @include('frontend.pages.services.includes.price')
 
@@ -75,7 +73,7 @@
     <div class="wpda-builder__burger_sidebar burger-id-77547541">
         <div class="wpda-builder__burger_sidebar-cover"></div>
         <div class="wpda-builder__burger_container">
-            @include('frontend.pages.news.includes.sidebar')
+            @include('frontend.pages.about.sidebar')
         </div>
     </div>
 

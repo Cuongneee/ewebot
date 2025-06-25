@@ -27,3 +27,4 @@ Route::post('/send-contact', [EmailController::class, 'sendContactMail'])->name(
 Route::get('/blog-new/category/{slug}', [NewsController::class, 'listNewsByCategory'])->name('listNewsByCategory');
 Route::get('/blog-new', [NewsController::class, 'listNews'])->name('listNews');
 Route::get('/blog-new/{slug}', [NewsController::class, 'detailNews'])->name('detailNews');
+Route::get('/search}', [NewsController::class, 'search'])->name('search');

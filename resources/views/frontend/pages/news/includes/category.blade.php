@@ -4,10 +4,10 @@
     </div>
     <div id="search-2" class="widget gt3_widget open widget_search">
 
-        <form role="search" method="get" class="search_form gt3_search_form" action="https://ewebotwp.com/">
-            <label for="search-form-6850d8694a614">Search</label>
+        <form role="search" method="get" class="search_form gt3_search_form" action="{{route('search')}}">
+            <label for="search-form-6850d8694a614">Tìm iếm</label>
             <input class="search_text" id="search-form-6850d8694a614" type="text" name="s"
-                placeholder="Search">
+                placeholder="Tìm kiếm">
             <input class="search_submit" type="submit" value="Search">
         </form>
     </div>
@@ -24,7 +24,7 @@
 
 
     <div id="posts-2" class="widget gt3_widget open widget_posts">
-        <h4 class="widget-title">Recent Posts</h4>
+        <h4 class="widget-title">Bài viết mới nhất</h4>
         <ul class="recent_posts">
             @foreach ($latestNews as $news)
                 <li class="with_img">

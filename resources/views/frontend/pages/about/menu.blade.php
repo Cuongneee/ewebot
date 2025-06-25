@@ -18,10 +18,10 @@
                                     data-widget_type="wpda-header-logo.default">
                                     <div class="elementor-widget-container">
                                         <div class="wpda-builder-logo_container ">
-                                            <a aria-label="Logo" href="https://ewebotwp.com/">
-                                                <img class="wpda-builder-logo"
-                                                    src="/frontend/assets/img/logo_retinablack.png" alt=""
-                                                    title="logo_retina(black)" width="298" height="96" />
+                                            <a aria-label="Logo" href="{{ route('home') }}">
+                                                <img class="wpda-builder-logo" src="{{ showImage($setting->logo) }}"
+                                                    alt="" title="logo_retina(black)" width="298"
+                                                    height="96" />
                                             </a>
                                         </div>
                                     </div>
@@ -40,55 +40,24 @@
                                                 <ul id="menu-main-menu" class="wpda-menu">
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('home') }}">Home</a>
+                                                        <a href="{{ route('home') }}">Trang chủ</a>
                                                     </li>
 
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('about') }}">About Us</a>
-                                                    </li>
-
-                                                    <li id="menu-item-12089"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12089 wpda-menu-item-12089 mega-menu-wrapper">
-                                                        <a href="#">Mega Menu</a>
-
+                                                        <a href="{{ route('about') }}">Giới thiệu</a>
                                                     </li>
 
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{route('listNews')}}">Blogs</a>
+                                                        <a href="{{ route('services') }}">Dịch vụ</a>
                                                     </li>
-                                                    <li id="menu-item-12081"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12081 wpda-menu-item-12081">
-                                                        <a href="#">Shop</a>
-                                                        <ul class="sub-menu wpda-menu wpda-mega-menu">
-                                                            <li id="menu-item-12085"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12085 wpda-menu-item-12085">
-                                                                <a href="https://ewebotwp.com/shop/">All Woo
-                                                                    Products</a>
-                                                            </li>
-                                                            <li id="menu-item-12252"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12252 wpda-menu-item-12252">
-                                                                <a
-                                                                    href="https://ewebotwp.com/product/menu-knitting-lounge-chair/">Single
-                                                                    Product Page</a>
-                                                            </li>
-                                                            <li id="menu-item-12082"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12082 wpda-menu-item-12082">
-                                                                <a href="https://ewebotwp.com/cart-2/">Shopping
-                                                                    Cart</a>
-                                                            </li>
-                                                            <li id="menu-item-12083"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12083 wpda-menu-item-12083">
-                                                                <a href="https://ewebotwp.com/modern-shop/">Shop
-                                                                    Landing Page</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
+
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="https://ewebotwp.com/contact-us/">Contacts</a>
+                                                        <a href="{{ route('listNews') }}">Blogs</a>
                                                     </li>
+
                                                 </ul>
                                             </nav>
                                         </div>
@@ -99,26 +68,7 @@
                         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b746180 elementor-hidden-mobile"
                             data-id="b746180" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-4c19026 alignment-right elementor-widget__width-auto elementor-hidden-phone elementor-widget elementor-widget-wpda-builder-search"
-                                    data-id="4c19026" data-element_type="widget"
-                                    data-widget_type="wpda-builder-search.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="wpda-builder-search">
-                                            <div class="wpda-search_icon"><i></i></div>
-                                            <div class="wpda-search_inner">
-
-
-                                                <form role="search" method="get" class="search_form gt3_search_form"
-                                                    action="https://ewebotwp.com/">
-                                                    <label for="search-form-684bebc99f4e2">Search</label>
-                                                    <input class="search_text" id="search-form-684bebc99f4e2"
-                                                        type="text" name="s" placeholder="Search">
-                                                    <input class="search_submit" type="submit" value="Search">
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                                 <div class="elementor-element elementor-element-9b6c8d8 elementor-widget__width-auto elementor-widget elementor-widget-wpda-builder-burger-sidebar"
                                     data-id="9b6c8d8" data-element_type="widget"
                                     data-widget_type="wpda-builder-burger-sidebar.default">

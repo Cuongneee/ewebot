@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\News;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
@@ -29,9 +30,20 @@ class NewsController extends Controller
             ->latest('posted_at')
             ->take(3)
             ->get();
+
+        $categoryService = Category::where('type', 'product')
+            ->where('status', 1)
+            ->orderByDesc('location')
+            ->get();
+
+
+        $categoryBlog = Category::query()
+            ->where('status', 1)
+            ->where('type', 'blog')
+            ->get();
         // dd($latestNews);
 
-        return view('frontend.pages.news.news', compact('allNews', 'allCategory', 'latestNews'));
+        return view('frontend.pages.news.news', compact('allNews', 'allCategory', 'latestNews', 'categoryService', 'categoryBlog'));
     }
 
     public function listNewsByCategory($slug)
@@ -65,7 +77,7 @@ class NewsController extends Controller
 
         $news = News::where('slug', $slug)->firstOrFail();
         $news->increment('view_count');
-        
+
         $relatedNews = News::where('category_id', $news->category_id)
             ->where('id', '!=', $news->id) // Không lấy chính nó
             ->where('status', 1)
@@ -75,7 +87,35 @@ class NewsController extends Controller
             ->get();
         // dd($news);
 
-        return view('frontend.pages.news.news-detail', compact('allCategory', 'latestNews', 'news', 'relatedNews'));
+        $categoryService = Category::where('type', 'product')
+            ->where('status', 1)
+            ->orderByDesc('location')
+            ->get();
+
+
+        $categoryBlog = Category::query()
+            ->where('status', 1)
+            ->where('type', 'blog')
+            ->get();
+
+        return view('frontend.pages.news.news-detail', compact('allCategory', 'latestNews', 'news', 'relatedNews', 'categoryService', 'categoryBlog'));
+    }
+
+    public function search(Request $request)
+    {
+        $keyword = $request->input('s');
+
+        $categoryService = Category::where('type', 'product')
+            ->where('status', 1)
+            ->orderByDesc('location')
+            ->get();
+
+
+        $categoryBlog = Category::query()
+            ->where('status', 1)
+            ->where('type', 'blog')
+            ->get();
+        return view('frontend.pages.news.news-search', compact('categoryService', 'categoryBlog'));
     }
 
 }

@@ -17,7 +17,7 @@
                                     data-settings='{"_animation":"gt3-slideup-animation"}'
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <h5>Chứng nhận</h5>
+                                        <h5>Đánh giá</h5>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-3f39cf7 elementor-widget elementor-widget-heading animated gt3-slideup-animation"

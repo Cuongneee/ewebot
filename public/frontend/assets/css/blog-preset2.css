@@ -380,7 +380,6 @@
 }
 
 .gt3_blog_preset2 .sidebar .widget .widget-title {
-    font-family: Inter;
     font-size: 24px;
     line-height: 1.2;
     font-weight: 500;
@@ -413,7 +412,7 @@
 }
 
 .gt3_blog_preset2 .widget.widget_posts .recent_posts .post_title a {
-    font-family: Inter;
+    font-family: Quicksand;
     font-size: 18px;
     line-height: 1.3;
     font-weight: 600 !important;
@@ -459,7 +458,7 @@
 }
 
 .gt3_blog_preset2 .gt3-page-title__content .breadcrumbs {
-    font-family: Rubik
+    font-family: Quicksand
 }
 
 .gt3_blog_preset2 .gt3-page-title__content .page_title {

@@ -115,7 +115,7 @@
 
     /* Secondaty Fonts */
     .secondary {
-        font-family: Nunito;
+        font-family: Quicksand;
         font-size: 18px;
         line-height: 27px;
         font-weight: 400;
@@ -177,7 +177,7 @@
     .single_prev_next_posts .gt3_post_navi:after,
     .gt3_single_team_header .gt3_team_title_position,
     .elementor-widget-image.gt3_new_demo_label a:after {
-        font-family: Nunito;
+        font-family: Quicksand;
         font-weight: 800;
     }
 
@@ -227,7 +227,7 @@
 
     h5,
     .elementor-widget-heading h5.elementor-heading-title {
-        font-family: Nunito;
+        font-family: Quicksand;
         font-weight: 700;
         font-size: 18px;
         line-height: 30px;
@@ -235,7 +235,7 @@
 
     h6,
     .elementor-widget-heading h6.elementor-heading-title {
-        font-family: Nunito;
+        font-family: Quicksand;
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
@@ -255,7 +255,7 @@
     .gt3_custom_tooltip:before,
     .gt3_custom_tooltip:after,
     .elementor-widget-gt3-core-TestimonialsLite .testimonials-text {
-        font-family: Nunito;
+        font-family: Quicksand;
         font-weight: 400;
     }
 
@@ -615,7 +615,7 @@
     .gt3_pricebox_module_wrapper .gt3_price_item-cost-elementor,
     .logo_container .site-title,
     .elementor-widget-gt3-core-blogboxed .gt3_module_blogboxed.module_type1 .item_wrapper span.post_date {
-        font-family: Nunito;
+        font-family: Quicksand;
     }
 
     .quantity-spinner.quantity-up:hover,
@@ -1072,7 +1072,7 @@
     .woocommerce .widget_shopping_cart .total strong,
     .woocommerce.widget_shopping_cart .total strong,
     .search .blog_post_preview .listing_meta span {
-        font-family: Nunito;
+        font-family: Quicksand;
     }
 
     .price_item-cost span,
@@ -1291,7 +1291,7 @@
 
     .gt3_modern_shop .woocommerce ul.products li.product a .woocommerce-loop-product__title,
     .woocommerce.gt3_modern_shop ul.products li.product a .woocommerce-loop-product__title {
-        font-family: Nunito;
+        font-family: Quicksand;
         color: #3b3663;
     }
 
@@ -1304,7 +1304,7 @@
     .gt3_modern_shop h6,
     .woocommerce.gt3_modern_shop #reviews .comment-reply-title,
     .gt3_modern_shop button.bapf_reset {
-        font-family: Nunito;
+        font-family: Quicksand;
         font-weight: 800;
     }
 
@@ -1325,11 +1325,11 @@
     .gt3_modern_shop .elementor-widget-wpda-builder-cart .wpda-builder-cart .wpda-cart-inner .wpda-cart-container ul.cart_list li a,
     .gt3_modern_shop .elementor-widget-wpda-builder-cart .wpda-builder-cart .wpda-cart-inner .wpda-cart-container ul.cart_list li .quantity,
     .gt3_modern_shop .elementor-widget-wpda-builder-cart .wpda-builder-cart .wpda-cart-inner .wpda-cart-container p.woocommerce-mini-cart__total {
-        font-family: Nunito;
+        font-family: Quicksand;
     }
 
     .gt3_modern_shop .gt3_typed_widget .typing-effect-strings {
-        font-family: Nunito !important;
+        font-family: Quicksand !important;
     }
 
     .gt3_modern_shop .gt3-page-title__content .breadcrumbs,
@@ -1681,11 +1681,11 @@
 
     /* latin */
     @font-face {
-        font-family: "Nunito";
+        font-family: 'Quicksand';
         font-style: italic;
         font-weight: 200 1000;
         font-display: swap;
-        src: url(https://ewebotwp.com/wp-content/themes/ewebot-child/fonts/nunito_i.woff2) format("woff2");
+        src: url(https://ewebotwp.com/wp-content/themes/ewebot-child/fonts/Quicksand_i.woff2) format("woff2");
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
             U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
             U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -1693,11 +1693,11 @@
 
     /* latin */
     @font-face {
-        font-family: "Nunito";
+        font-family: 'Quicksand';
         font-style: normal;
         font-weight: 200 1000;
         font-display: swap;
-        src: url(https://ewebotwp.com/wp-content/themes/ewebot-child/fonts/nunito.woff2) format("woff2");
+        src: url(https://ewebotwp.com/wp-content/themes/ewebot-child/fonts/Quicksand.woff2) format("woff2");
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
             U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
             U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;

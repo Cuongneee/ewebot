@@ -1,30 +1,181 @@
+/* Existing spacing */
 .gt3_tabs_space-30 .gt3_advanced_tabs .gt3_advanced_tabs_nav>li {
     margin-bottom: 20px
 }
 
+/* Updated title styling with larger font size and no wrap */
 .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
-    font-size: 14px;
+    font-size: 18px; /* Increased from 14px */
     line-height: 1;
     letter-spacing: .2px;
-    font-weight: 500
+    font-weight: 600; /* Increased from 500 for better visibility */
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+    display: inline-block;
 }
 
+/* Base tab link styling */
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a {
+    position: relative;
+    display: inline-block;
+    overflow: visible; /* Changed from hidden to allow text to show */
+    background: none !important;
+    border: none !important;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 0 !important;
+    padding: 15px 10px; /* Add horizontal padding for spacing */
+    white-space: nowrap; /* Prevent wrapping */
+    min-width: max-content; /* Ensure enough width for content */
+}
+
+/* Gradient underline effect - Updated with new colors */
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #1E90FF, #8B00FF, #383838);
+    transition: width 0.4s ease;
+}
+
+/* Hover effects - Updated with new gradient colors */
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a:hover .gt3_tabs_nav__title {
+    background: linear-gradient(90deg, #1E90FF, #8B00FF, #383838);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a:hover::after {
+    width: 100%;
+}
+
+/* Active tab styling - Updated with new gradient colors */
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li.ui-tabs-active>a .gt3_tabs_nav__title,
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li.ui-state-active>a .gt3_tabs_nav__title {
+    background: linear-gradient(90deg, #1E90FF, #8B00FF, #1a1a1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li.ui-tabs-active>a::after,
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li.ui-state-active>a::after {
+    width: 100%;
+}
+
+/* Size variations with updated font sizes and no wrap */
 .gt3_tabs_size-mini .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a {
-    padding: 19px 30px
+    padding: 19px 20px; /* Reduced horizontal padding for mini */
 }
 
 .gt3_tabs_size-mini .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
-    font-size: 12px
+    font-size: 18px; /* Increased from 12px */
+    white-space: nowrap;
 }
 
 .gt3_tabs_size-small .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a {
-    padding: 19px 20px
+    padding: 19px 15px; /* Adjusted padding */
+}
+
+.gt3_tabs_size-small .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+    font-size: 17px; /* New size for small */
+    white-space: nowrap;
 }
 
 .gt3_tabs_size-normal .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a {
-    padding: 25px
+    padding: 25px 15px; /* Adjusted padding */
+}
+
+.gt3_tabs_size-normal .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+    font-size: 18px; /* Default size */
+    white-space: nowrap;
 }
 
 .gt3_tabs_size-large .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a {
-    padding: 30px
+    padding: 30px 20px; /* Adjusted padding */
+}
+
+.gt3_tabs_size-large .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+    font-size: 20px; /* Increased for large size */
+    white-space: nowrap;
+}
+
+/* Navigation wrapper styling */
+.gt3_advanced_tabs_nav_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.gt3_advanced_tabs_nav {
+    display: flex;
+    gap: 30px; /* Reduced gap to fit more content */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap; /* Prevent wrapping to new line */
+    align-items: center;
+}
+
+.gt3_advanced_tabs_nav>li {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Mobile responsive */
+@media(max-width: 767px) {
+    .gt3_advanced_tabs_nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    
+    .gt3_tabs_size-mini .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+        font-size: 16px;
+    }
+    
+    .gt3_tabs_size-small .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+        font-size: 15px;
+    }
+    
+    .gt3_tabs_size-large .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+        font-size: 18px;
+    }
+}
+
+/* For very small screens, allow some wrapping if absolutely necessary */
+@media(max-width: 480px) {
+    .gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+        white-space: normal; /* Allow wrapping on very small screens */
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
+/* Ensure no conflicting styles */
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Fix for gradient text display issues */
+.gt3_advanced_tabs .gt3_advanced_tabs_nav>li>a .gt3_tabs_nav__title {
+    background: none;
+    color: #666;
 }
