@@ -520,7 +520,7 @@ body.rtl .elementor-14335 .elementor-element.elementor-element-3d80a25c {
 
 .elementor-14335 .elementor-element.elementor-element-76726333 {
     text-align: center;
-    font-family: "Nunito", Sans-serif;
+    font-family: 'Quicksand', Sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -600,7 +600,7 @@ body.rtl .elementor-14335 .elementor-element.elementor-element-3d80a25c {
 }
 
 .elementor-14335 .elementor-element.elementor-element-cd0ee59 {
-    font-family: "Nunito", Sans-serif;
+    font-family: 'Quicksand', Sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1034,4 +1034,35 @@ body.rtl .elementor-14335 .elementor-element.elementor-element-23d51e21 {
     .elementor-14335 .elementor-element.elementor-element-6fdf1a2b {
         text-align: center;
     }
+
+    .gt3_advanced_tabs_nav>li {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .gt3_advanced_tabs_nav>li>a {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .gt3_advanced_tabs_nav>li>a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background-color: #0F110F;
+        /* Màu gạch chân */
+        transition: width 0.4s ease;
+    }
+
+    .gt3_advanced_tabs_nav>li>a:hover::after {
+        width: 100%;
+    }
+
+    
+
 }

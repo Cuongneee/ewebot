@@ -25,7 +25,7 @@
                                     data-widget_type="wpda-header-logo.default">
                                     <div class="elementor-widget-container">
                                         <div class="wpda-builder-logo_container ">
-                                            <a aria-label="Logo" href="https://ewebotwp.com/">
+                                            <a aria-label="Logo" href="{{ route('home') }}">
                                                 <img class="wpda-builder-logo"
                                                     src="{{ showImage($setting->logo_footer) }}" alt=""
                                                     title="logo-agency-footer.png" width="304" height="96" /> </a>
@@ -119,8 +119,7 @@
                                     data-id="7255701e" data-element_type="widget"
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <p>Ewebot have much planned for the future, working with great clients
-                                            and continued software development.</p>
+                                        <p>{{ $setting->small_text_footer }}</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-63609b90 elementor-shape-square e-grid-align-left elementor-grid-0 elementor-widget elementor-widget-social-icons"
@@ -179,27 +178,14 @@
                                         </div>
                                         <div class="wpda-navbar-collapse">
                                             <nav class="wpda-builder-menu">
+                                                <p>Dịch vụ</p>
                                                 <ul id="menu-services" class="wpda-menu">
-                                                    <li id="menu-item-12026"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12026">
-                                                        <a href="#">SEO Marketing</a>
-                                                    </li>
-                                                    <li id="menu-item-12027"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12027">
-                                                        <a href="#">SEO Services</a>
-                                                    </li>
-                                                    <li id="menu-item-12028"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12028">
-                                                        <a href="#">Pay Per Click</a>
-                                                    </li>
-                                                    <li id="menu-item-12029"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12029">
-                                                        <a href="#">Social Media</a>
-                                                    </li>
-                                                    <li id="menu-item-12030"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12030">
-                                                        <a href="#">SEO Audit</a>
-                                                    </li>
+                                                    @foreach ($categoryService as $category)
+                                                        <li id="menu-item-12026"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12026">
+                                                            <a href="{{ route('services') }}">{{ $category->name }}</a>
+                                                        </li>
+                                                    @endforeach
                                                 </ul>
                                             </nav>
                                         </div>
@@ -230,26 +216,13 @@
                                         <div class="wpda-navbar-collapse">
                                             <nav class="wpda-builder-menu">
                                                 <ul id="menu-community" class="wpda-menu">
-                                                    <li id="menu-item-12031"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12031">
-                                                        <a href="#">Our Product</a>
-                                                    </li>
-                                                    <li id="menu-item-12032"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12032">
-                                                        <a href="#">Documentation</a>
-                                                    </li>
-                                                    <li id="menu-item-12033"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12033">
-                                                        <a href="#">Our Services</a>
-                                                    </li>
-                                                    <li id="menu-item-12034"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12034">
-                                                        <a href="#">Company</a>
-                                                    </li>
-                                                    <li id="menu-item-12035"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12035">
-                                                        <a href="#">What We Do?</a>
-                                                    </li>
+                                                    <p>Blogs</p>
+                                                    @foreach ($categoryBlog as $category)
+                                                        <li id="menu-item-12031"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12031">
+                                                            <a href="{{route('services')}}">{{$category->name}}</a>
+                                                        </li>
+                                                    @endforeach
                                                 </ul>
                                             </nav>
                                         </div>
@@ -280,28 +253,25 @@
                                         <div class="wpda-navbar-collapse">
                                             <nav class="wpda-builder-menu">
                                                 <ul id="menu-quick-links" class="wpda-menu">
+                                                    <p>Đường dẫn nhanh</p>
                                                     <li id="menu-item-12023"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12023">
-                                                        <a href="https://ewebotwp.com/home-02/">Home</a>
+                                                        <a href="{{route('home')}}">Trang chủ</a>
                                                     </li>
                                                     <li id="menu-item-12024"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12024">
-                                                        <a href="https://ewebotwp.com/about-us/">About Us</a>
+                                                        <a href="{{route('about')}}">Giới thiệu</a>
                                                     </li>
                                                     <li id="menu-item-12025"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12025">
-                                                        <a href="https://ewebotwp.com/services/">Main
-                                                            Services</a>
+                                                        <a href="{{route('services')}}">
+                                                            Dịch vụ</a>
                                                     </li>
                                                     <li id="menu-item-12021"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12021">
-                                                        <a href="https://ewebotwp.com/pricing-plans/">Pricing</a>
+                                                        <a href="{{route('listNews')}}">Blogs</a>
                                                     </li>
-                                                    <li id="menu-item-12022"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12022">
-                                                        <a href="https://ewebotwp.com/our-case-studies/">Our
-                                                            Cases</a>
-                                                    </li>
+                                                   
                                                 </ul>
                                             </nav>
                                         </div>

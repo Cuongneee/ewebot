@@ -7,7 +7,7 @@
                     <h1>Blog New</h1>
                 </div>
                 <div class='gt3_breadcrumb'>
-                    <div class="breadcrumbs"><a href="https://ewebotwp.com/">Home</a><span
+                    <div class="breadcrumbs"><a href="https://ewebotwp.com/">Trang chủ</a><span
                             class="gt3_pagination_delimiter"></span><span class="current">Blog New</span>
                     </div>
                 </div>

@@ -12,7 +12,7 @@
                                 target="_blank" data-color="#5747e4" data-hover-color="#5747e4"
                                 style="font-size: 16px;color: #5747e4;margin-right: 10px" rel="noopener"><i
                                     class="fa fa-phone" style="font-weight: bold"> </i></a><a
-                                href="tel:+88002534236"><span class="gt3_font-weight">8 800 2563 123</span></a>
+                                href="tel:+88002534236"><span class="gt3_font-weight">{{$setting->hotline}}</span></a>
                         </p>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                         <p><a class="gt3_icon_link gt3_custom_color" href="#" target="_blank" data-color="#5747e4"
                                 data-hover-color="#5747e4" style="font-size: 16px;margin-right: 8px;color: #5747e4"
                                 rel="noopener"><i class="fa fa-envelope"> </i></a> <a
-                                href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+                                href="mailto:email@yoursite.com">{{$setting->email}}</a></p>
                     </div>
                 </div>
             </div>
@@ -37,8 +37,8 @@
                             <span class="elementor-grid-item" role="listitem">
                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-3c4561b"
                                     target="_blank">
-                                    <span class="elementor-screen-only">Twitter</span>
-                                    <i class="fab fa-twitter"></i> </a>
+                                    <span class="elementor-screen-only">Youtube</span>
+                                    <i class="fab fa-youtube"></i> </a>
                             </span>
                             <span class="elementor-grid-item" role="listitem">
                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-f9f8056"
@@ -49,21 +49,10 @@
                             <span class="elementor-grid-item" role="listitem">
                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-google-plus-g elementor-repeater-item-ce2da41"
                                     target="_blank">
-                                    <span class="elementor-screen-only">Google-plus-g</span>
-                                    <i class="fab fa-google-plus-g"></i> </a>
+                                    <span class="elementor-screen-only">Ig</span>
+                                    <i class="fab fa-instagram"></i> </a>
                             </span>
-                            <span class="elementor-grid-item" role="listitem">
-                                <a class="elementor-icon elementor-social-icon elementor-social-icon-pinterest-p elementor-repeater-item-4105dfa"
-                                    target="_blank">
-                                    <span class="elementor-screen-only">Pinterest-p</span>
-                                    <i class="fab fa-pinterest-p"></i> </a>
-                            </span>
-                            <span class="elementor-grid-item" role="listitem">
-                                <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-301a5de"
-                                    target="_blank">
-                                    <span class="elementor-screen-only">Linkedin-in</span>
-                                    <i class="fab fa-linkedin-in"></i> </a>
-                            </span>
+                           
                         </div>
                     </div>
                 </div>

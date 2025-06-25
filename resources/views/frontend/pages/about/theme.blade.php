@@ -4,11 +4,11 @@
         <div class='container'>
             <div class='gt3-page-title__content'>
                 <div class='page_title'>
-                    <h1>About Us</h1>
+                    <h1>Giới thiệu</h1>
                 </div>
                 <div class='gt3_breadcrumb'>
-                    <div class="breadcrumbs"><a href="https://ewebotwp.com/">Home</a><span
-                            class="gt3_pagination_delimiter"></span><span class="current">About Us</span></div>
+                    <div class="breadcrumbs"><a href="https://ewebotwp.com/">Trang chủ</a><span
+                            class="gt3_pagination_delimiter"></span><span class="current">Giới thiệu</span></div>
                 </div>
             </div>
         </div>

@@ -33,7 +33,7 @@
                                     data-id="46108c3a" data-element_type="widget"
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <h4>About</h4>
+                                        <h4>Giới thiệu</h4>
                                     </div>
                                 </div>
                                 <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element-custom_color elementor-element elementor-element-7555758f elementor-widget elementor-widget-text-editor"

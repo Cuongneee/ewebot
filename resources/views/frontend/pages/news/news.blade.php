@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <head>
 
@@ -48,7 +49,7 @@
     <div class="wpda-builder__burger_sidebar burger-id-bc91c40">
         <div class="wpda-builder__burger_sidebar-cover"></div>
         <div class="wpda-builder__burger_container">
-            @include('frontend.pages.news.includes.sidebar')
+            @include('frontend.pages.about.sidebar')
         </div>
     </div>
 

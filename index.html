@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Giá Dịch Vụ Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .pricing-container {
+            padding: 60px 0;
+        }
+        
+        /* Category Tabs Styling */
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            gap: 40px;
+        }
+
+        .category-tab {
+            background: none;
+            border: none;
+            color: #666;
+            padding: 15px 0;
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-tab::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #8B5CF6, #3B82F6, #EC4899, #F97316);
+            transition: width 0.4s ease;
+        }
+
+        .category-tab:hover {
+            background: linear-gradient(90deg, #8B5CF6, #3B82F6, #EC4899, #F97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .category-tab:hover::after {
+            width: 100%;
+        }
+
+        .category-tab.active {
+            background: linear-gradient(90deg, #8B5CF6, #3B82F6, #EC4899, #F97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .category-tab.active::after {
+            width: 100%;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .pricing-card.featured {
+            background: #1a1a1a;
+            color: white;
+            transform: scale(1.05);
+            z-index: 2;
+        }
+        
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+        
+        .plan-title {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .featured .plan-title {
+            color: #ccc;
+        }
+        
+        .price {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .featured .price {
+            color: white;
+        }
+        
+        .price-currency {
+            font-size: 24px;
+        }
+        
+        .plan-description {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        
+        .featured .plan-description {
+            color: #ccc;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+        
+        .features-list li {
+            padding: 12px 0;
+            color: #555;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .featured .features-list li {
+            color: #ddd;
+        }
+        
+        .features-list li i {
+            color: #00d4aa;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+        
+        .cta-button {
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        
+        .cta-button:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+        
+        .featured .cta-button {
+            background: white;
+            color: #1a1a1a;
+        }
+        
+        .featured .cta-button:hover {
+            background: #f0f0f0;
+        }
+        
+        .header-text {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .header-text h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .header-text p {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .category-tabs {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .category-tab {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container pricing-container">
+        <div class="header-text">
+            <h2>Bảng Giá Dịch Vụ</h2>
+            <p>Chọn danh mục và gói phù hợp với nhu cầu của bạn</p>
+        </div>
+        
+        <!-- Category Navigation Tabs -->
+        <div class="category-tabs">
+            <button class="category-tab active" onclick="switchTab('seo')">
+                SEO tổng thể
+            </button>
+            <button class="category-tab" onclick="switchTab('website-care')">
+                Chăm sóc website
+            </button>
+        </div>
+        
+        <!-- SEO Services Tab Content -->
+        <div id="seo-content" class="tab-content active">
+            <div class="row g-4 justify-content-center">
+                <!-- Gói SEO Cơ Bản -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="plan-title">CƠ BẢN</div>
+                        <div class="price">5.000.000<span class="price-currency">đ</span></div>
+                        <div class="plan-description">Gói SEO website cơ bản</div>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Phân tích từ khóa</li>
+                            <li><i class="fas fa-check"></i> Tối ưu On-page</li>
+                            <li><i class="fas fa-check"></i> Báo cáo hàng tháng</li>
+                            <li><i class="fas fa-check"></i> Hỗ trợ 24/7</li>
+                        </ul>
+                        
+                        <button class="cta-button">Đăng ký nhận tư vấn</button>
+                    </div>
+                </div>
+                
+                <!-- Gói SEO Nâng Cao (Featured) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card featured">
+                        <div class="plan-title">NÂNG CAO</div>
+                        <div class="price">8.000.000<span class="price-currency">đ</span></div>
+                        <div class="plan-description">Vip hơn cơ bản</div>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> SEO Off-page</li>
+                            <li><i class="fas fa-check"></i> Link building</li>
+                            <li><i class="fas fa-check"></i> Tối ưu tốc độ</li>
+                            <li><i class="fas fa-check"></i> Phân tích đối thủ</li>
+                        </ul>
+                        
+                        <button class="cta-button">Đăng ký nhận tư vấn</button>
+                    </div>
+                </div>
+                
+                <!-- Gói SEO Cao Cấp -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="plan-title">CAO CẤP</div>
+                        <div class="price">12.000.000<span class="price-currency">đ</span></div>
+                        <div class="plan-description">Oách xã lách vô cùng</div>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> SEO toàn diện</li>
+                            <li><i class="fas fa-check"></i> Quản lý danh tiếng</li>
+                            <li><i class="fas fa-check"></i> Tư vấn chiến lược</li>
+                            <li><i class="fas fa-check"></i> Đảm bảo top 3</li>
+                        </ul>
+                        
+                        <button class="cta-button">Đăng ký nhận tư vấn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Website Care Services Tab Content -->
+        <div id="website-care-content" class="tab-content">
+            <div class="row g-4 justify-content-center">
+                <!-- Gói Chăm Sóc Cơ Bản -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="plan-title">CƠ BẢN</div>
+                        <div class="price">3.000.000<span class="price-currency">đ</span></div>
+                        <div class="plan-description">Bảo trì website cơ bản</div>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Backup hàng tuần</li>
+                            <li><i class="fas fa-check"></i> Cập nhật bảo mật</li>
+                            <li><i class="fas fa-check"></i> Sửa lỗi nhỏ</li>
+                            <li><i class="fas fa-check"></i> Hỗ trợ email</li>
+                        </ul>
+                        
+                        <button class="cta-button">Đăng ký nhận tư vấn</button>
+                    </div>
+                </div>
+                
+                <!-- Gói Chăm Sóc Nâng Cao (Featured) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card featured">
+                        <div class="plan-title">NÂNG CAO</div>
+                        <div class="price">5.000.000<span class="price-currency">đ</span></div>
+                        <div class="plan-description">Chăm sóc toàn diện</div>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Backup hàng ngày</li>
+                            <li><i class="fas fa-check"></i> Giám sát 24/7</li>
+                            <li><i class="fas fa-check"></i> Tối ưu hiệu suất</li>
+                            <li><i class="fas fa-check"></i> Cập nhật nội dung</li>
+                        </ul>
+                        
+                        <button class="cta-button">Đăng ký nhận tư vấn</button>
+                    </div>
+                </div>
+                
+                <!-- Gói Chăm Sóc Cao Cấp -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="plan-title">CAO CẤP</div>
+                        <div class="price">8.000.000<span class="price-currency">đ</span></div>
+                        <div class="plan-description">Dịch vụ VIP toàn diện</div>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Quản lý hoàn toàn</li>
+                            <li><i class="fas fa-check"></i> Phát triển tính năng</li>
+                            <li><i class="fas fa-check"></i> Tư vấn chiến lược</li>
+                            <li><i class="fas fa-check"></i> Hỗ trợ ưu tiên</li>
+                        </ul>
+                        
+                        <button class="cta-button">Đăng ký nhận tư vấn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function switchTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.category-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            if (tabName === 'seo') {
+                document.getElementById('seo-content').classList.add('active');
+                document.querySelector('[onclick="switchTab(\'seo\')"]').classList.add('active');
+            } else if (tabName === 'website-care') {
+                document.getElementById('website-care-content').classList.add('active');
+                document.querySelector('[onclick="switchTab(\'website-care\')"]').classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

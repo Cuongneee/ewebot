@@ -966,3 +966,230 @@
         border-color: #000000 !important;
     }
 }
+
+/* Enhanced Pricing Cards CSS */
+
+/* Container improvements */
+.elementor-14367 .elementor-element.elementor-element-692b1540 {
+    padding: 50px 0px 50px 0px;
+    position: relative;
+}
+
+/* Base card styling improvements */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a>.elementor-element-populated,
+.elementor-14367 .elementor-element.elementor-element-2550424a>.elementor-element-populated {
+    border-style: none;
+    box-shadow: 0 15px 35px rgba(8, 50, 79, 0.08);
+    text-align: left;
+    margin: 15px 15px 15px 15px;
+    padding: 45px 45px 45px 45px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effects for regular cards */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a>.elementor-element-populated:hover,
+.elementor-14367 .elementor-element.elementor-element-2550424a>.elementor-element-populated:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(8, 50, 79, 0.15);
+}
+
+/* Featured card (NÂNG CAO) - Make it taller and more prominent */
+.elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated {
+    background-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1E90FF;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-align: left;
+    padding: 60px 45px 60px 45px; /* Increased top/bottom padding */
+    position: relative;
+    transform: scale(1.05) translateY(-15px); /* Make it bigger and higher */
+    z-index: 10;
+    box-shadow: 0 30px 60px rgba(30, 144, 255, 0.3);
+}
+
+/* Featured card gradient border effect */
+.elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #1E90FF, #8B00FF, #1a1a1a);
+    border-radius: 20px;
+    z-index: -1;
+    animation: gradientRotate 3s linear infinite;
+}
+
+@keyframes gradientRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Featured card hover effect */
+.elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated:hover {
+    transform: scale(1.08) translateY(-20px);
+    box-shadow: 0 40px 80px rgba(30, 144, 255, 0.4);
+}
+
+/* Popular badge for featured card */
+.elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated::after {
+    content: 'PHỔ BIẾN NHẤT';
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: linear-gradient(45deg, #1E90FF, #8B00FF);
+    color: white;
+    padding: 8px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transform: rotate(45deg);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Enhanced price styling for featured card */
+.elementor-14367 .elementor-element.elementor-element-44a11259 .gt3_price_item-cost-elementor {
+    font-family: "Inter", Sans-serif;
+    font-size: 84px; /* Increased from 72px */
+    font-weight: 700;
+    line-height: 1em;
+    background: linear-gradient(45deg, #1E90FF, #8B00FF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: priceGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes priceGlow {
+    from { filter: drop-shadow(0 0 5px rgba(30, 144, 255, 0.5)); }
+    to { filter: drop-shadow(0 0 20px rgba(30, 144, 255, 0.8)); }
+}
+
+/* Enhanced buttons with gradient effects */
+.elementor-14367 .elementor-element.elementor-element-317eeefa.elementor-widget-gt3-core-button .gt3_module_button_elementor:not(.hover_type2):not(.hover_type4):not(.hover_type5) a,
+.elementor-14367 .elementor-element.elementor-element-30e60af2.elementor-widget-gt3-core-button .gt3_module_button_elementor:not(.hover_type2):not(.hover_type4):not(.hover_type5) a {
+    background: linear-gradient(45deg, #1E90FF, #8B00FF);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.elementor-14367 .elementor-element.elementor-element-317eeefa.elementor-widget-gt3-core-button .gt3_module_button_elementor:not(.hover_type2):not(.hover_type4):not(.hover_type5) a:hover,
+.elementor-14367 .elementor-element.elementor-element-30e60af2.elementor-widget-gt3-core-button .gt3_module_button_elementor:not(.hover_type2):not(.hover_type4):not(.hover_type5) a:hover {
+    background: linear-gradient(45deg, #8B00FF, #1E90FF);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(30, 144, 255, 0.4);
+}
+
+/* Featured card button special styling */
+.elementor-14367 .elementor-element.elementor-element-288f3372.elementor-widget-gt3-core-button .gt3_module_button_elementor:not(.hover_type2):not(.hover_type4):not(.hover_type5) a {
+    background: #FFFFFF;
+    color: #000000;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.elementor-14367 .elementor-element.elementor-element-288f3372.elementor-widget-gt3-core-button .gt3_module_button_elementor:not(.hover_type2):not(.hover_type4):not(.hover_type5) a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #1E90FF, #8B00FF);
+    border-radius: inherit;
+    z-index: -1;
+    margin: -2px;
+}
+
+.elementor-14367 .elementor-element.elementor-element-288f3372.elementor-widget-gt3-core-button .gt3_module_button_elementor:not(.hover_type2):not(.hover_type4):not(.hover_type5) a:hover {
+    background: linear-gradient(45deg, #1E90FF, #8B00FF);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(30, 144, 255, 0.5);
+}
+
+/* Enhanced typography */
+.elementor-14367 .elementor-element.elementor-element-584815c2 .price_item_title-elementor h3,
+.elementor-14367 .elementor-element.elementor-element-6e77019c .price_item_title-elementor h3 {
+    color: #000000;
+    background-image: none !important;
+    -webkit-text-fill-color: unset !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* Add subtle animations */
+.elementor-14367 .elementor-element.elementor-element-4fb3f01a>.elementor-element-populated,
+.elementor-14367 .elementor-element.elementor-element-2550424a>.elementor-element-populated {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced list styling */
+.elementor-14367 .gt3_styled_list li {
+    transition: all 0.3s ease;
+    padding: 8px 0;
+}
+
+.elementor-14367 .gt3_styled_list li:hover {
+    transform: translateX(5px);
+    color: #1E90FF;
+}
+
+.elementor-14367 .gt3_list__icon {
+    transition: all 0.3s ease;
+}
+
+.elementor-14367 .gt3_styled_list li:hover .gt3_list__icon {
+    transform: scale(1.2);
+    color: #1E90FF;
+}
+
+/* Mobile responsive enhancements */
+@media(max-width:767px) {
+    .elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated {
+        transform: scale(1.02) translateY(-10px);
+        padding: 40px 30px 50px 30px;
+    }
+    
+    .elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated:hover {
+        transform: scale(1.04) translateY(-15px);
+    }
+    
+    .elementor-14367 .elementor-element.elementor-element-44a11259 .gt3_price_item-cost-elementor {
+        font-size: 64px;
+    }
+}
+
+/* Additional glow effects for featured card */
+.elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated {
+    box-shadow: 
+        0 30px 60px rgba(30, 144, 255, 0.3),
+        0 0 0 1px rgba(30, 144, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
