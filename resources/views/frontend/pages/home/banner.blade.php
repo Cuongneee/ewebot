@@ -9,14 +9,9 @@
                     data-id="a32c371" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                         <img loading="lazy" decoding="async" width="785" height="802"
-                            src="/frontend/assets/img/smiling_girl.jpg" class="attachment-full size-full wp-image-8067"
-                            alt=""
-                            srcset="
-                                  /frontend/assets/img/smiling_girl.jpg 785w,
-                                  /frontend/assets/img/smiling_girl.jpg 294w,
-                                  /frontend/assets/img/smiling_girl.jpg 768w,
-                                  /frontend/assets/img/smiling_girl.jpg 480w,
-                                  /frontend/assets/img/smiling_girl.jpg  50w
+                            src="{{ showImage($banner->image) }}" class="attachment-full size-full wp-image-8067"
+                            alt="" srcset="
+                                  
                                 "
                             sizes="auto, (max-width: 785px) 100vw, 785px" title="" />
                     </div>
@@ -114,37 +109,29 @@
                                     data-id="dee550e" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">
-                                            Digital
+                                            {{ $banner->title }}
                                         </h2>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-bf7567a gt3_theme_textgradient-yes elementor-widget elementor-widget-heading"
-                                    data-id="bf7567a" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">
-                                            Marketing
-                                        </h2>
-                                    </div>
+
+                                <div class="my-typed-text-box">
+                                    <span id="my-typed-text"></span><span class="typed-cursor">|</span>
                                 </div>
-                                <div class="elementor-element elementor-element-937c14f gt3_theme_textgradient-yes elementor-widget elementor-widget-gt3-core-typed-text"
-                                    data-id="937c14f" data-element_type="widget"
-                                    data-widget_type="gt3-core-typed-text.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="gt3_typed_widget">
-                                            <span class="gt3_typed_holder">&nbsp;</span><span
-                                                class="typing-effect-strings" id="typed_937c14f">Success</span><span
-                                                class="typed-cursor">&nbsp;</span>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                @php
+                                    $animated_texts = is_array($banner->animated_texts)
+                                        ? $banner->animated_texts
+                                        : [$banner->animated_texts];
+                                @endphp
+
+                                <span id="typed-data" data-strings='@json($animated_texts)'></span>
+
                                 <div class="elementor-element elementor-element-b1b55b5 elementor-widget elementor-widget-text-editor"
                                     data-id="b1b55b5" data-element_type="widget"
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
                                         <p>
-                                            Ensuring the best return on investment
-                                            for your bespoke SEO campaign
-                                            requirement.
+                                          {{$banner->description}}
                                         </p>
                                     </div>
                                 </div>
@@ -277,3 +264,52 @@
         </div>
     </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const el = document.getElementById('typed-data');
+        const strings = JSON.parse(el.getAttribute('data-strings'));
+
+        new Typed("#my-typed-text", {
+            strings: strings,
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    });
+</script>
+<style>
+    .my-typed-text-box {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 5px; /* cách chữ phía trên */
+    background: linear-gradient(90deg, #FF4969, #FC9D44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+    .typed-cursor {
+        display: inline-block;
+        margin-left: 3px;
+        color: #fff;
+        animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>

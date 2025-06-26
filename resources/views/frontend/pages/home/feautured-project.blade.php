@@ -9,7 +9,10 @@
                     data-id="74143d2e" data-element_type="widget" data-settings='{"_animation":"gt3-slideup-animation"}'
                     data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
-                        <h5>featured Projects</h5>
+                        <h5>Với trên 5+ kinh nghiệm trong ngành công nghệ và truyền thông, SGO MEDIA tự hòa cung cấp tới
+                            khách hàng các dịch vụ chuyên nghiệp, uy tín, chất lượng.
+
+                        </h5>
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-53f2d37c elementor-widget elementor-widget-heading animated gt3-slideup-animation"
@@ -17,7 +20,7 @@
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            Our Case Studies
+                            Dịch vụ của SGO MEDIA
                         </h2>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\ReviewController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\Auth\AuthController;
+use App\Http\Controllers\Backend\BannerController;
 use App\Http\Controllers\Backend\BulkActionController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\DashboardController;
@@ -62,6 +63,8 @@ Route::name('admin.')->middleware('auth:admin')->group(function () {
     Route::resource('reviews', ReviewController::class);
     Route::resource('aboutus', AboutUsController::class);
     Route::resource('contacts', ContactController::class);
+    Route::resource('banners', BannerController::class);
+
     Route::post('update-mail-env', [EmailController::class, 'updateMailEnv'])->name('update-mail-env');
 
 

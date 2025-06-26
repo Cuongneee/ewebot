@@ -57,8 +57,18 @@ class NewsController extends Controller
             ->latest('posted_at')
             ->paginate(4);
 
+        $categoryService = Category::where('type', 'product')
+            ->where('status', 1)
+            ->orderByDesc('location')
+            ->get();
 
-        return view('frontend.pages.news.news-by-category', compact('allNewsCategory', 'category'));
+
+        $categoryBlog = Category::query()
+            ->where('status', 1)
+            ->where('type', 'blog')
+            ->get();
+
+        return view('frontend.pages.news.news-by-category', compact('allNewsCategory', 'category','categoryService', 'categoryBlog'));
     }
 
     public function detailNews($slug)
@@ -105,6 +115,12 @@ class NewsController extends Controller
     {
         $keyword = $request->input('s');
 
+        $allNews = News::query()
+            ->where('title', 'like', '%' . $keyword . '%')
+            ->orWhere('content', 'like', '%' . $keyword . '%')
+            ->orderBy('created_at', 'desc')
+            ->paginate(8);
+
         $categoryService = Category::where('type', 'product')
             ->where('status', 1)
             ->orderByDesc('location')
@@ -115,7 +131,8 @@ class NewsController extends Controller
             ->where('status', 1)
             ->where('type', 'blog')
             ->get();
-        return view('frontend.pages.news.news-search', compact('categoryService', 'categoryBlog'));
+
+        return view('frontend.pages.news.news-search', compact('categoryService', 'categoryBlog', 'keyword', 'allNews'));
     }
 
 }
