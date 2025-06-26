@@ -179,11 +179,11 @@
                                     <span class="sub-item">Về chúng tôi</span>
                                 </a>
                             </li>
-                            {{-- <li class="nav-item {{ activeMenu('admin.advertisement.index') }}">
-                                <a href="{{ route('admin.advertisement.index') }}">
-                                    <span class="sub-item">Quảng cáo</span>
+                            <li class="nav-item {{ activeMenu('admin.banners.index') }}">
+                                <a href="{{ route('admin.banners.index') }}">
+                                    <span class="sub-item">Banner</span>
                                 </a>
-                            </li> --}}
+                            </li>
                         </ul>
                     </div>
                 </li>

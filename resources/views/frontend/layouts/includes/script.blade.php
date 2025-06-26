@@ -12,9 +12,7 @@
             }
         }
 
-        const urlFields = document.querySelectorAll(
-            '.mc4wp-form input[type="url"]'
-        );
+       
         for (let j = 0; j < urlFields.length; j++) {
             urlFields[j].addEventListener("blur", maybePrefixUrlField);
         }

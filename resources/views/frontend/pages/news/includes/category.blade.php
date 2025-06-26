@@ -6,7 +6,7 @@
 
         <form role="search" method="get" class="search_form gt3_search_form" action="{{route('search')}}">
             <label for="search-form-6850d8694a614">Tìm iếm</label>
-            <input class="search_text" id="search-form-6850d8694a614" type="text" name="s"
+            <input class="search_text" id="search-form-6850d8694a614" type="search" name="s"
                 placeholder="Tìm kiếm">
             <input class="search_submit" type="submit" value="Search">
         </form>

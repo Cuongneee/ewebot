@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Banner;
 use App\Models\Category;
 use App\Models\CustomerReview;
 use App\Models\News;
@@ -26,13 +27,15 @@ class HomeController extends Controller
 
         $customerReviews = CustomerReview::query()->get();
 
+        $banner = Banner::first();
+
         $categoryBlog = Category::query()
             ->where('status', 1)
             ->where('type', 'blog')
             ->get();
 
-        // dd(vars: $categoryService);
+        // dd(vars: $banner);
 
-        return view('frontend.pages.home.home', compact('highViewNews', 'customerReviews', 'categoryService', 'categoryBlog'));
+        return view('frontend.pages.home.home', compact('highViewNews', 'customerReviews', 'categoryService', 'categoryBlog', 'banner'));
     }
 }
