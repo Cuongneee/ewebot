@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use App\Models\Category;
+use App\Models\Customer;
 use App\Models\CustomerReview;
 use App\Models\News;
 use Carbon\Carbon;
@@ -29,13 +30,21 @@ class HomeController extends Controller
 
         $banner = Banner::first();
 
+        $customers = Customer::query()->get();
         $categoryBlog = Category::query()
             ->where('status', 1)
             ->where('type', 'blog')
             ->get();
 
-        // dd(vars: $banner);
+        // dd(vars: $customers);
 
-        return view('frontend.pages.home.home', compact('highViewNews', 'customerReviews', 'categoryService', 'categoryBlog', 'banner'));
+        return view('frontend.pages.home.home', compact(
+            'highViewNews',
+            'customerReviews',
+            'categoryService',
+            'categoryBlog',
+            'banner',
+            'customers'
+        ));
     }
 }
