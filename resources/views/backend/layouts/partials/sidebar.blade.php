@@ -184,6 +184,11 @@
                                     <span class="sub-item">Banner</span>
                                 </a>
                             </li>
+                            <li class="nav-item {{ activeMenu('admin.customers.index') }}">
+                                <a href="{{ route('admin.customers.index') }}">
+                                    <span class="sub-item">Khách hàng của SGO</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>

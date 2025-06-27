@@ -38,124 +38,37 @@
                                         <div
                                             class="portfolio_carousel_wrapper portfolio_items_per_line_3 portfolio_items--center_mode elementor text_align-left">
                                             <div class="swiper space_30px">
-
-
                                                 <div class="swiper-wrapper">
-
-
-                                                    <div class="swiper-slide portfolio_item">
-                                                        <div class="wrapper">
-                                                            <a href="https://ewebotwp.com/portfolio/online-media-management_112-2/"
-                                                                class="lightbox" target="_self">
-                                                                View More
-                                                            </a>
-                                                            <div class="img_wrap has_text_content">
-                                                                <div class="img">
-                                                                    <img src="/frontend/assets/img/portfolio_img_02-1200x870.jpg"
-                                                                        sizes="(min-width: 2000px) 1200px, (min-width: 1920px) 670px, (min-width: 1620px) 640px, (min-width: 1200px) 540px, (min-width: 992px) 400px, (min-width: 768px) 496px, (min-width: 600px) 384px, (min-width: 420px) 600px, (max-width: 600px) 420px"
-                                                                        alt="portfolio image" width="1200"
-                                                                        height="870" />
+                                                    @foreach ($categoryService as $category)
+                                                        <div class="swiper-slide portfolio_item">
+                                                            <div class="wrapper">
+                                                                <a href="{{ route('services') }}" class="lightbox"
+                                                                    target="_self">
+                                                                    View More
+                                                                </a>
+                                                                <div class="img_wrap has_text_content">
+                                                                    <div class="img">
+                                                                        <img src="{{showImage($category->logo)}}"
+                                                                            sizes="(min-width: 2000px) 1200px, (min-width: 1920px) 670px, (min-width: 1620px) 640px, (min-width: 1200px) 540px, (min-width: 992px) 400px, (min-width: 768px) 496px, (min-width: 600px) 384px, (min-width: 420px) 600px, (max-width: 600px) 420px"
+                                                                            alt="portfolio image" width="1200"
+                                                                            height="870" />
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="text_wrap">
-                                                                <h4 class="title">
-                                                                    <a href="https://ewebotwp.com/portfolio/online-media-management_112-2/"
-                                                                        title="Online Media Management" target="_self">
-                                                                        Online Media
-                                                                        Management
-                                                                    </a>
-                                                                </h4>
-                                                                <div class="categories">
-                                                                    <span>Marketing</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide portfolio_item ">
-                                                        <div class="wrapper">
-                                                            <a href="#" class="lightbox" target="_self">
-                                                                View More
-                                                            </a>
-                                                            <div class="img_wrap has_text_content">
-                                                                <div class="img">
-                                                                    <img src="/frontend/assets/img/portfolio_img_01_new-1200x870.jpg"
-                                                                        sizes="(min-width: 2000px) 1200px, (min-width: 1920px) 670px, (min-width: 1620px) 640px, (min-width: 1200px) 540px, (min-width: 992px) 400px, (min-width: 768px) 496px, (min-width: 600px) 384px, (min-width: 420px) 600px, (max-width: 600px) 420px"
-                                                                        alt="portfolio image" width="1200"
-                                                                        height="870" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="text_wrap">
-                                                                <h4 class="title">
-                                                                    <a href="https://ewebotwp.com/portfolio/online-media-management_112-2/"
-                                                                        title="Online Media Management" target="_self">
-                                                                        Online Media
-                                                                        Management
-                                                                    </a>
-                                                                </h4>
-                                                                <div class="categories">
-                                                                    <span>Marketing</span>
+                                                                <div class="text_wrap">
+                                                                    <h4 class="title">
+                                                                        <a href="{{ route('services') }}"
+                                                                            title="Online Media Management"
+                                                                            target="_self">
+                                                                             {{$category->name}}
+                                                                        </a>
+                                                                    </h4>
+                                                                    <div class="categories">
+                                                                        <span> {!!$category->description!!}</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="swiper-slide portfolio_item ">
-                                                        <div class="wrapper">
-                                                            <a href="https://ewebotwp.com/portfolio/online-media-management_112-2/"
-                                                                class="lightbox" target="_self">
-                                                                View More
-                                                            </a>
-                                                            <div class="img_wrap has_text_content">
-                                                                <div class="img">
-                                                                    <img src="/frontend/assets/img/portfolio_img_04-1200x870.jpg"
-                                                                        sizes="(min-width: 2000px) 1200px, (min-width: 1920px) 670px, (min-width: 1620px) 640px, (min-width: 1200px) 540px, (min-width: 992px) 400px, (min-width: 768px) 496px, (min-width: 600px) 384px, (min-width: 420px) 600px, (max-width: 600px) 420px"
-                                                                        alt="portfolio image" width="1200"
-                                                                        height="870" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="text_wrap">
-                                                                <h4 class="title">
-                                                                    <a href="https://ewebotwp.com/portfolio/online-media-management_112-2/"
-                                                                        title="Online Media Management" target="_self">
-                                                                        Online Media
-                                                                        Management
-                                                                    </a>
-                                                                </h4>
-                                                                <div class="categories">
-                                                                    <span>Marketing</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide portfolio_item ">
-                                                        <div class="wrapper">
-                                                            <a href="https://ewebotwp.com/portfolio/online-media-management_112-2/"
-                                                                class="lightbox" target="_self">
-                                                                View More
-                                                            </a>
-                                                            <div class="img_wrap has_text_content">
-                                                                <div class="img">
-                                                                    <img src="/frontend/assets/img/flowy-dark-haired-woman-1200x870.jpg"
-                                                                        sizes="(min-width: 2000px) 1200px, (min-width: 1920px) 670px, (min-width: 1620px) 640px, (min-width: 1200px) 540px, (min-width: 992px) 400px, (min-width: 768px) 496px, (min-width: 600px) 384px, (min-width: 420px) 600px, (max-width: 600px) 420px"
-                                                                        alt="portfolio image" width="1200"
-                                                                        height="870" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="text_wrap">
-                                                                <h4 class="title">
-                                                                    <a href="https://ewebotwp.com/portfolio/online-media-management_112-2/"
-                                                                        title="Online Media Management"
-                                                                        target="_self">
-                                                                        Online Media
-                                                                        Management
-                                                                    </a>
-                                                                </h4>
-                                                                <div class="categories">
-                                                                    <span>Marketing</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
+                                                    @endforeach
 
                                                     <!-- Optional Controls -->
 

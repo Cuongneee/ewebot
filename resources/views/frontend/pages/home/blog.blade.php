@@ -21,20 +21,10 @@
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            Latest News
-                        </h2>
+                            Bài viết mới nhất </h2>
                     </div>
                 </div>
-                <div class="elementor-element elementor-element-4294d3d9 elementor-widget elementor-widget-heading animated gt3-slideup-animation"
-                    data-id="3c822831" data-element_type="widget" data-widget_type="text-editor.default">
-                    <div class="elementor-widget-container">
-                        <p>
-                            Ad nec unum copiosae. Sea ex everti labores, ad
-                            option iuvaret qui. Id quo esse nusquam. Eam
-                            iriure diceret oporteat.
-                        </p>
-                    </div>
-                </div>
+               
             </div>
         </div>
         <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-354fe797"
@@ -62,7 +52,7 @@
                                         <div class="item_wrapper gt3_center_mode has_post_meta">
                                             <div class="blogboxed_img_block"
                                                 style="
-                                          background-image: url({{asset($news->image)}});
+                                          background-image: url({{ asset($news->image) }});
                                         ">
                                             </div>
                                             <div class="blogboxed_content without_bordered has_img_block">
@@ -72,16 +62,14 @@
                                                             class="post_date">{{ $news->created_at->format('d-m-Y') }}</span>
                                                     </div>
                                                     <h2 class="blog_post_title">
-                                                        <a
-                                                            href="{{route('detailNews', $news->slug)}}">
-                                                           {{$news->title}}</a>
+                                                        <a href="{{ route('detailNews', $news->slug) }}">
+                                                            {{ $news->title }}</a>
                                                     </h2>
                                                     <div class="blogboxed_info_box">
                                                         <div class="clear"></div>
                                                         <div class="gt3_post_footer">
                                                             <div class="gt3_module_button_list">
-                                                                <a
-                                                                    href="{{route('listNews')}}">Read
+                                                                <a href="{{ route('listNews') }}">Read
                                                                     More</a>
                                                             </div>
                                                             <div class="blog_post_info">
