@@ -32,7 +32,7 @@
 }
 
 .elementor-623 .elementor-element.elementor-element-3b26c0d .gt3-core-imagebox-content .gt3-core-imagebox-title {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
     line-height: 26px;
 }
@@ -41,6 +41,7 @@
     color: #696687;
     font-size: 16px;
     line-height: 1.7em;
+    font-weight: normal;
 }
 
 .elementor-623 .elementor-element.elementor-element-4af78bd>.elementor-widget-container {
@@ -1437,14 +1438,6 @@
     line-height: 27px;
 }
 
-.elementor-623 .elementor-element.elementor-element-98f77fe.elementor-widget-gt3-core-TestimonialsLite .testimonials-text-quote {
-    color: #f19910;
-}
-
-    {
-    WRAPPER
-}
-}
 
 .testimonials-quote-icon-holder {
     color: #f19910;

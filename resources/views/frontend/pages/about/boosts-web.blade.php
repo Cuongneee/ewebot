@@ -13,17 +13,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-element-custom_font_size elementor-element-custom_font_weight elementor-element elementor-element-3d56faa elementor-widget elementor-widget-text-editor"
-                    data-id="3d56faa" data-element_type="widget" data-widget_type="text-editor.default">
-                    <div class="elementor-widget-container">
-                        <h5>About Us</h5>
-                    </div>
-                </div>
+
                 <div class="elementor-element elementor-element-cb3b887 elementor-widget elementor-widget-heading"
                     data-id="cb3b887" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            Boosts Your Website Traffic!</h2>
+                            Về chúng tôi</h2>
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-a19a7da elementor-widget elementor-widget-spacer"
@@ -37,54 +32,22 @@
                 <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element elementor-element-a8725e4 elementor-widget elementor-widget-text-editor"
                     data-id="a8725e4" data-element_type="widget" data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
-                        <p>Ad nec unum copiosae. Sea ex everti labores, ad option
-                            iuvaret qui muva.</p>
+                        <p>SGO Việt Nam với kinh nghiệm 6+
+                            năm về thiết kế website, ,Mobile app,
+                            các phần mềm quản lý CRM cùng với
+                            việc triển khai các các chiến dịch
+                            Digital Marketing, đặc biệt đối với giải
+                            pháp SEO Tổng thể chúng tôi tự tin là
+                            một trong những Agency khép kín có
+                            đủ năng lực cam kết giúp các doanh
+                            nghiệp phát triển và gia tăng doanh
+                            số trong tương lai.</p>
                     </div>
                 </div>
-                <div class="elementor-element elementor-element-448c001 elementor-widget elementor-widget-spacer"
-                    data-id="448c001" data-element_type="widget" data-widget_type="spacer.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-5b96b22 elementor-widget elementor-widget-text-editor"
-                    data-id="5b96b22" data-element_type="widget" data-widget_type="text-editor.default">
-                    <div class="elementor-widget-container">
-                        <p>Ea pro tibique comprehensam, sed ea verear numquam molestie.
-                            Nam te omittam comprehensam. Ne nam nonumy putent fuisset,
-                            reque fabulas usu ne. Ex vel populo appellantur. Eos ne
-                            delenit admodum.</p>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-87eefe6 elementor-widget elementor-widget-spacer"
-                    data-id="87eefe6" data-element_type="widget" data-widget_type="spacer.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gt3-core-button--alignment_left elementor-element elementor-element-e61b03d elementor-widget elementor-widget-gt3-core-button"
-                    data-id="e61b03d" data-element_type="widget" data-widget_type="gt3-core-button.default">
-                    <div class="elementor-widget-container">
-                        <div
-                            class="gt3_module_button_elementor size_custom alignment_left button_icon_none hover_type5 rounded">
-                            <a class="button_size_elementor_custom alignment_left border_icon_none hover_type5 btn_icon_position_left"
-                                href="#">
-                                <span class="gt3_module_button__container">
-                                    <span class="elementor_gt3_btn_text">Our
-                                        Services</span> <span class="gt3_module_button__cover front"></span>
-                                    <span class="gt3_module_button__cover back"></span>
-                                </span>
-                            </a>
-                        </div>
-
-                        <script type="application/json"
-                                                            id="settings--e61b03d">[]</script>
-                    </div>
-                </div>
+               
+                
+               
+               
                 <div class="elementor-element elementor-element-0b6d5b7 elementor-widget elementor-widget-spacer"
                     data-id="0b6d5b7" data-element_type="widget" data-widget_type="spacer.default">
                     <div class="elementor-widget-container">
@@ -120,7 +83,7 @@
                                     <div class="elementor-widget-container">
                                         <div class="video-popup-wrapper">
                                             <a class="swipebox-video video-popup__link"
-                                                href="https://www.youtube.com/watch?v=7K43sEjKWiE"
+                                                href="{{$setting->youtube_link}}"
                                                 data-settings="{&quot;autoplay&quot;:false}">
                                                 <svg width="13" height="18">
                                                     <polygon points="1,1 1,16 11,9" stroke-width="2" />

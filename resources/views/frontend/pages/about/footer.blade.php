@@ -311,7 +311,7 @@
                  <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element-custom_color elementor-element elementor-element-e23a8f5 elementor-widget elementor-widget-text-editor"
                      data-id="e23a8f5" data-element_type="widget" data-widget_type="text-editor.default">
                      <div class="elementor-widget-container">
-                         <p style="text-align: center;">© <a href="">{{ $setting->footer }}</a></p>
+                         <p style="text-align: center;"><a href="">{{ $setting->footer }}</a></p>
                      </div>
                  </div>
              </div>

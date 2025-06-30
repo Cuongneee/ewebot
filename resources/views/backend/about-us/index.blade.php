@@ -1,5 +1,5 @@
 @extends('backend.layouts.master')
-@section('title', 'Đánh giá khách hàng')
+@section('title', 'Về chúng tôi')
 
 @section('content')
 

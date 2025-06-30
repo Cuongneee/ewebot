@@ -1,5 +1,6 @@
 .wpda-builder p {
   font-size: inherit;
+  font-weight: bolder;
 }
 .wpda-footer-builder
   .elementor-widget.elementor-widget-wpda-builder-menu

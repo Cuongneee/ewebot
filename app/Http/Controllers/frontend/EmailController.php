@@ -22,7 +22,7 @@ class EmailController extends Controller
             'phone' => 'required|string|max:20',
             'website' => 'nullable|string|max:255',
             'message' => 'nullable|string',
-            'service_id' => 'required|exists:service_pricings,id',
+            'service_id' => 'nullable|exists:service_pricings,id',
         ]);
         // Lưu vào bảng contacts
         Contact::create([
@@ -31,7 +31,7 @@ class EmailController extends Controller
             'phone' => $data['phone'],
             'website' => $data['website'],
             'message' => $data['message'],
-            'service_id' => $data['service_id'],
+            'service_id' => $data['service_id'] ?? null,
         ]);
         $emailAdmin = config('mail.to');
         // dd($emailAdmin);
@@ -39,7 +39,7 @@ class EmailController extends Controller
             $service = ServicePricing::with('category')->find($request->service_id);
 
             $data['service_name'] = $service->name;
-            $data['category_name'] = $service->category->name ?? 'Không rõ';
+            $data['category_name'] = $service->category->name ?? 'Không có';
 
         }
         // dd($data);
