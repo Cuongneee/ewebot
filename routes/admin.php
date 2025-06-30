@@ -13,6 +13,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\EmailController;
+use App\Http\Controllers\Backend\EmployeController;
 use App\Http\Controllers\Backend\NewsController;
 use App\Http\Controllers\Backend\ServiceController;
 use UniSharp\LaravelFilemanager\Lfm;
@@ -66,6 +67,7 @@ Route::name('admin.')->middleware('auth:admin')->group(function () {
     Route::resource('contacts', ContactController::class);
     Route::resource('banners', BannerController::class);
     Route::resource('customers', CustomerController::class);
+    Route::resource('employes', EmployeController::class);
 
     Route::post('update-mail-env', [EmailController::class, 'updateMailEnv'])->name('update-mail-env');
 

@@ -74,10 +74,10 @@
                                     type="text" placeholder="Di động">
                             </div>
                             <div class=" mb-3 col-lg-4">
-                                <label for="hotline_kinhdoanh" class="form-label">Di động kinh doanh</label>
+                                <label for="hotline_kinhdoanh" class="form-label">Di động</label>
                                 <input value="{{ $config->hotline_kinhdoanh }}" id="hotline_kinhdoanh"
                                     name="hotline_kinhdoanh"class="form-control" type="text"
-                                    placeholder="Di động kinh doanh">
+                                    placeholder="Di động">
                             </div>
                             <div class=" mb-3 col-lg-4">
                                 <label for="hotline_baotri" class="form-label">Di động bảo trì</label>
@@ -120,6 +120,12 @@
 
                     <div class="card-body">
                         <div class="row">
+                            <div class=" mb-3 col-lg-12">
+                                <label for="stk" class="form-label">Mã số thuế</label>
+                                <input value="{{ $config->mst }}" id="mst" name="mst"class="form-control"
+                                    type="text" placeholder="Mã số thuế">
+                            </div>
+
                             <div class=" mb-3 col-lg-6">
                                 <label for="stk" class="form-label">Tên tài khoản</label>
                                 <input value="{{ $config->ttk }}" id="ttk" name="ttk"class="form-control"

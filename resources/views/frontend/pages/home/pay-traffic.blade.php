@@ -1,397 +1,461 @@
-<section
-    class="elementor-section elementor-top-section elementor-element elementor-element-588fcab elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-    data-id="588fcab" data-element_type="section" data-settings='{"background_background":"classic"}'>
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-63fd403 animated fadeIn"
-            data-id="63fd403" data-element_type="column"
-            data-settings='{"background_background":"classic","animation":"fadeIn"}'>
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-080829e elementor-widget elementor-widget-image animated fadeIn"
-                    data-id="080829e" data-element_type="widget"
-                    data-settings='{"_animation":"fadeIn","_animation_delay":500}' data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="600" height="533"
-                            src="/frontend/assets/img/home10-figure1.jpg"
-                            class="attachment-full size-full wp-image-7143" alt=""
-                            srcset="
-                                  /frontend/assets/img/home10-figure1.jpg 600w,
-                                  /frontend/assets/img/home10-figure1.jpg 300w,
-                                  /frontend/assets/img/home10-figure1.jpg 480w
-                                "
-                            sizes="auto, (max-width: 600px) 100vw, 600px" title="Phones Figure" />
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-fb4d0d9 elementor-absolute elementor-widget elementor-widget-image animated fadeInLeft"
-                    data-id="fb4d0d9" data-element_type="widget"
-                    data-settings='{"_animation":"fadeInLeft","_position":"absolute"}' data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="380" height="630"
-                            src="/frontend/assets/img/home10-phone1.png" class="attachment-full size-full wp-image-7189"
-                            alt=""
-                            srcset="
-                                  /frontend/assets/img/home10-phone1.png 380w,
-                                  /frontend/assets/img/home10-phone1.png 181w
-                                "
-                            sizes="auto, (max-width: 380px) 100vw, 380px" title="Statistic" />
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-a179278 elementor-absolute elementor-widget elementor-widget-image animated fadeInUp"
-                    data-id="a179278" data-element_type="widget"
-                    data-settings='{"_animation":"fadeInUp","_position":"absolute"}' data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="417" height="690"
-                            src="/frontend/assets/img/home10_phone2.png" class="attachment-full size-full wp-image-7249"
-                            alt=""
-                            srcset="
-                                  /frontend/assets/img/home10_phone2.png 417w,
-                                  /frontend/assets/img/home10_phone2.png 181w
-                                "
-                            sizes="auto, (max-width: 417px) 100vw, 417px" title="Progress" />
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-40c2e73 elementor-absolute elementor-widget elementor-widget-image animated zoomIn"
-                    data-id="40c2e73" data-element_type="widget"
-                    data-settings='{"_animation":"zoomIn","_position":"absolute"}' data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="235" height="290"
-                            src="/frontend/assets/img/home10_phone3.png" class="attachment-full size-full wp-image-7250"
-                            alt="" title="Marketing" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ea4ca7d"
-            data-id="ea4ca7d" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <section
-                    class="elementor-section elementor-inner-section elementor-element elementor-element-ffbfcf3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="ffbfcf3" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2ae89d3"
-                            data-id="2ae89d3" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element-custom_font_size elementor-element-custom_font_weight elementor-element elementor-element-60af6a5 elementor-widget elementor-widget-text-editor animated gt3-slideup-animation"
-                                    data-id="60af6a5" data-element_type="widget"
-                                    data-settings='{"_animation":"gt3-slideup-animation"}'
-                                    data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                        <h5>experience</h5>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-aa6a2f5 elementor-widget elementor-widget-heading animated gt3-slideup-animation"
-                                    data-id="aa6a2f5" data-element_type="widget"
-                                    data-settings='{"_animation":"gt3-slideup-animation"}'
-                                    data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">
-                                            Pay for Qualified Traffic
-                                        </h2>
-                                    </div>
-                                </div>
-                                <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element elementor-element-3417fbd elementor-widget elementor-widget-text-editor"
-                                    data-id="3417fbd" data-element_type="widget"
-                                    data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                        <p>
-                                            Ewebot stays ahead of the curve with
-                                            digital marketing trends. Our success
-                                            has us leading the pack amongst our
-                                            competitors with our ability to
-                                            anticipate change <br />and innovation.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-59b9440 elementor-widget elementor-widget-progress"
-                                    data-id="59b9440" data-element_type="widget" data-widget_type="progress.default">
-                                    <div class="elementor-widget-container">
-                                        <span class="elementor-title" id="elementor-progress-bar-59b9440">
-                                            SEO Analysis
-                                        </span>
+<style>
+    .curved-image-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
+    }
 
-                                        <div aria-labelledby="elementor-progress-bar-59b9440"
-                                            class="elementor-progress-wrapper progress-success" role="progressbar"
-                                            aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-                                            <div class="elementor-progress-bar" data-max="90" style="width: 90%">
-                                                <span class="elementor-progress-text"></span>
-                                                <span class="elementor-progress-percentage">90%</span>
-                                            </div>
+    .professional-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+    }
+
+    /* Right side - Form section */
+    .form-section {
+        padding: 60px 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #374151;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .form-subtitle {
+        color: var(--text-gray);
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control:focus {
+        border-color: var(--primary-red);
+        box-shadow: 0 0 0 0.2rem rgba(220, 38, 38, 0.1);
+
+        outline: none;
+    }
+
+    .form-control::placeholder {
+        color: #9ca3af;
+        font-weight: 400;
+    }
+
+    textarea.form-control {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .submit-btn {
+        background: linear-gradient(135deg, #ff9500 0%, #ff6b35 100%);
+        color: var(--white);
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 149, 0, 0.3);
+        cursor: pointer;
+        width: auto;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    /* Hiệu ứng sweep từ trái qua phải */
+    .submit-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #ffb347 0%, #ff8c42 100%);
+        transition: left 0.4s ease;
+        z-index: -1;
+    }
+
+    .submit-btn:hover::before {
+        left: 0;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 149, 0, 0.4);
+        color: var(--white);
+    }
+
+    .submit-btn:active {
+        transform: translateY(0);
+    }
+
+    /* Đảm bảo text luôn ở trên */
+    .submit-btn .btn-text {
+        position: relative;
+        color: white
+    }
+
+    /* Form validation styles */
+    .form-control.is-invalid {
+        border-color: var(--primary-red);
+    }
+
+    .form-control.is-valid {
+        border-color: #10b981;
+    }
+
+    .invalid-feedback {
+        color: var(--primary-red);
+        font-size: 0.875rem;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .success-message {
+        background: #10b981;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        display: none;
+    }
+
+    .success-message.show {
+        display: block;
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .contact-section {
+            padding: 40px 0;
+        }
+
+        .contact-container {
+            margin: 0 15px;
+            border-radius: 15px;
+        }
+
+        .image-section {
+            padding: 30px 20px;
+            min-height: 400px;
+        }
+
+        .curved-image-wrapper {
+            max-width: 350px;
+            height: 350px;
+        }
+
+        .curved-shape {
+            width: 300px;
+            height: 300px;
+        }
+
+        .curve-blue {
+            width: 120px;
+            height: 120px;
+            top: -10px;
+            right: -10px;
+        }
+
+        .curve-green {
+            width: 100px;
+            height: 100px;
+            bottom: 10px;
+            left: -20px;
+        }
+
+        .form-section {
+            padding: 40px 30px;
+        }
+
+        .form-title {
+            font-size: 2rem;
+        }
+
+        .form-subtitle {
+            font-size: 1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .form-section {
+            padding: 30px 20px;
+        }
+
+        .form-title {
+            font-size: 1.8rem;
+        }
+
+        .image-section {
+            padding: 30px 15px;
+        }
+
+        .curved-image-wrapper {
+            max-width: 280px;
+            height: 280px;
+        }
+
+        .curved-shape {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    /* Loading state */
+    .submit-btn.loading {
+        pointer-events: none;
+        opacity: 0.7;
+        position: relative;
+    }
+
+    .submit-btn.loading::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 2px solid transparent;
+        border-top: 2px solid var(--white);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @keyframes spin {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+</style>
+
+<section class="contact-section">
+    <div class="container-fluid">
+        <div class="contact-container">
+            <div class="row g-0 h-100">
+                <!-- Left side - Image with curved design -->
+                <div class="col-lg-6">
+                    <div class="image-section">
+                        <div class="curved-image-wrapper">
+                            <div class="curved-shape">
+                                <img src="/frontend/assets/img/home10_img5.jpg" alt="Professional SEO Consultant"
+                                    class="professional-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side - Form -->
+                <div class="col-lg-6">
+                    <div class="form-section">
+                        <div class="success-message" id="successMessage">
+                            <i class="fas fa-check-circle me-2"></i>
+                            Cảm ơn! Chúng tôi sẽ liên hệ lại với bạn sớm nhất.
+                        </div>
+
+                        <h2 class="form-title">Bạn cần tư vấn?</h2>
+                        <p class="form-subtitle">
+                            Vui lòng điền thông tin, chúng tôi sẽ liên hệ sớm nhất có thể. </p>
+
+                        <form id="contactForm" novalidate method="POST" action="{{ route('contact.send') }}">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Tên của bạn*" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập tên
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-d2906f9 elementor-widget elementor-widget-progress"
-                                    data-id="d2906f9" data-element_type="widget" data-widget_type="progress.default">
-                                    <div class="elementor-widget-container">
-                                        <span class="elementor-title" id="elementor-progress-bar-d2906f9">
-                                            SEO Audit
-                                        </span>
-
-                                        <div aria-labelledby="elementor-progress-bar-d2906f9"
-                                            class="elementor-progress-wrapper progress-success" role="progressbar"
-                                            aria-valuemin="0" aria-valuemax="100" aria-valuenow="79">
-                                            <div class="elementor-progress-bar" data-max="79" style="width: 79%">
-                                                <span class="elementor-progress-text"></span>
-                                                <span class="elementor-progress-percentage">79%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-e8f800f elementor-widget elementor-widget-progress"
-                                    data-id="e8f800f" data-element_type="widget" data-widget_type="progress.default">
-                                    <div class="elementor-widget-container">
-                                        <span class="elementor-title" id="elementor-progress-bar-e8f800f">
-                                            Optimization
-                                        </span>
-
-                                        <div aria-labelledby="elementor-progress-bar-e8f800f"
-                                            class="elementor-progress-wrapper progress-success" role="progressbar"
-                                            aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
-                                            <div class="elementor-progress-bar" data-max="95" style="width: 95%">
-                                                <span class="elementor-progress-text"></span>
-                                                <span class="elementor-progress-percentage">95%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gt3-core-button--alignment_inline elementor-element elementor-element-d34e637 elementor-widget elementor-widget-gt3-core-button"
-                                    data-id="d34e637" data-element_type="widget"
-                                    data-widget_type="gt3-core-button.default">
-                                    <div class="elementor-widget-container">
-                                        <div
-                                            class="gt3_module_button_elementor size_custom alignment_inline button_icon_none hover_none rounded">
-                                            <a class="button_size_elementor_custom alignment_inline border_icon_none hover_none btn_icon_position_left"
-                                                href="#">
-                                                <span class="gt3_module_button__container">
-                                                    <span class="gt3_module_button__cover front"><span
-                                                            class="elementor_gt3_btn_text">Discover
-                                                            more</span></span>
-                                                </span>
-                                            </a>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Email*" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập email
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-</section>
-<section
-    class="elementor-section elementor-top-section elementor-element elementor-element-17a9ca9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-    data-id="17a9ca9" data-element_type="section">
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b3da26e"
-            data-id="b3da26e" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-94d6df7 gt3_pulse_out_element elementor-widget elementor-widget-image animated fadeInLeft"
-                    data-id="94d6df7" data-element_type="widget"
-                    data-settings='{"_animation":"fadeInLeft","_animation_delay":500}'
-                    data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="777" height="644"
-                            src="/frontend/assets/img/home10_ellipse.png"
-                            class="attachment-full size-full wp-image-7358" alt=""
-                            srcset="
-                                  /frontend/assets/img/home10_ellipse.png 777w,
-                                  /frontend/assets/img/home10_ellipse.png 300w,
-                                  /frontend/assets/img/home10_ellipse.png 768w,
-                                  /frontend/assets/img/home10_ellipse.png 480w
-                                "
-                            sizes="auto, (max-width: 777px) 100vw, 777px" title="Ellipse" />
-                    </div>
-                </div>
-                <section
-                    class="elementor-section elementor-inner-section elementor-element elementor-element-d5a07b7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="d5a07b7" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fff083a"
-                            data-id="fff083a" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-9f0ac6c elementor-align-left gt3_theme_textgradient-yes elementor-widget elementor-widget-gt3-core-counter"
-                                    data-id="9f0ac6c" data-element_type="widget"
-                                    data-widget_type="gt3-core-counter.default">
-                                    <div class="elementor-widget-container">
-                                        <div data-settings='{"start":10,"end":320,"decimal":0,"duration":0.5,"options":{"useEasing":false,"easingFn":"","useGrouping":true,"separator":",","decimal":".","prefix":"","suffix":"<span class=\"counter_suffix\">m<\/span>"}}'
-                                            data-options='{"useEasing":false,"easingFn":"","useGrouping":true,"separator":",","decimal":".","prefix":"","suffix":"<span class=\"counter_suffix\">m<\/span>"}'
-                                            class="counter-wrapper icon_type-icon icon_position-left text_gradient">
-                                            <div class="counter_text">
-                                                <div class="counter">
-                                                    320<span class="counter_suffix">m</span>
-                                                </div>
-                                                <div class="hidden_end">
-                                                    320<span class="counter_suffix">m</span>
-                                                </div>
 
-                                                <div class="description">
-                                                    <p>Digital global audience reach</p>
-                                                </div>
-                                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="SĐT*" required>
+                                        <div class="invalid-feedback">
+                                            Vui lòng nhập số điện thoại
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-bda2536 elementor-align-left gt3_theme_textgradient-yes elementor-widget elementor-widget-gt3-core-counter"
-                                    data-id="bda2536" data-element_type="widget"
-                                    data-widget_type="gt3-core-counter.default">
-                                    <div class="elementor-widget-container">
-                                        <div data-settings='{"start":10,"end":1350,"decimal":0,"duration":0.5,"options":{"useEasing":false,"easingFn":"","useGrouping":true,"separator":"","decimal":".","prefix":"","suffix":""}}'
-                                            data-options='{"useEasing":false,"easingFn":"","useGrouping":true,"separator":"","decimal":".","prefix":"","suffix":""}'
-                                            class="counter-wrapper icon_type-icon icon_position-left text_gradient">
-                                            <div class="counter_text">
-                                                <div class="counter">1350</div>
-                                                <div class="hidden_end">1350</div>
-
-                                                <div class="description">
-                                                    <p>
-                                                        Content pieces produced everyday
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="url" class="form-control" id="website" name="website"
+                                            placeholder="Website">
                                     </div>
                                 </div>
+
                             </div>
-                        </div>
-                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-dff8a53"
-                            data-id="dff8a53" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-0fead66 elementor-align-left gt3_theme_textgradient-yes elementor-widget elementor-widget-gt3-core-counter"
-                                    data-id="0fead66" data-element_type="widget"
-                                    data-widget_type="gt3-core-counter.default">
-                                    <div class="elementor-widget-container">
-                                        <div data-settings='{"start":10,"end":89,"decimal":0,"duration":0.5,"options":{"useEasing":false,"easingFn":"","useGrouping":true,"separator":",","decimal":".","prefix":"","suffix":"<span class=\"counter_suffix\">%<\/span>"}}'
-                                            data-options='{"useEasing":false,"easingFn":"","useGrouping":true,"separator":",","decimal":".","prefix":"","suffix":"<span class=\"counter_suffix\">%<\/span>"}'
-                                            class="counter-wrapper icon_type-icon icon_position-left text_gradient">
-                                            <div class="counter_text">
-                                                <div class="counter">
-                                                    89<span class="counter_suffix">%</span>
-                                                </div>
-                                                <div class="hidden_end">
-                                                    89<span class="counter_suffix">%</span>
-                                                </div>
 
-                                                <div class="description">
-                                                    <p>
-                                                        Of the audience is under 34
-                                                        years
-                                                        old
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-7b5c2d4 elementor-align-left gt3_theme_textgradient-yes elementor-widget elementor-widget-gt3-core-counter"
-                                    data-id="7b5c2d4" data-element_type="widget"
-                                    data-widget_type="gt3-core-counter.default">
-                                    <div class="elementor-widget-container">
-                                        <div data-settings='{"start":10,"end":94,"decimal":0,"duration":0.5,"options":{"useEasing":false,"easingFn":"","useGrouping":true,"separator":",","decimal":".","prefix":"","suffix":"<span class=\"counter_suffix\">%<\/span>"}}'
-                                            data-options='{"useEasing":false,"easingFn":"","useGrouping":true,"separator":",","decimal":".","prefix":"","suffix":"<span class=\"counter_suffix\">%<\/span>"}'
-                                            class="counter-wrapper icon_type-icon icon_position-left text_gradient">
-                                            <div class="counter_text">
-                                                <div class="counter">
-                                                    94<span class="counter_suffix">%</span>
-                                                </div>
-                                                <div class="hidden_end">
-                                                    94<span class="counter_suffix">%</span>
-                                                </div>
-
-                                                <div class="description">
-                                                    <p>Employee <br />worldwide</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" placeholder="Nội dung" rows="4"></textarea>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="elementor-element elementor-element-d4482c9 gt3_rotated_element elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
-                    data-id="d4482c9" data-element_type="widget" data-settings='{"_position":"absolute"}'
-                    data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="42" height="42"
-                            src="/frontend/assets/img/home_06_icon_23.png"
-                            class="attachment-full size-full wp-image-5555" alt="" title="home_06_icon_23" />
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-16909a5 gt3_rotated_element elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
-                    data-id="16909a5" data-element_type="widget" data-settings='{"_position":"absolute"}'
-                    data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="26" height="26"
-                            src="/frontend/assets/img/home_06_icon_22.png"
-                            class="attachment-full size-full wp-image-5556" alt="" title="home_06_icon_22" />
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-cc54d9e gt3_moved_element elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
-                    data-id="cc54d9e" data-element_type="widget" data-settings='{"_position":"absolute"}'
-                    data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="72" height="74"
-                            src="/frontend/assets/img/triangle_blue.png"
-                            class="attachment-full size-full wp-image-3275" alt=""
-                            srcset="
-                                  /frontend/assets/img/triangle_blue.png 72w,
-                                  /frontend/assets/img/triangle_blue.png 50w
-                                "
-                            sizes="auto, (max-width: 72px) 100vw, 72px" title="triangle" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-25cb59d"
-            data-id="25cb59d" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-ba6f5f3 animated-fast elementor-widget elementor-widget-image animated fadeInRight"
-                    data-id="ba6f5f3" data-element_type="widget" data-settings='{"_animation":"fadeInRight"}'
-                    data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="637" height="580"
-                            src="/frontend/assets/img/girl-with_phone.jpg"
-                            class="attachment-full size-full wp-image-7346" alt=""
-                            srcset="
-                                  /frontend/assets/img/girl-with_phone.jpg 637w,
-                                  /frontend/assets/img/girl-with_phone.jpg 300w,
-                                  /frontend/assets/img/girl-with_phone.jpg 480w
-                                "
-                            sizes="auto, (max-width: 637px) 100vw, 637px" title="Girl with phone" />
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-f26a2c2 gt3_moved_element elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
-                    data-id="f26a2c2" data-element_type="widget" data-settings='{"_position":"absolute"}'
-                    data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="48" height="48"
-                            src="/frontend/assets/img/circle.png" class="attachment-full size-full wp-image-3276"
-                            alt="" title="circle" />
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-6db9a99 gt3_rotated_element elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
-                    data-id="6db9a99" data-element_type="widget" data-settings='{"_position":"absolute"}'
-                    data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="72" height="74"
-                            src="/frontend/assets/img/triangle_orange.png"
-                            class="attachment-full size-full wp-image-3274" alt=""
-                            srcset="
-                                  /frontend/assets/img/triangle_orange.png 72w,
-                                  /frontend/assets/img/triangle_orange.png 50w
-                                "
-                            sizes="auto, (max-width: 72px) 100vw, 72px" title="triangle" />
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-378900f gt3_rotated_element elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
-                    data-id="378900f" data-element_type="widget" data-settings='{"_position":"absolute"}'
-                    data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="26" height="26"
-                            src="/frontend/assets/img/home_06_icon_22.png"
-                            class="attachment-full size-full wp-image-5556" alt="" title="home_06_icon_22" />
+
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Gửi yêu cầu</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const form = this;
+        const formData = new FormData(form);
+        const submitBtn = form.querySelector('.submit-btn');
+        const successMessage = document.getElementById('successMessage');
+
+        // Reset validation
+        form.querySelectorAll('.form-control').forEach(input => {
+            input.classList.remove('is-invalid', 'is-valid');
+        });
+
+        // Validate form
+        let isValid = true;
+        const requiredFields = form.querySelectorAll('[required]');
+
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                field.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                field.classList.add('is-valid');
+            }
+        });
+
+        // Email validation
+        const email = form.querySelector('#email');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email.value && !emailRegex.test(email.value)) {
+            email.classList.add('is-invalid');
+            isValid = false;
+        }
+
+        // Website validation
+        const website = form.querySelector('#website');
+        if (website.value && !website.value.includes('.')) {
+            website.classList.add('is-invalid');
+            isValid = false;
+        }
+
+        if (isValid) {
+            // Show loading
+            submitBtn.classList.add('loading');
+            submitBtn.querySelector('.btn-text').textContent = 'SENDING...';
+
+            // Gửi mail qua AJAX
+            jQuery.ajax({
+                url: '/send-contact',
+                method: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                    // Reset nút
+                    // console.log(response);
+                    
+                    submitBtn.classList.remove('loading');
+                    submitBtn.querySelector('.btn-text').textContent = 'GỬI YÊU CẦU';
+
+                    // Hiện thông báo thành công
+                    successMessage.classList.add('show');
+
+                    // Reset form
+                    form.reset();
+                    form.querySelectorAll('.form-control').forEach(input => {
+                        input.classList.remove('is-valid');
+                    });
+
+                    // Ẩn thông báo sau 5s
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                    }, 5000);
+                },
+                error: function(xhr) {
+                    // console.log('lỗi', xhr);
+                    
+                    submitBtn.classList.remove('loading');
+                    submitBtn.querySelector('.btn-text').textContent = 'GỬI YÊU CẦU';
+
+                    alert('Gửi thất bại. Vui lòng thử lại.');
+                }
+            });
+        }
+    });
+
+    // Real-time validation giữ nguyên như bạn viết
+    document.querySelectorAll('.form-control').forEach(input => {
+        input.addEventListener('blur', function() {
+            if (this.hasAttribute('required') && !this.value.trim()) {
+                this.classList.add('is-invalid');
+                this.classList.remove('is-valid');
+            } else if (this.value.trim()) {
+                this.classList.remove('is-invalid');
+                this.classList.add('is-valid');
+            }
+        });
+
+        input.addEventListener('input', function() {
+            if (this.classList.contains('is-invalid') && this.value.trim()) {
+                this.classList.remove('is-invalid');
+                this.classList.add('is-valid');
+            }
+        });
+    });
+</script>

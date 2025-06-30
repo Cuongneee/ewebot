@@ -23,24 +23,17 @@
                                 <div class="elementor-element-custom_font_size elementor-element-custom_font_weight elementor-element elementor-element-4f95fed elementor-widget elementor-widget-text-editor"
                                     data-id="4f95fed" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <h5>Our Team</h5>
+                                        <h5>Đội ngũ</h5>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-db9b624 elementor-widget elementor-widget-heading"
                                     data-id="db9b624" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">
-                                            Our Professionals</h2>
+                                            SGO Việt Nam</h2>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-76b501a elementor-widget elementor-widget-text-editor"
-                                    data-id="76b501a" data-element_type="widget" data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                        <p>Ne summo dictas pertinacia nam. Illum cetero
-                                            vocent ei vim, case regione signiferumque
-                                            vim te.</p>
-                                    </div>
-                                </div>
+
                                 <div class="elementor-element elementor-element-9981a45 elementor-widget elementor-widget-spacer"
                                     data-id="9981a45" data-element_type="widget" data-widget_type="spacer.default">
                                     <div class="elementor-widget-container">
@@ -101,175 +94,49 @@
                                             <div class="shortcode_team team_has_grid_gap">
                                                 <div class="items4">
                                                     <ul class="item_list ">
-                                                        <li class="item-team-member main">
-                                                            <div class="item_wrapper">
-                                                                <div class="item">
-                                                                    <div class="team_img featured_img">
-                                                                        <a
-                                                                            href="https://ewebotwp.com/team/sandra-willson/"><span
-                                                                                class="team_image_cover"
-                                                                                style="background-image: url(/frontend/assets/img/Sandra-Willson-540x654.jpg)"></span></a>
-                                                                    </div>
-                                                                    <div class="team_icons_wrapper">
-                                                                        <div class="member-icons">
-                                                                            <div class="team-icons">
-                                                                                <a href="#"
-                                                                                    class="member-icon fa fa-twitter"
-                                                                                    style="color: #00aced"><span></span></a><a
-                                                                                    href="#"
-                                                                                    class="member-icon fa fa-facebook"
-                                                                                    style="color: #3b5998"><span></span></a><a
-                                                                                    href="#"
-                                                                                    class="member-icon fa fa-linkedin"
-                                                                                    style="color: #007bb6"><span></span></a>
+                                                        @foreach ($employees as $employe)
+                                                            <li class="item-team-member main">
+                                                                <div class="item_wrapper">
+                                                                    <div class="item">
+                                                                        <div class="team_img featured_img">
+                                                                            <a
+                                                                                href=""><span
+                                                                                    class="team_image_cover"
+                                                                                    style="background-image: url({{showImage($employe->image)}}); border-radius: 20px"></span></a>
+                                                                        </div>
+                                                                        <div class="team_icons_wrapper">
+                                                                            <div class="member-icons">
+                                                                                <div class="team-icons">
+                                                                                    <a href="#"
+                                                                                        class="member-icon fa fa-twitter"
+                                                                                        style="color: #00aced"><span></span></a><a
+                                                                                        href="#"
+                                                                                        class="member-icon fa fa-facebook"
+                                                                                        style="color: #3b5998"><span></span></a><a
+                                                                                        href="#"
+                                                                                        class="member-icon fa fa-linkedin"
+                                                                                        style="color: #007bb6"><span></span></a>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="team-infobox">
-                                                                        <div class="team_title">
-                                                                            <div class="team_title_wrapper">
-                                                                                <h3 class="team_title__text">
-                                                                                    <a
-                                                                                        href="https://ewebotwp.com/team/sandra-willson/">Sandra
-                                                                                        Willson</a>
-                                                                                </h3>
-                                                                                <div class="team-positions">
-                                                                                    Chief
-                                                                                    Operating
-                                                                                    Officer
+                                                                        <div class="team-infobox">
+                                                                            <div class="team_title">
+                                                                                <div class="team_title_wrapper">
+                                                                                    <h3 class="team_title__text">
+                                                                                        <p
+                                                                                            href="">
+                                                                                            {{$employe->name}}</p>
+                                                                                    </h3>
+                                                                                    <div class="team-positions">
+                                                                                         {{$employe->position}}
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="item-team-member main">
-                                                            <div class="item_wrapper">
-                                                                <div class="item">
-                                                                    <div class="team_img featured_img">
-                                                                        <a href="https://ewebotwp.com/team/dan-brake/"><span
-                                                                                class="team_image_cover"
-                                                                                style="background-image: url(/frontend/assets/img/Dan_Brake-540x654.jpg)"></span></a>
-                                                                    </div>
-                                                                    <div class="team_icons_wrapper">
-                                                                        <div class="member-icons">
-                                                                            <div class="team-icons">
-                                                                                <a href="#"
-                                                                                    class="member-icon fa fa-twitter"
-                                                                                    style="color: #00aced"><span></span></a><a
-                                                                                    href="#"
-                                                                                    class="member-icon fa fa-facebook"
-                                                                                    style="color: #3b5998"><span></span></a><a
-                                                                                    href="#"
-                                                                                    class="member-icon fa fa-linkedin"
-                                                                                    style="color: #007bb6"><span></span></a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="team-infobox">
-                                                                        <div class="team_title">
-                                                                            <div class="team_title_wrapper">
-                                                                                <h3 class="team_title__text">
-                                                                                    <a
-                                                                                        href="https://ewebotwp.com/team/dan-brake/">Dan
-                                                                                        Brake</a>
-                                                                                </h3>
-                                                                                <div class="team-positions">
-                                                                                    Senior
-                                                                                    Digital
-                                                                                    Strategist
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="item-team-member main">
-                                                            <div class="item_wrapper">
-                                                                <div class="item">
-                                                                    <div class="team_img featured_img">
-                                                                        <a
-                                                                            href="https://ewebotwp.com/team/angela-long/"><span
-                                                                                class="team_image_cover"
-                                                                                style="background-image: url(/frontend/assets/img/Angela-Long-540x654.jpg)"></span></a>
-                                                                    </div>
-                                                                    <div class="team_icons_wrapper">
-                                                                        <div class="member-icons">
-                                                                            <div class="team-icons">
-                                                                                <a href="#"
-                                                                                    class="member-icon fa fa-twitter"
-                                                                                    style="color: #00aced"><span></span></a><a
-                                                                                    href="#"
-                                                                                    class="member-icon fa fa-facebook"
-                                                                                    style="color: #3b5998"><span></span></a><a
-                                                                                    href="#"
-                                                                                    class="member-icon fa fa-linkedin"
-                                                                                    style="color: #007bb6"><span></span></a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="team-infobox">
-                                                                        <div class="team_title">
-                                                                            <div class="team_title_wrapper">
-                                                                                <h3 class="team_title__text">
-                                                                                    <a
-                                                                                        href="https://ewebotwp.com/team/angela-long/">Angela
-                                                                                        Long</a>
-                                                                                </h3>
-                                                                                <div class="team-positions">
-                                                                                    Managing
-                                                                                    Director
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="item-team-member main">
-                                                            <div class="item_wrapper">
-                                                                <div class="item">
-                                                                    <div class="team_img featured_img">
-                                                                        <a
-                                                                            href="https://ewebotwp.com/team/victor-liuw/"><span
-                                                                                class="team_image_cover"
-                                                                                style="background-image: url(/frontend/assets/img/Victor-Liuw-540x654.jpg)"></span></a>
-                                                                    </div>
-                                                                    <div class="team_icons_wrapper">
-                                                                        <div class="member-icons">
-                                                                            <div class="team-icons">
-                                                                                <a href="#"
-                                                                                    class="member-icon fa fa-twitter"
-                                                                                    style="color: #00aced"><span></span></a><a
-                                                                                    href="#"
-                                                                                    class="member-icon fa fa-facebook"
-                                                                                    style="color: #3b5998"><span></span></a><a
-                                                                                    href="#"
-                                                                                    class="member-icon fa fa-linkedin"
-                                                                                    style="color: #007bb6"><span></span></a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="team-infobox">
-                                                                        <div class="team_title">
-                                                                            <div class="team_title_wrapper">
-                                                                                <h3 class="team_title__text">
-                                                                                    <a
-                                                                                        href="https://ewebotwp.com/team/victor-liuw/">Victor
-                                                                                        Liuw</a>
-                                                                                </h3>
-                                                                                <div class="team-positions">
-                                                                                    General
-                                                                                    Manager
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
+                                                            </li>
+                                                        @endforeach
                                                     </ul>
                                                     <div class="clear"></div>
                                                 </div>

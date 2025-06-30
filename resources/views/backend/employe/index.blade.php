@@ -1,6 +1,6 @@
 @extends('backend.layouts.master')
 
-@section('title', 'Đánh giá của khách hàng')
+@section('title', 'Nhân viên')
 
 @section('content')
     <div class="page-header">
@@ -17,7 +17,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active text-uppercase" aria-current="page">
-                    đánh giá khách hàng
+                    đội ngũ nhân viên
                 </li>
             </ol>
         </nav>
@@ -28,12 +28,12 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0">Thêm/Sửa khách hàng</h5>
+                    <h5 class="card-title mb-0">Thêm/Sửa nhân viên</h5>
                 </div>
 
                 <div class="card-body">
                     <form id="postForm"
-                        action="{{ isset($review) ? route('admin.reviews.update', $review->id) : route('admin.reviews.store') }}"
+                        action="{{ isset($review) ? route('admin.employes.update', $review->id) : route('admin.employes.store') }}"
                         method="POST" enctype="multipart/form-data">
                         @csrf
 
@@ -41,34 +41,29 @@
                         <input type="hidden" name="id" id="postId">
 
                         <div class="mb-3">
-                            <label for="name" class="form-label">Tên khách hàng <span
+                            <label for="name" class="form-label">Tên nhân viên <span
                                     class="text-danger">*</span></label>
                             <input id="name" name="name" class="form-control" type="text"
-                                placeholder="Nhập tên khách hàng">
+                                placeholder="Nhập tên nhân viên">
                             <div class="error-message text-danger"></div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="image" class="form-label">Ảnh <span class="text-danger">*</span></label>
+                            <label for="image" class="form-label">Ảnh</label>
                             <img class="img-fluid img-thumbnail w-100" id="show_image"
-                                style="cursor: pointer; height: 170px !important;" src="{{ showImage($post->image ?? '') }}"
+                                style="cursor: pointer; height: 350px !important;" src="{{ showImage($post->image ?? '') }}"
                                 alt="" onclick="document.getElementById('image').click();">
                             <input type="file" name="image" id="image" class="form-control d-none" accept="image/*"
                                 onchange="previewImage(event, 'show_image')">
                         </div>
 
                         <div class="mb-3">
-                            <label for="address" class="form-label">Địa chỉ</label>
-                            <input id="address" name="address" class="form-control" type="text"
-                                placeholder="Nhập địa chỉ">
+                            <label for="position" class="form-label">Chức vụ <span class="text-danger">*</span></label>
+                            <input id="position" name="position" class="form-control" type="text"
+                                placeholder="Nhập chức vụ">
                             <div class="error-message text-danger"></div>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="description" class="form-label">Mô tả</label>
-                            <textarea name="description" class="form-control" id="description" placeholder="Nhập mô tả"></textarea>
-                            <div class="error-message text-danger"></div>
-                        </div>
 
 
                         <div class="d-flex justify-content-end">
@@ -93,11 +88,9 @@
                         <table id="myTable" class="display" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th><input type="checkbox" id="selectAll" /></th>
-
-                                    <th>Tên khách hàng</th>
-                                    <th>Địa chỉ</th>
-                                    <th>nội dung</th>
+                                    <th><input type="checkbox" id="selectAll" /></th>                      
+                                    <th>Tên </th>
+                                    <th>Chức vụ</th>
 
                                 </tr>
                             </thead>
@@ -124,7 +117,7 @@
 
     <script>
         $(document).ready(function() {
-            const api = '{{ route('admin.reviews.index') }}';
+            const api = '{{ route('admin.employes.index') }}';
 
             const columns = [{
                     data: "checkbox",
@@ -140,27 +133,21 @@
                     orderable: false
                 },
                 {
-                    data: 'address',
-                    name: 'address',
+                    data: 'position',
+                    name: 'position',
                     searchable: false,
                     className: "text-center"
-                },
-                {
-                    data: 'description',
-                    name: 'description',
-                    searchable: false,
-                    className: "text-center"
-                },
+                },              
 
             ];
 
 
-            dataTables(api, columns, 'CustomerReview', 8)
+            dataTables(api, columns, 'Employe', 8)
 
-            handleDestroy('CustomerReview')
+            handleDestroy('Employe')
 
             initStatusToggle({
-                model: 'CustomerReview'
+                model: 'Employe'
             });
 
 
@@ -179,21 +166,19 @@
             $(document).on('click', '.edit', function() {
                 let name = $(this).data('name');
                 let image = $(this).data('image');
-                let address = $(this).data('address');
-                let description = $(this).data('description');
+                let position = $(this).data('position');
                 let id = $(this).closest('tr').data('id');
 
                 // Gán dữ liệu vào form
                 $('#name').val(name);
-                $('#description').val(description);
-                $('#address').val(address);
+                $('#position').val(position);             
                 $('#postId').val(id);
 
                 let imageUrl = "{{ asset('storage') }}/" + image;
                 $('#show_image').attr('src', imageUrl);
 
                 // Gán action và method mới
-                $('#postForm').attr('action', "{{ route('admin.reviews.update', ':id') }}".replace(':id',
+                $('#postForm').attr('action', "{{ route('admin.employes.update', ':id') }}".replace(':id',
                     id));
 
                 // Xóa method cũ nếu có, thêm method PUT
@@ -212,28 +197,23 @@
                 $('.error-message').text('').hide();
 
                 let name = $('#name').val().trim();
-                let address = $('#address').val().trim();
-                let description = $('#description').val().trim();
+                let position = $('#position').val().trim();
 
                 if (!name) {
                     $('#name').next('.error-message').text('Vui lòng nhập tiêu đề').show();
                     isValid = false;
                 }
-                if (!address) {
-                    $('#address').next('.error-message').text('Vui lòng nhập địa chỉ').show();
+                if (!position) {
+                    $('#position').next('.error-message').text('Vui lòng nhập chức vụ').show();
                     isValid = false;
                 }
 
-                if (!description) {
-                    $('#description').next('.error-message').text('Vui lòng nhập mô tả').show();
-                    isValid = false;
-                }
-
+               
                 return isValid;
             }
 
             function reset() {
-                $('#postForm').attr('action', "{{ route('admin.reviews.store') }}");
+                $('#postForm').attr('action', "{{ route('admin.employes.store') }}");
                 $('#postForm')[0].reset();
                 $('#postId').val('');
                 $('#show_image').attr('src', '{{ showImage('') }}');

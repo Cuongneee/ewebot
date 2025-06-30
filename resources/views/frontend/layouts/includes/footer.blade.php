@@ -33,7 +33,7 @@
                                     data-id="46108c3a" data-element_type="widget"
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <h4>Giới thiệu</h4>
+                                        <h4>Liên hệ với chúng tôi</h4>
                                     </div>
                                 </div>
                                 <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element-custom_color elementor-element elementor-element-7555758f elementor-widget elementor-widget-text-editor"
@@ -41,9 +41,32 @@
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
                                         <p>
-                                            {{ $setting->small_text_footer }}
+                                            {{ $setting->company }}
                                         </p>
                                     </div>
+                                    @php
+                                        $addresses = json_decode($setting->address, true) ?: [];
+                                    @endphp
+                                    <div class="elementor-widget-container">
+                                        @foreach ($addresses as $line)
+                                            <li class="gt3-core-imagebox-description" style="margin: 0; font-weight: 400;">
+                                                {{ $line }}
+                                            </li>
+                                        @endforeach
+                                        <li class="gt3-core-imagebox-description mt-1" style="margin: 0; font-weight: 400;">
+                                            Điện thoại:{{$setting->hotline}} / Hotline: {{$setting->hotline_kinhdoanh}}
+                                        </li>
+                                         <li class="gt3-core-imagebox-description mt-1" style="margin: 0; font-weight: 400;">
+                                            Email:{{$setting->email}}
+                                        </li>
+                                         <li class="gt3-core-imagebox-description mt-1" style="margin: 0; font-weight: 400;">
+                                            MST:{{$setting->mst}}
+                                        </li>
+                                         <li class="gt3-core-imagebox-description mt-1" style="margin: 0; font-weight: 400;">
+                                            STK:{{$setting->stk}} - {{$setting->bank}}
+                                        </li>
+                                    </div>
+
                                 </div>
                                 <div class="elementor-element elementor-element-3e52fb1f elementor-shape-square e-grid-align-left elementor-grid-0 elementor-widget elementor-widget-social-icons"
                                     data-id="3e52fb1f" data-element_type="widget"
@@ -53,20 +76,20 @@
 
                                             <span class="elementor-grid-item">
                                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-5ffa149"
-                                                    href="{{$setting->facebook_link}}" target="_blank">
+                                                    href="{{ $setting->facebook_link }}" target="_blank">
                                                     <span class="elementor-screen-only">Facebook-f</span>
                                                     <i class="fa-brands fa-facebook-f"></i>
                                                 </a>
                                             </span>
                                             <span class="elementor-grid-item">
                                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-pinterest-p elementor-repeater-item-473615c"
-                                                    href="{{$setting->youtube_link}}" target="_blank">
+                                                    href="{{ $setting->youtube_link }}" target="_blank">
                                                     <span class="elementor-screen-only">YouTube-p</span>
                                                     <i class="fa-brands fa-youtube"></i> </a>
                                             </span>
                                             <span class="elementor-grid-item">
                                                 <a class="elementor-icon elementor-social-icon elementor-social-icon-pinterest-p elementor-repeater-item-473615c"
-                                                    href="{{$setting->ig_link}}" target="_blank">
+                                                    href="{{ $setting->ig_link }}" target="_blank">
                                                     <span class="elementor-screen-only">Instagram-p</span>
                                                     <i class="fa-brands fa-instagram"></i> </a>
                                             </span>
@@ -226,7 +249,7 @@
                     data-id="1d26260d" data-element_type="widget" data-widget_type="text-editor.default">
                     <div class="elementor-widget-container">
                         <p>
-                            © <a href="">{{ $setting->footer }}</a>
+                            <a href="">{{ $setting->footer }}</a>
                         </p>
                     </div>
                 </div>

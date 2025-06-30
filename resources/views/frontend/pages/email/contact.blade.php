@@ -53,7 +53,11 @@
         <p><strong>Email:</strong> {{ $data['email'] }}</p>
         <p><strong>Điện thoại:</strong> {{ $data['phone'] }}</p>
         <p><strong>Website:</strong> {{ $data['website'] ?? 'Không có❗' }}</p>
-        <p><strong>Dịch vụ quan tâm:</strong> {{ $data['category_name'] ?? 'Không rõ' }} - {{ $data['service_name'] ?? 'Không rõ' }}</p>
+        @if (!empty($data['category_name']) || !empty($data['service_name']))
+            <p><strong>Dịch vụ quan tâm:</strong> {{ $data['category_name'] ?? 'Không có' }} - {{ $data['service_name'] ?? 'Không có' }}
+            </p>
+        @endif
+
         <p><strong>Nội dung tư vấn:</strong><br>{{ $data['message'] ?? 'Không có nội dung.' }}</p>
 
         <p class="footer-note">Vui lòng kiểm tra và phản hồi yêu cầu này sớm nhất có thể. Xin cảm ơn!</p>

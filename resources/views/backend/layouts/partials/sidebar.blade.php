@@ -189,6 +189,11 @@
                                     <span class="sub-item">Khách hàng của SGO</span>
                                 </a>
                             </li>
+                             <li class="nav-item {{ activeMenu('admin.employes.index') }}">
+                                <a href="{{ route('admin.employes.index') }}">
+                                    <span class="sub-item">Nhân viên</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>

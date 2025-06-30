@@ -135,56 +135,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-da8fd1c dark_style elementor-widget elementor-widget-shortcode"
-                                    data-id="da8fd1c" data-element_type="widget"
-                                    data-widget_type="shortcode.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-shortcode">
-                                            <div class="wpcf7 js" id="wpcf7-f1133-p6782-o1" lang="en-US"
-                                                dir="ltr" data-wpcf7-id="1133">
-                                                <div class="screen-reader-response">
-                                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
-                                                    <ul></ul>
-                                                </div>
-                                                <form action="/home-10/#wpcf7-f1133-p6782-o1" method="post"
-                                                    class="wpcf7-form init" aria-label="Contact form"
-                                                    novalidate="novalidate" data-status="init">
-                                                    <div style="display: none">
-                                                        <input type="hidden" name="_wpcf7" value="1133" />
-                                                        <input type="hidden" name="_wpcf7_version" value="6.0.6" />
-                                                        <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                                        <input type="hidden" name="_wpcf7_unit_tag"
-                                                            value="wpcf7-f1133-p6782-o1" />
-                                                        <input type="hidden" name="_wpcf7_container_post"
-                                                            value="6782" />
-                                                        <input type="hidden" name="_wpcf7_posted_data_hash"
-                                                            value="" />
-                                                    </div>
-                                                    <div class="revolution_form with_border">
-                                                        <p>
-                                                            <span class="wpcf7-form-control-wrap"
-                                                                data-name="site-url"><input size="40"
-                                                                    maxlength="400"
-                                                                    class="wpcf7-form-control wpcf7-url wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-url"
-                                                                    aria-required="true" aria-invalid="false"
-                                                                    placeholder="https:// yoursite.com" value=""
-                                                                    type="url" name="site-url" /></span>
-                                                        </p>
-                                                        <div class="revolution_form_btn">
-                                                            <p>
-                                                                <input
-                                                                    class="wpcf7-form-control wpcf7-submit has-spinner"
-                                                                    type="submit" value="Analyze your site" /><span
-                                                                    class="wpcf7-spinner"></span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <div class="elementor-element elementor-element-beb5f45 elementor-position-left elementor-widget__width-auto elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
                                     data-id="beb5f45" data-element_type="widget"
                                     data-widget_type="gt3-core-imagebox.default">
