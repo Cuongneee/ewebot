@@ -5,18 +5,12 @@
          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-37499e2"
              data-id="37499e2" data-element_type="column">
              <div class="elementor-widget-wrap elementor-element-populated">
-                 <div class="elementor-element-custom_font_size elementor-element-custom_font_weight elementor-element elementor-element-358a8ea elementor-widget elementor-widget-text-editor"
-                     data-id="358a8ea" data-element_type="widget" data-widget_type="text-editor.default">
-                     <div class="elementor-widget-container">
-                         <h5>What we do</h5>
-                     </div>
-                 </div>
+
                  <div class="elementor-element elementor-element-e2881a4 elementor-widget elementor-widget-heading"
                      data-id="e2881a4" data-element_type="widget" data-widget_type="heading.default">
                      <div class="elementor-widget-container">
                          <h2 class="elementor-heading-title elementor-size-default">
-                             Fresh
-                             Ideas for Every Business</h2>
+                             DỊCH VỤ CỦA CHÚNG TÔI</h2>
                      </div>
                  </div>
              </div>
@@ -34,8 +28,8 @@
                      data-id="7d565d5" data-element_type="widget" data-widget_type="image.default">
                      <div class="elementor-widget-container">
                          <img loading="lazy" decoding="async" width="596" height="556"
-                             src="/frontend/assets/img/about_us_img_01.png" class="attachment-full size-full wp-image-2092"
-                             alt=""
+                             src="/frontend/assets/img/about_us_img_01.png"
+                             class="attachment-full size-full wp-image-2092" alt=""
                              srcset="/frontend/assets/img/about_us_img_01.png 596w, /frontend/assets/img/about_us_img_01-300x280.png 300w, /frontend/assets/img/about_us_img_01-480x448.png 480w"
                              sizes="auto, (max-width: 596px) 100vw, 596px" title="about_us_img_01" />
                      </div>
@@ -54,187 +48,421 @@
                      </div>
                  </div>
 
-                 <section
-                     class="elementor-section elementor-inner-section elementor-element elementor-element-8aa214b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                     data-id="8aa214b" data-element_type="section">
-                     <div class="elementor-container elementor-column-gap-default">
-                         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9e221b4"
-                             data-id="9e221b4" data-element_type="column">
-                             <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-504878e elementor-widget elementor-widget-gt3-core-piechart"
-                                     data-id="504878e" data-element_type="widget"
-                                     data-widget_type="gt3-core-piechart.default">
-                                     <div class="elementor-widget-container">
-                                         <div class="gt3_pie_chart_wrapper ">
-                                             <div class="gt3_elementor_pie_chart" data-value="0.76"
-                                                 data-label-value="76" data-units="%" data-size="126" data-thickness="5"
-                                                 data-line-cap="square"
-                                                 data-fill="{
-			  						&quot;gradient&quot;: [&quot;#6254e7&quot;, &quot;#9289f1&quot;]
-							  }"
-                                                 data-empty-fill="#e6e6e7">
-
-                                                 <strong class="element_typography">76<span>%</span></strong>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-cac433b"
-                             data-id="cac433b" data-element_type="column">
-                             <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-03ac9cd elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                     data-id="03ac9cd" data-element_type="widget"
-                                     data-widget_type="gt3-core-imagebox.default">
-                                     <div class="elementor-widget-container">
-                                         <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-default">
-                                             <div class="gt3-core-imagebox-content">
-                                                 <div class="gt3-core-imagebox-title">
-                                                     <h6 class="gt3-core-imagebox-title">
-                                                         Creative Approach</h6>
-                                                 </div>
-                                                 <p class="gt3-core-imagebox-description">
-                                                     Ea pro tibique comprehensam, sed ea
-                                                     verear numquam molestie. Nam te
-                                                     omittam comprehensam.</p>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </section>
-
                  <div class="elementor-element elementor-element-9d9a33c elementor-widget elementor-widget-spacer"
                      data-id="9d9a33c" data-element_type="widget" data-widget_type="spacer.default">
                      <div class="elementor-widget-container">
-                         <div class="elementor-spacer">
-                             <div class="elementor-spacer-inner"></div>
-                         </div>
-                     </div>
-                 </div>
-                 <section
-                     class="elementor-section elementor-inner-section elementor-element elementor-element-c1f9586 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                     data-id="c1f9586" data-element_type="section">
-                     <div class="elementor-container elementor-column-gap-default">
-                         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7c09c9f"
-                             data-id="7c09c9f" data-element_type="column">
-                             <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-46155d8 elementor-widget elementor-widget-gt3-core-piechart"
-                                     data-id="46155d8" data-element_type="widget"
-                                     data-widget_type="gt3-core-piechart.default">
-                                     <div class="elementor-widget-container">
-                                         <div class="gt3_pie_chart_wrapper ">
-                                             <div class="gt3_elementor_pie_chart" data-value="0.89"
-                                                 data-label-value="89" data-units="%" data-size="126"
-                                                 data-thickness="5" data-line-cap="square"
-                                                 data-fill="{
-			  						&quot;gradient&quot;: [&quot;#f56616&quot;, &quot;#f0ac0e&quot;]
-							  }"
-                                                 data-empty-fill="#e6e6e7">
-                                                 <strong class="element_typography">89<span>%</span></strong>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a6e38e3"
-                             data-id="a6e38e3" data-element_type="column">
-                             <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-40771bb elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                     data-id="40771bb" data-element_type="widget"
-                                     data-widget_type="gt3-core-imagebox.default">
-                                     <div class="elementor-widget-container">
-                                         <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-default">
-                                             <div class="gt3-core-imagebox-content">
-                                                 <div class="gt3-core-imagebox-title">
-                                                     <h6 class="gt3-core-imagebox-title">
-                                                         Guaranteed Success</h6>
-                                                 </div>
-                                                 <p class="gt3-core-imagebox-description">
-                                                     Ea pro tibique comprehensam, sed ea
-                                                     verear numquam molestie. Nam te
-                                                     omittam comprehensam.</p>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </section>
 
-                 <div class="elementor-element elementor-element-c2b9102 elementor-widget elementor-widget-spacer"
-                     data-id="c2b9102" data-element_type="widget" data-widget_type="spacer.default">
-                     <div class="elementor-widget-container">
-                         <div class="elementor-spacer">
-                             <div class="elementor-spacer-inner"></div>
-                         </div>
-                     </div>
-                 </div>
-                 <section
-                     class="elementor-section elementor-inner-section elementor-element elementor-element-2e92d93 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                     data-id="2e92d93" data-element_type="section">
-                     <div class="elementor-container elementor-column-gap-default">
-                         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2af8bec"
-                             data-id="2af8bec" data-element_type="column">
-                             <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-3fb7c2b elementor-widget elementor-widget-gt3-core-piechart"
-                                     data-id="3fb7c2b" data-element_type="widget"
-                                     data-widget_type="gt3-core-piechart.default">
-                                     <div class="elementor-widget-container">
-                                         <div class="gt3_pie_chart_wrapper ">
-                                             <div class="gt3_elementor_pie_chart" data-value="0.75"
-                                                 data-label-value="75" data-units="%" data-size="126"
-                                                 data-thickness="5" data-line-cap="square"
-                                                 data-fill="{
-			  						&quot;gradient&quot;: [&quot;#34c478&quot;, &quot;#88fdb9&quot;]
-							  }"
-                                                 data-empty-fill="#e6e6e7">
-                                                 <strong class="element_typography">75<span>%</span></strong>
-                                             </div>
-                                         </div>
-                                     </div>
+                         <div class="service-item mb-5">
+                             <div class="service-header mb-2" onclick="toggleService(this)" tabindex="0"
+                                 role="button" aria-expanded="false">
+                                 <h3 class="service-title mb-0">Website-Phần mềm</h3>
+                                 <div class="dropdown-arrow">
+                                     <i class="fas fa-chevron-down"></i>
+                                 </div>
+                             </div>
+                             <div class="service-content">
+                                 <div class="service-content-inner">
+                                     <ul class="service-features list-unstyled">
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Cung cấp giải pháp thiết kế
+                                                 website theo yêu cầu
+                                             </span>
+                                         </li>
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Thiết kế trọn gói, nhiều mẫu giao diện,
+                                                 khả năng tùy biến cao, tối ưu hóa Onpage
+                                             </span>
+                                         </li>
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Cung cấp giải pháp thiết kế
+                                                 website dạng quản lý, phần mềm, các ứng dụng mobile theo yêu cầu
+                                             </span>
+                                         </li>
+                                     </ul>
                                  </div>
                              </div>
                          </div>
-                         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5a506ea"
-                             data-id="5a506ea" data-element_type="column">
-                             <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-c78962d elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-gt3-core-imagebox"
-                                     data-id="c78962d" data-element_type="widget"
-                                     data-widget_type="gt3-core-imagebox.default">
-                                     <div class="elementor-widget-container">
-                                         <div class="gt3-core-imagebox-wrapper elementor-image_icon-position-default">
-                                             <div class="gt3-core-imagebox-content">
-                                                 <div class="gt3-core-imagebox-title">
-                                                     <h6 class="gt3-core-imagebox-title">
-                                                         SEO Optimization</h6>
-                                                 </div>
-                                                 <p class="gt3-core-imagebox-description">
-                                                     Ea pro tibique comprehensam, sed ea
-                                                     verear numquam molestie. Nam te
-                                                     omittam comprehensam.</p>
-                                             </div>
-                                         </div>
-                                     </div>
+                         <div class="elementor-spacer-inner"> </div>
+                         <div class="elementor-spacer-inner"> </div>
+                         <div class="service-item mb-5">
+                             <div class="service-header mb-2" onclick="toggleService(this)" tabindex="0"
+                                 role="button" aria-expanded="false">
+                                 <h3 class="service-title mb-0">SEO tổng thể</h3>
+                                 <div class="dropdown-arrow">
+                                     <i class="fas fa-chevron-down"></i>
+                                 </div>
+                             </div>
+                             <div class="service-content">
+                                 <div class="service-content-inner">
+                                     <ul class="service-features list-unstyled">
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Nghiên cứu từ khóa chuyên sâu theo
+                                                 ngành</span>
+                                         </li>
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Tối ưu On-page và Off-page SEO</span>
+                                         </li>
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Báo cáo và theo dõi thứ hạng từ
+                                                 khóa</span>
+                                         </li>
+                                     </ul>
                                  </div>
                              </div>
                          </div>
-                     </div>
-                 </section>
-                 <div class="elementor-element elementor-element-28740c0 elementor-widget elementor-widget-spacer"
-                     data-id="28740c0" data-element_type="widget" data-widget_type="spacer.default">
-                     <div class="elementor-widget-container">
-                         <div class="elementor-spacer">
-                             <div class="elementor-spacer-inner"></div>
+                         <div class="elementor-spacer-inner"> </div>
+                         <div class="elementor-spacer-inner"> </div>
+                         <div class="service-item mb-5">
+                             <div class="service-header mb-2" onclick="toggleService(this)" tabindex="0"
+                                 role="button" aria-expanded="false">
+                                 <h3 class="service-title mb-0">Marketing Online</h3>
+                                 <div class="dropdown-arrow">
+                                     <i class="fas fa-chevron-down"></i>
+                                 </div>
+                             </div>
+                             <div class="service-content">
+                                 <div class="service-content-inner">
+                                     <ul class="service-features list-unstyled">
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Xây dựng nội dung, chăm sóc Fanpage,
+                                                 Tiktok,...</span>
+                                         </li>
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Xây dựng video, xây kênh tiktok,
+                                                 triển khai các chiến dịch quảng cáo: Google, Zalo, Facebook,...
+                                             </span>
+                                         </li>
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Thiết kế các tài nguyên chạy quảng cáo như:
+                                                 hình ảnh,
+                                                 video, poster,...
+                                             </span>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
                          </div>
+                         <div class="elementor-spacer-inner"> </div>
+                         <div class="elementor-spacer-inner"> </div>
+                         <div class="service-item mb-5">
+                             <div class="service-header mb-2" onclick="toggleService(this)" tabindex="0"
+                                 role="button" aria-expanded="false">
+                                 <h3 class="service-title mb-0">Nhận diện thương hiệu</h3>
+                                 <div class="dropdown-arrow">
+                                     <i class="fas fa-chevron-down"></i>
+                                 </div>
+                             </div>
+                             <div class="service-content">
+                                 <div class="service-content-inner">
+                                     <ul class="service-features list-unstyled">
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Thiết kế logo, nhận diện, cardvisit...</span>
+                                         </li>
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Hệ thống booking báo chí hàng đầu Việt Nam
+                                             </span>
+                                         </li>
+                                         <li class="service-feature">
+                                             <div class="feature-bullet"></div>
+                                             <span class="feature-text">Các chiến dịch quảng cáo tại các toàn nhà,
+                                                 thang máy, biển hiệu ngoài trời,...
+                                             </span>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="elementor-spacer-inner"> </div>
+                         <div class="elementor-spacer-inner"> </div>
                      </div>
                  </div>
+
              </div>
          </div>
      </div>
  </section>
+ <style>
+     :root {
+         --primary-gradient: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+         --secondary-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+         --accent-gradient: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+         --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.08);
+         --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.12);
+         --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.15);
+         --border-radius: 12px;
+         --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+     }
+
+     /* Service Items */
+     .service-item {
+         background: white;
+         border-radius: var(--border-radius);
+         box-shadow: var(--shadow-light);
+         border: 1px solid #e9ecef;
+         overflow: hidden;
+         transition: var(--transition);
+     }
+
+     .service-item:hover {
+         transform: translateY(-3px);
+         box-shadow: var(--shadow-medium);
+     }
+
+     /* Service Header */
+     .service-header {
+         padding: 1rem 1.25rem;
+         cursor: pointer;
+         background: var(--secondary-gradient);
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         transition: var(--transition);
+         border: none;
+         outline: none;
+     }
+
+     .service-header:hover {
+         background: var(--accent-gradient);
+         color: white;
+     }
+
+     .service-header.active {
+         background: var(--primary-gradient);
+         color: white;
+     }
+
+     .service-header:focus {
+         box-shadow: inset 0 0 0 2px rgba(0, 123, 255, 0.25);
+     }
+
+     .service-header.active .service-title {
+         color: white;
+     }
+
+
+     .service-title {
+         font-size: 0.9rem;
+         font-weight: 600;
+         letter-spacing: 0.5px;
+         text-transform: uppercase;
+         margin: 0;
+     }
+
+     .service-title:hover {
+         color: rgb(235, 235, 235)
+     }
+
+     @media (min-width: 768px) {
+         .service-title {
+             font-size: 1rem;
+         }
+     }
+
+     /* Dropdown Arrow */
+     .dropdown-arrow {
+         width: 28px;
+         height: 28px;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: rgba(0, 0, 0, 0.1);
+         transition: var(--transition);
+     }
+
+     .service-header:hover .dropdown-arrow,
+     .service-header.active .dropdown-arrow {
+         background: rgba(255, 255, 255, 0.2);
+     }
+
+     .dropdown-arrow i {
+         font-size: 0.8rem;
+         transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+     }
+
+     .service-header.active .dropdown-arrow i {
+         transform: rotate(180deg);
+     }
+
+     /* Service Content */
+     .service-content {
+         max-height: 0;
+         overflow: hidden;
+         transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), padding 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+             opacity 0.3s ease 0.1s;
+         opacity: 0;
+         background: white;
+     }
+
+     .service-content.active {
+         max-height: 500px;
+         opacity: 1;
+     }
+
+     .service-content-inner {
+         padding: 1.25rem;
+         padding-top: 1rem;
+     }
+
+     /* Service Description */
+     .service-description {
+         font-size: 0.85rem;
+         color: #555;
+         line-height: 1.6;
+         margin-bottom: 1rem;
+         text-align: justify;
+
+     }
+
+     /* Service Features */
+     .service-features {
+         margin: 0;
+         padding: 0;
+     }
+
+     .service-feature {
+         display: flex;
+         align-items: flex-start;
+         gap: 0.75rem;
+         margin-bottom: 0.75rem;
+         opacity: 0;
+         transform: translateY(10px);
+         transition: opacity 0.3s ease, transform 0.3s ease;
+     }
+
+     .service-content.active .service-feature {
+         opacity: 1;
+         transform: translateY(0);
+     }
+
+     .service-content.active .service-feature:nth-child(1) {
+         transition-delay: 0.2s;
+     }
+
+     .service-content.active .service-feature:nth-child(2) {
+         transition-delay: 0.25s;
+     }
+
+     .service-content.active .service-feature:nth-child(3) {
+         transition-delay: 0.3s;
+     }
+
+     .service-content.active .service-feature:nth-child(4) {
+         transition-delay: 0.35s;
+     }
+
+     .feature-bullet {
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         background: var(--accent-gradient);
+         margin-top: 0.4rem;
+         flex-shrink: 0;
+     }
+
+     .feature-text {
+         font-size: 0.85rem;
+         color: #555;
+         line-height: 1.5;
+     }
+
+     /* Responsive Adjustments */
+     @media (max-width: 991.98px) {
+         .service-image-wrapper {
+             margin-bottom: 2rem;
+         }
+     }
+
+     @media (max-width: 767.98px) {
+         .service-header {
+             padding: 0.875rem 1rem;
+         }
+
+         .service-content-inner {
+             padding: 1rem;
+         }
+
+         .service-title {
+             font-size: 0.85rem;
+         }
+
+         .service-description,
+         .feature-text {
+             font-size: 0.8rem;
+         }
+     }
+
+     /* Animation for smooth content reveal */
+     @keyframes fadeInUp {
+         from {
+             opacity: 0;
+             transform: translateY(20px);
+         }
+
+         to {
+             opacity: 1;
+             transform: translateY(0);
+         }
+     }
+
+     .service-content.active .service-description {
+         animation: fadeInUp 0.4s ease 0.15s both;
+     }
+ </style>
+ <script>
+     function toggleService(header) {
+         const content = header.nextElementSibling;
+         const isActive = header.classList.contains('active');
+
+         // Close all other services
+         document.querySelectorAll('.service-header.active').forEach(activeHeader => {
+             if (activeHeader !== header) {
+                 activeHeader.classList.remove('active');
+                 activeHeader.nextElementSibling.classList.remove('active');
+             }
+         });
+
+         // Toggle current service
+         if (isActive) {
+             header.classList.remove('active');
+             content.classList.remove('active');
+         } else {
+             header.classList.add('active');
+             content.classList.add('active');
+         }
+     }
+
+     // Close dropdown when clicking outside
+     document.addEventListener('click', function(event) {
+         if (!event.target.closest('.service-item')) {
+             document.querySelectorAll('.service-header.active').forEach(header => {
+                 header.classList.remove('active');
+                 header.nextElementSibling.classList.remove('active');
+             });
+         }
+     });
+
+     // Keyboard accessibility
+     document.querySelectorAll('.service-header').forEach(header => {
+         header.addEventListener('keydown', function(event) {
+             if (event.key === 'Enter' || event.key === ' ') {
+                 event.preventDefault();
+                 toggleService(this);
+             }
+         });
+
+         // Make headers focusable
+         header.setAttribute('tabindex', '0');
+     });
+ </script>

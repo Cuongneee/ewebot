@@ -36,7 +36,7 @@ class HomeController extends Controller
             ->where('type', 'blog')
             ->get();
 
-        // dd(vars: $customers);
+        // dd(vars: $categoryService);
 
         return view('frontend.pages.home.home', compact(
             'highViewNews',

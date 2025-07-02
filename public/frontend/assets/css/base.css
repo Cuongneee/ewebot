@@ -268,7 +268,7 @@ ul li:last-child {
 .main_wrapper ul li {
   list-style: none;
 }
-.content-container ul > li:before,
+/* .content-container ul > li:before,
 .main_wrapper .elementor-widget-text-editor ul > li:before {
   content: "\f111";
   font: normal normal normal 7px/1 FontAwesome;
@@ -279,7 +279,7 @@ ul li:last-child {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-right: 10px;
-}
+} */
 .content-container ul > li.product:before {
   content: "";
   display: none !important;
