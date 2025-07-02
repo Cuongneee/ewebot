@@ -35,7 +35,7 @@
 
                                 @include('frontend.pages.about.colum-after-them')
 
-                                @include('frontend.pages.about.boosts-web')
+                                {{-- @include('frontend.pages.about.boosts-web') --}}
 
                                 @include('frontend.pages.about.what-we-do')
 

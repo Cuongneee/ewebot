@@ -55,26 +55,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="gt3-core-button--alignment_right elementor-element elementor-element-f07985b elementor-widget elementor-widget-gt3-core-button"
-                                    data-id="f07985b" data-element_type="widget"
-                                    data-widget_type="gt3-core-button.default">
-                                    <div class="elementor-widget-container">
-                                        <div
-                                            class="gt3_module_button_elementor size_custom alignment_right button_icon_none hover_type5 rounded">
-                                            <a class="button_size_elementor_custom alignment_right border_icon_none hover_type5 btn_icon_position_left"
-                                                href="#">
-                                                <span class="gt3_module_button__container">
-                                                    <span class="elementor_gt3_btn_text">Join
-                                                        team</span> <span class="gt3_module_button__cover front"></span>
-                                                    <span class="gt3_module_button__cover back"></span>
-                                                </span>
-                                            </a>
-                                        </div>
-
-                                        <script type="application/json"
-                                                                            id="settings--f07985b">[]</script>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -104,21 +85,7 @@
                                                                                     class="team_image_cover"
                                                                                     style="background-image: url({{showImage($employe->image)}}); border-radius: 20px"></span></a>
                                                                         </div>
-                                                                        <div class="team_icons_wrapper">
-                                                                            <div class="member-icons">
-                                                                                <div class="team-icons">
-                                                                                    <a href="#"
-                                                                                        class="member-icon fa fa-twitter"
-                                                                                        style="color: #00aced"><span></span></a><a
-                                                                                        href="#"
-                                                                                        class="member-icon fa fa-facebook"
-                                                                                        style="color: #3b5998"><span></span></a><a
-                                                                                        href="#"
-                                                                                        class="member-icon fa fa-linkedin"
-                                                                                        style="color: #007bb6"><span></span></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
+                                                                        
                                                                         <div class="team-infobox">
                                                                             <div class="team_title">
                                                                                 <div class="team_title_wrapper">

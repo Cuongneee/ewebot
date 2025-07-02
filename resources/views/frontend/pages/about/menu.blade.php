@@ -52,6 +52,12 @@
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a href="{{ route('services') }}">Dịch vụ</a>
                                                     </li>
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a
+                                                            href="{{ route('listNewsByCategory', ['slug' => 'tuyen-dung']) }}">Tuyển
+                                                            dụng</a>
+                                                    </li>
 
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
@@ -68,7 +74,7 @@
                         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b746180 elementor-hidden-mobile"
                             data-id="b746180" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                               
+
                                 <div class="elementor-element elementor-element-9b6c8d8 elementor-widget__width-auto elementor-widget elementor-widget-wpda-builder-burger-sidebar"
                                     data-id="9b6c8d8" data-element_type="widget"
                                     data-widget_type="wpda-builder-burger-sidebar.default">
