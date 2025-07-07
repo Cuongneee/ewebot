@@ -217,3 +217,154 @@
          </div>
      </div>
  </section>
+ <style>
+
+     .elementor-toggle-icon svg {
+         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+     /* Hiệu ứng mượt mà cho content - CHỈ THAY ĐỔI PHẦN NÀY */
+     .elementor-tab-content {
+         max-height: 0;
+         overflow: hidden;
+         opacity: 0;
+         padding: 0;
+         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+         transform: translateY(-10px);
+     }
+
+     .elementor-tab-content.elementor-active {
+         max-height: 200px;
+         opacity: 1;
+         padding: 0 0 25px 0;
+         transform: translateY(0);
+     }
+
+     .elementor-tab-content p {
+         color: #666;
+         line-height: 1.7;
+         font-size: 16px;
+         margin: 0;
+     }
+
+     /* Icon animation */
+     .elementor-tab-title .elementor-toggle-icon-closed {
+         display: block;
+         opacity: 1;
+         transform: rotate(0deg);
+         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+     .elementor-tab-title .elementor-toggle-icon-opened {
+         display: block;
+         opacity: 0;
+         transform: rotate(-180deg);
+         position: absolute;
+         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+     .elementor-tab-title.elementor-active .elementor-toggle-icon-closed {
+         opacity: 0;
+         transform: rotate(180deg);
+     }
+
+     .elementor-tab-title.elementor-active .elementor-toggle-icon-opened {
+         opacity: 1;
+         transform: rotate(0deg);
+     }
+
+     /* Responsive */
+     @media (max-width: 768px) {
+         .elementor-container {
+             flex-direction: column;
+         }
+
+         .elementor-col-50 {
+             width: 100%;
+         }
+
+         h2 {
+             font-size: 32px;
+         }
+
+         .elementor-toggle-title {
+             font-size: 16px;
+         }
+     }
+ </style>
+ <script>
+     document.addEventListener('DOMContentLoaded', function() {
+         const toggleTitles = document.querySelectorAll('.elementor-tab-title');
+
+         // Hàm tính chiều cao thực tế
+         function getContentHeight(element) {
+             const clone = element.cloneNode(true);
+             clone.style.position = 'absolute';
+             clone.style.visibility = 'hidden';
+             clone.style.height = 'auto';
+             clone.style.maxHeight = 'none';
+             clone.style.opacity = '1';
+             clone.style.padding = '0 0 25px 0';
+             document.body.appendChild(clone);
+             const height = clone.offsetHeight;
+             document.body.removeChild(clone);
+             return height;
+         }
+
+         toggleTitles.forEach(function(title) {
+             title.addEventListener('click', function() {
+                 const contentId = 'elementor-tab-content-' + this.id.split('-').pop();
+                 const content = document.getElementById(contentId);
+                 const isActive = this.classList.contains('elementor-active');
+
+                 if (isActive) {
+                     // Đóng
+                     this.classList.remove('elementor-active');
+                     this.setAttribute('aria-expanded', 'false');
+                     content.classList.remove('elementor-active');
+                     content.style.maxHeight = '0px';
+                 } else {
+                     // Mở
+                     this.classList.add('elementor-active');
+                     this.setAttribute('aria-expanded', 'true');
+                     content.classList.add('elementor-active');
+                     const contentHeight = getContentHeight(content);
+                     content.style.maxHeight = contentHeight + 'px';
+
+                     // Set về auto sau khi animation xong
+                     setTimeout(() => {
+                         if (content.classList.contains('elementor-active')) {
+                             content.style.maxHeight = 'none';
+                         }
+                     }, 500);
+                 }
+             });
+
+             // Keyboard support
+             title.addEventListener('keydown', function(e) {
+                 if (e.key === 'Enter' || e.key === ' ') {
+                     e.preventDefault();
+                     this.click();
+                 }
+             });
+         });
+
+         // Khởi tạo trạng thái ban đầu
+         toggleTitles.forEach(function(title) {
+             const contentId = 'elementor-tab-content-' + title.id.split('-').pop();
+             const content = document.getElementById(contentId);
+
+             if (title.classList.contains('elementor-active')) {
+                 const contentHeight = getContentHeight(content);
+                 content.style.maxHeight = contentHeight + 'px';
+                 title.setAttribute('aria-expanded', 'true');
+                 setTimeout(() => {
+                     content.style.maxHeight = 'none';
+                 }, 100);
+             } else {
+                 content.style.maxHeight = '0px';
+                 title.setAttribute('aria-expanded', 'false');
+             }
+         });
+     });
+ </script>

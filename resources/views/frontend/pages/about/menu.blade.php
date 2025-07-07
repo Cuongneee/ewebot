@@ -63,7 +63,10 @@
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a href="{{ route('listNews') }}">Blogs</a>
                                                     </li>
-
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('contact') }}">Liên hệ</a>
+                                                    </li>
                                                 </ul>
                                             </nav>
                                         </div>
@@ -71,7 +74,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b746180 elementor-hidden-mobile"
+                        {{-- <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b746180 elementor-hidden-mobile"
                             data-id="b746180" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
 
@@ -86,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </section>
             </div>

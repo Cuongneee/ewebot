@@ -56,13 +56,18 @@
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('listNewsByCategory', ['slug' => 'tuyen-dung']) }}">Tuyển dụng</a>
+                                                        <a
+                                                            href="{{ route('listNewsByCategory', ['slug' => 'tuyen-dung']) }}">Tuyển
+                                                            dụng</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a href="{{ route('listNews') }}">Blog</a>
                                                     </li>
-
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('contact') }}">Liên hệ</a>
+                                                    </li>
 
                                                 </ul>
                                             </nav>

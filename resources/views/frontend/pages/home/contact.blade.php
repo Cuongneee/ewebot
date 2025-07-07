@@ -56,7 +56,7 @@
                                                     <ul></ul>
                                                 </div>
                                                 <form id="contactForm" method="post"
-                                                    action="{{ route('contact.send') }}" novalidate="novalidate">
+                                                    action="{{ route('contact.send') }}">
                                                     @csrf
                                                     <div class="row gt3_contactform_home6">
                                                         <div class="span6">

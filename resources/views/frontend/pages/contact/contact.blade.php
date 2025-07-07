@@ -9,20 +9,17 @@
 </head>
 
 <body
-    class="wp-singular page-template-default page page-id-623 wp-theme-ewebot wp-child-theme-ewebot-child theme-ewebot woocommerce-no-js woo-variation-swatches wvs-behavior-blur wvs-theme-ewebot-child wvs-show-label wvs-tooltip gt3_lenis_scroll gt3_enable_sticky_sidebar elementor-default elementor-kit-7 elementor-page elementor-page-623 elementor-page"
+    class="wp-singular page-template-default page page-id-382 wp-theme-ewebot wp-child-theme-ewebot-child theme-ewebot woocommerce-no-js woo-variation-swatches wvs-behavior-blur wvs-theme-ewebot-child wvs-show-label wvs-tooltip gt3_lenis_scroll gt3_enable_sticky_sidebar elementor-default elementor-kit-7 elementor-page elementor-page-382 elementor-page"
     data-theme-color="#6254e7">
-
     <div data-elementor-type="wpda-header" data-elementor-id="4031"
         class="elementor elementor-4031 wpda-builder-page-4031 wpda-builder wpda-header-builder">
-
         @include('frontend.pages.about.header')
 
         {{-- Menu --}}
         @include('frontend.pages.about.menu')
-
     </div>
     <div class="gt3-page-title_wrapper">
-        @include('frontend.pages.about.theme')
+        @include('frontend.pages.contact.includes.theme')
     </div>
     <div class="site_wrapper fadeOnLoad">
         <div class="main_wrapper">
@@ -31,20 +28,12 @@
                 <div class="row sidebar_none">
                     <div class="content-container span12">
                         <section id='main_content'>
-                            <div data-elementor-type="wp-post" data-elementor-id="623" class="elementor elementor-623">
+                            <div data-elementor-type="wp-post" data-elementor-id="382" class="elementor elementor-382">
+                                @include('frontend.pages.contact.includes.business')
 
-                                @include('frontend.pages.about.colum-after-them')
+                                @include('frontend.pages.contact.includes.form')
 
-                                {{-- @include('frontend.pages.about.boosts-web') --}}
-
-                                @include('frontend.pages.about.what-we-do')
-
-                                @include('frontend.pages.about.story')
-
-
-                                @include('frontend.pages.about.team')
-
-                                @include('frontend.pages.about.choose-us')
+                                @include('frontend.pages.contact.includes.map')
 
                             </div>
                             <div class="clear"></div>
@@ -62,18 +51,17 @@
         class="elementor elementor-4110 wpda-builder-page-4110 wpda-builder wpda-footer-builder">
         @include('frontend.pages.about.footer')
     </div>
-
     <div class="wpda-builder__burger_sidebar burger-id-9b6c8d8">
         <div class="wpda-builder__burger_sidebar-cover"></div>
         <div class="wpda-builder__burger_container">
-            {{-- @include('frontend.pages.about.sidebar') --}}
+            @include('frontend.pages.about.sidebar')
+
         </div>
     </div>
 
-    
     <div id="yith-quick-view-modal" class="yith-quick-view yith-modal">
         <div class="yith-quick-view-overlay"></div>
-        <div id="" class="yith-wcqv-wrapper">
+        <div id=""class="yith-wcqv-wrapper">
             <div class="yith-wcqv-main">
                 <div class="yith-wcqv-head">
                     <a href="#" class="yith-quick-view-close">
@@ -87,7 +75,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class='bubbles_wrap'>
         <div class='bubble x1'></div>
         <div class='bubble x2'></div>
@@ -101,9 +89,7 @@
         <div class='bubble x10'></div>
     </div>
     <div class='back_to_top_container'><a href='javascript:void(0)' class='gt3_back2top' id='back_to_top'>Back
-            to
-            top</a></div>
-    
+            to top</a></div>
 
     <div class="pswp" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="pswp__bg"></div>
@@ -139,7 +125,8 @@
             </div>
         </div>
     </div>
-   
+
+
     @include('frontend.pages.about.script')
 </body>
 

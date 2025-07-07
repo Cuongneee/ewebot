@@ -424,7 +424,7 @@
  <script type="text/javascript" src="/frontend/assets/js/theme-woo.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/sourcebuster.min.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/order-attribution.min.js"></script>
- <script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script>
+ {{-- <script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script> --}}
  <script type="text/javascript" src="/frontend/assets/js/frontend-modules.min.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/core.min.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/frontend.min.js"></script>
