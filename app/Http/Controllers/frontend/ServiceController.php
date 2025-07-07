@@ -13,16 +13,20 @@ class ServiceController extends Controller
     {
         $categories = Category::where('type', 'product')
             ->where('status', '1')
+            ->whereHas('services', function ($query) {
+                $query->where('posted_at', '<=', now())
+                    ->where('status', '1');
+            })
             ->with([
                 'services' => function ($query) {
-                    $query
-                        ->where('posted_at', '<=', now())
+                    $query->where('posted_at', '<=', now())
                         ->where('status', '1')
                         ->orderBy('order')
                         ->latest('posted_at');
                 }
             ])
             ->get();
+
 
         $categoryService = Category::where('type', 'product')
             ->where('status', 1)

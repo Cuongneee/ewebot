@@ -110,19 +110,23 @@
                                                 <ul id="menu-main-menu" class="wpda-menu">
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{route('home')}}">Trang chủ</a>
+                                                        <a href="{{ route('home') }}">Trang chủ</a>
                                                     </li>
-                                                     <li id="menu-item-12047"
+                                                    <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{route('about')}}">Giới thiệu</a>
+                                                        <a href="{{ route('about') }}">Giới thiệu</a>
                                                     </li>
-                                                     <li id="menu-item-12047"
+                                                    <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{route('services')}}">Dịch vụ</a>
+                                                        <a href="{{ route('services') }}">Dịch vụ</a>
                                                     </li>
-                                                     <li id="menu-item-12047"
+                                                    <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{route('listNews')}}">Blogs</a>
+                                                        <a href="{{ route('listNews') }}">Blogs</a>
+                                                    </li>
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('contact') }}">Liên hệ</a>
                                                     </li>
                                                 </ul>
                                             </nav>
@@ -133,10 +137,10 @@
                                     data-id="1083c12f" data-element_type="widget"
                                     data-widget_type="wpda-builder-search.default">
                                     <div class="elementor-widget-container">
-                                        
+
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-77547541 elementor-widget__width-auto elementor-widget-tablet__width-auto elementor-hidden-mobile elementor-widget elementor-widget-wpda-builder-burger-sidebar"
+                                {{-- <div class="elementor-element elementor-element-77547541 elementor-widget__width-auto elementor-widget-tablet__width-auto elementor-hidden-mobile elementor-widget elementor-widget-wpda-builder-burger-sidebar"
                                     data-id="77547541" data-element_type="widget"
                                     data-widget_type="wpda-builder-burger-sidebar.default">
                                     <div class="elementor-widget-container">
@@ -145,7 +149,7 @@
                                                     class="second"></span><span class="third"></span></i>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

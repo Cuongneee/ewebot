@@ -13,9 +13,7 @@
         }
 
        
-        for (let j = 0; j < urlFields.length; j++) {
-            urlFields[j].addEventListener("blur", maybePrefixUrlField);
-        }
+        
     })();
 </script>
 <script>
@@ -133,20 +131,7 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("typed_937c14f").innerHTML = "";
 
-        const typed = new Typed("#typed_937c14f", {
-            strings: ["Success", "Services", "Business"],
-            typeSpeed: 60,
-            backSpeed: 30,
-            loop: true,
-            smartBackspace: true,
-            showCursor: false, // Tắt dấu nháy
-        });
-    });
-</script>
 <script>
     const swiperComment = new Swiper('.testimonials_rotator', {
         loop: true, // Nếu bạn muốn lặp lại các slide

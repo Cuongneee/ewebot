@@ -8,9 +8,12 @@
 }
 
 .elementor-623 .elementor-element.elementor-element-3b26c0d>.elementor-widget-container {
-    background-color: #f9f8ff;
+    background-color: #ffffff;
     padding: 0px 43px 57px 43px;
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transform: perspective(1000px) translateZ(0); /* tạo chiều sâu */
+    transition: all 0.3s ease;
 }
 
 .elementor-623 .elementor-element.elementor-element-3b26c0d .gt3-core-imagebox-wrapper .gt3-core-imagebox-img {
@@ -32,9 +35,9 @@
 }
 
 .elementor-623 .elementor-element.elementor-element-3b26c0d .gt3-core-imagebox-content .gt3-core-imagebox-title {
-    font-size: 17px;
+    font-size: 13 px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 24px;
 }
 
 .elementor-623 .elementor-element.elementor-element-3b26c0d .gt3-core-imagebox-content .gt3-core-imagebox-description {

@@ -183,6 +183,12 @@
                                 <input value="{{ $config->ig_link }}" id="ig_link" name="ig_link"
                                     class="form-control" type="text" placeholder="Link Instagram">
                             </div>
+
+                             <div class="mb-3 col-lg-12">
+                                <label for="map_link" class="form-label">Link Map</label>
+                                <input value="{{ $config->map_link }}" id="map_link" name="map_link"
+                                    class="form-control" type="text" placeholder="Link Map">
+                            </div>
                         </div>
                     </div>
                 </div>
