@@ -17,17 +17,6 @@
         position: relative;
     }
 
-    .highlight::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: -8%;
-        transform: translateX(-50%);
-        width: 140px;
-        height: 3px;
-        background-color: #dc3545;
-    }
-
     .client-logo {
         background: white;
         border-radius: 10px;

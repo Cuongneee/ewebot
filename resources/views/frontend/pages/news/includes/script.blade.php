@@ -54,7 +54,7 @@
          jQuery(function() {
              gt3_parallax();
          });
-     })(jQuery);
+     });
 
      /*
      jQuery Parallax 1.1.3
@@ -91,7 +91,7 @@
              }, (arguments.length < 1 || null === o) && (o = "50%"), (arguments.length < 2 || null === r) && (r =
                  .1), (arguments.length < 3 || null === i) && (i = !0), t.bind("scroll", u).resize(u), u()
          }
-     }(jQuery);
+     };
  </script>
  <script>
      if (localStorage.getItem('gt3_gridlist_woo') === null) {
@@ -424,7 +424,7 @@
  <script type="text/javascript" src="/frontend/assets/js/theme-woo.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/sourcebuster.min.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/order-attribution.min.js"></script>
- {{-- <script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script> --}}
+ <script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/frontend-modules.min.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/core.min.js"></script>
  <script type="text/javascript" src="/frontend/assets/js/frontend.min.js"></script>

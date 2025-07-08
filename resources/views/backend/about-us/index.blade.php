@@ -29,7 +29,8 @@
                                 @foreach ($aboutus as $aboutUs)
                                     <div class="col-md-12 row align-items-center slider-row">
                                         <div class="form-group col-lg-3 text-center">
-                                            <img class="img-fluid img-thumbnail w-100 preview-image" style="height:150px;"
+                                            <p class="text-small">(Khuyên dùng ảnh kích thước 140x120)</p>
+                                            <img class="img-fluid img-thumbnail w-100 preview-image" style="height:200px;"
                                                 style="cursor: pointer;"
                                                 src="{{ !empty($aboutUs->image) ? asset('storage/' . $aboutUs->image) : asset('backend/assets/img/image-default.jpg') }}
                                                 "

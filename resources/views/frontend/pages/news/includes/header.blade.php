@@ -62,7 +62,18 @@
 
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a
+                                                            href="{{ route('listNewsByCategory', ['slug' => 'tuyen-dung']) }}">Tuyển
+                                                            dụng</a>
+                                                    </li>
+
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a href="{{ route('listNews') }}">Blogs</a>
+                                                    </li>
+                                                     <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('contact') }}">Liên hệ</a>
                                                     </li>
                                                 </ul>
                                             </nav>
@@ -73,7 +84,7 @@
                                     data-id="250d35f" data-element_type="widget"
                                     data-widget_type="wpda-builder-search.default">
                                     <div class="elementor-widget-container">
-                                        
+
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-bc91c40 elementor-widget__width-auto elementor-widget-tablet__width-auto elementor-hidden-mobile elementor-widget elementor-widget-wpda-builder-burger-sidebar"

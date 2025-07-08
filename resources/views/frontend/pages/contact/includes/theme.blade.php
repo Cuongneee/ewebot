@@ -1,5 +1,5 @@
 <div class='gt3-page-title gt3-page-title_horiz_align_center gt3-page-title_vert_align_middle gt3-page-title_has_img_bg'
-    style="background-color:#423bb6;height:261px;color:#ffffff;margin-bottom:80px;background-image:url(/frontend/assets/img/Banner.png);background-size:cover;background-repeat:no-repeat;background-attachment:scroll;background-position:center center;">
+    style="background-color:#423bb6;height:261px;color:#ffffff;margin-bottom:80px;background-image:url(/frontend/assets/img/bannerNew.png);background-size:cover;background-repeat:no-repeat;background-attachment:scroll;background-position:center center;">
     <div class='gt3-page-title__inner '>
         <div class='container'>
             <div class='gt3-page-title__content'>

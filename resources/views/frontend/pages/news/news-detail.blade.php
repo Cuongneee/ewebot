@@ -144,11 +144,11 @@
                             <div id="search-1" class="widget gt3_widget open widget_search">
 
                                 <form role="search" method="get" class="search_form gt3_search_form"
-                                    action="https://ewebotwp.com/">
-                                    <label for="search-form-6851356d868ea">Search</label>
+                                    action="{{route('search')}}">
+                                    <label for="search-form-6851356d868ea">Tìm kiếm</label>
                                     <input class="search_text" id="search-form-6851356d868ea" type="text"
                                         name="s" placeholder="Search">
-                                    <input class="search_submit" type="submit" value="Search">
+                                    <input class="search_submit" type="submit" value="Tìm kiếm">
                                 </form>
                             </div>
                             <div id="categories-1" class="widget gt3_widget open widget_categories">
