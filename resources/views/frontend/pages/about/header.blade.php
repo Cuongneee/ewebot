@@ -1,61 +1,86 @@
 <section
-    class="wpda_builder_section elementor-section elementor-top-section elementor-element elementor-element-435d824 elementor-hidden-tablet elementor-hidden-phone elementor-section-content-middle elementor-section-height-min-height elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
-    data-id="435d824" data-element_type="section">
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cc1f372"
-            data-id="cc1f372" data-element_type="column">
+    class="wpda_builder_section sticky_section_desktop sticky_section_tablet sticky_section_mobile elementor-section elementor-top-section elementor-element elementor-element-1c7d0e5b elementor-section-stretched elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle"
+    data-id="1c7d0e5b" data-element_type="section" data-settings='{"stretch_section":"section-stretched"}' style="">
+    <div class="elementor-container elementor-column-gap-no">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4c7824b4"
+            data-id="4c7824b4" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element-custom_font_size elementor-element-custom_font_weight elementor-element elementor-element-ee0bb99 elementor-widget__width-auto elementor-widget elementor-widget-text-editor"
-                    data-id="ee0bb99" data-element_type="widget" data-widget_type="text-editor.default">
-                    <div class="elementor-widget-container">
-                        <p><a href="tel:+88002534236"></a><a class="gt3_icon_link gt3_custom_color" href="#"
-                                target="_blank" data-color="#5747e4" data-hover-color="#5747e4"
-                                style="font-size: 16px;color: #5747e4;margin-right: 10px" rel="noopener"><i
-                                    class="fa fa-phone" style="font-weight: bold"> </i></a><a
-                                href="tel:+88002534236"><span class="gt3_font-weight">{{$setting->hotline}}</span></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="elementor-element-custom_font_size elementor-element elementor-element-ce379d5 elementor-widget__width-auto elementor-widget elementor-widget-text-editor"
-                    data-id="ce379d5" data-element_type="widget" data-widget_type="text-editor.default">
-                    <div class="elementor-widget-container">
-                        <p><a class="gt3_icon_link gt3_custom_color" href="#" target="_blank" data-color="#5747e4"
-                                data-hover-color="#5747e4" style="font-size: 16px;margin-right: 8px;color: #5747e4"
-                                rel="noopener"><i class="fa fa-envelope"> </i></a> <a
-                                href="mailto:email@yoursite.com">{{$setting->email}}</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c3b5a04"
-            data-id="c3b5a04" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-7310046 elementor-shape-square e-grid-align-right elementor-grid-0 elementor-widget elementor-widget-social-icons"
-                    data-id="7310046" data-element_type="widget" data-widget_type="social-icons.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-social-icons-wrapper elementor-grid" role="list">
-                            <span class="elementor-grid-item" role="listitem">
-                                <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-3c4561b"
-                                    target="_blank">
-                                    <span class="elementor-screen-only">Youtube</span>
-                                    <i class="fab fa-youtube"></i> </a>
-                            </span>
-                            <span class="elementor-grid-item" role="listitem">
-                                <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-f9f8056"
-                                    target="_blank">
-                                    <span class="elementor-screen-only">Facebook-f</span>
-                                    <i class="fab fa-facebook-f"></i> </a>
-                            </span>
-                            <span class="elementor-grid-item" role="listitem">
-                                <a class="elementor-icon elementor-social-icon elementor-social-icon-google-plus-g elementor-repeater-item-ce2da41"
-                                    target="_blank">
-                                    <span class="elementor-screen-only">Ig</span>
-                                    <i class="fab fa-instagram"></i> </a>
-                            </span>
-                           
+                <section
+                    class="wpda_builder_section elementor-section elementor-inner-section elementor-element elementor-element-1477da7f elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default"
+                    data-id="1477da7f" data-element_type="section">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7489d207"
+                            data-id="7489d207" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-74b3b867 elementor-widget__width-auto elementor-widget elementor-widget-wpda-header-logo"
+                                    data-id="74b3b867" data-element_type="widget"
+                                    data-widget_type="wpda-header-logo.default">
+                                    <div class="sgo-logo-widget-wrapper">
+                                        <div class="sgo-logo-container">
+                                            <a aria-label="Logo" href="{{ route('home') }}">
+                                                <img class="sgo-logo-img" src="{{ showImage($setting->logo) }}"
+                                                    alt="" title="logo_retina(black)" width="298"
+                                                    height="96" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a2529b2"
+                            data-id="a2529b2" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-f89fc0c elementor-widget__width-auto elementor-widget elementor-widget-wpda-builder-menu"
+                                    data-id="f89fc0c" data-element_type="widget"
+                                    data-widget_type="wpda-builder-menu.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="wpda-mobile-navigation-toggle">
+                                            <div class="wpda-toggle-box">
+                                                <div class="wpda-toggle-inner"></div>
+                                            </div>
+                                        </div>
+                                        <div class="wpda-navbar-collapse">
+                                            <nav class="wpda-builder-menu">
+                                                <ul id="menu-main-menu" class="wpda-menu">
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('home') }}">TRANG CHỦ</a>
+                                                    </li>
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('about') }}">GIỚI THIỆU</a>
+                                                    </li>
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('services') }}">DỊCH VỤ</a>
+                                                    </li>
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a
+                                                            href="{{ route('listNewsByCategory', ['slug' => 'tuyen-dung']) }}">TUYỂN
+                                                            DỤNG</a>
+                                                    </li>
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('listNews') }}">BLOG</a>
+                                                    </li>
+                                                    <li id="menu-item-12047"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
+                                                        <a href="{{ route('contact') }}">LIÊN HỆ</a>
+                                                    </li>
+
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </div>

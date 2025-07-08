@@ -8,11 +8,11 @@
             <label for="search-form-6850d8694a614">Tìm iếm</label>
             <input class="search_text" id="search-form-6850d8694a614" type="search" name="s"
                 placeholder="Tìm kiếm">
-            <input class="search_submit" type="submit" value="Search">
+            <input class="search_submit" type="submit" value="Tìm kiếm">
         </form>
     </div>
     <div id="categories-2" class="widget gt3_widget open widget_categories">
-        <h4 class="widget-title">Categories</h4>
+        <h4 class="widget-title">Danh mục</h4>
         <ul>
             @foreach ($allCategory as $category)
                 <li class="cat-item cat-item-36"><a

@@ -1003,9 +1003,11 @@
     border-color: #1E90FF;
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-align: left;
-    padding: 60px 45px 60px 45px; /* Increased top/bottom padding */
+    padding: 60px 45px 60px 45px;
+    /* Increased top/bottom padding */
     position: relative;
-    transform: scale(1.05) translateY(-15px); /* Make it bigger and higher */
+    transform: scale(1.05) translateY(-15px);
+    /* Make it bigger and higher */
     z-index: 10;
     box-shadow: 0 30px 60px rgba(30, 144, 255, 0.3);
 }
@@ -1025,8 +1027,13 @@
 }
 
 @keyframes gradientRotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Featured card hover effect */
@@ -1048,13 +1055,14 @@
     font-weight: 700;
     letter-spacing: 1px;
     transform: rotate(45deg);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Enhanced price styling for featured card */
 .elementor-14367 .elementor-element.elementor-element-44a11259 .gt3_price_item-cost-elementor {
     font-family: "Inter", Sans-serif;
-    font-size: 84px; /* Increased from 72px */
+    font-size: 84px;
+    /* Increased from 72px */
     font-weight: 700;
     line-height: 1em;
     background: linear-gradient(45deg, #1E90FF, #8B00FF, #FFFFFF);
@@ -1065,8 +1073,13 @@
 }
 
 @keyframes priceGlow {
-    from { filter: drop-shadow(0 0 5px rgba(30, 144, 255, 0.5)); }
-    to { filter: drop-shadow(0 0 20px rgba(30, 144, 255, 0.8)); }
+    from {
+        filter: drop-shadow(0 0 5px rgba(30, 144, 255, 0.5));
+    }
+
+    to {
+        filter: drop-shadow(0 0 20px rgba(30, 144, 255, 0.8));
+    }
 }
 
 /* Enhanced buttons with gradient effects */
@@ -1144,6 +1157,7 @@
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1176,11 +1190,11 @@
         transform: scale(1.02) translateY(-10px);
         padding: 40px 30px 50px 30px;
     }
-    
+
     .elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated:hover {
         transform: scale(1.04) translateY(-15px);
     }
-    
+
     .elementor-14367 .elementor-element.elementor-element-44a11259 .gt3_price_item-cost-elementor {
         font-size: 64px;
     }
@@ -1188,8 +1202,20 @@
 
 /* Additional glow effects for featured card */
 .elementor-14367 .elementor-element.elementor-element-312c5ed2>.elementor-element-populated {
-    box-shadow: 
+    box-shadow:
         0 30px 60px rgba(30, 144, 255, 0.3),
         0 0 0 1px rgba(30, 144, 255, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767px) {
+    .elementor-14367 .elementor-element.elementor-element-317eeefa .gt3_module_button_elementor.size_custom .gt3_module_button__container {
+        padding: 10px 10px !important;
+        /* thu gọn lại */
+    }
+
+    .elementor-14367 .elementor-element.elementor-element-317eeefa .elementor_gt3_btn_text {
+        font-size: 10px !important;
+        /* nhỏ lại chút */
+    }
 }

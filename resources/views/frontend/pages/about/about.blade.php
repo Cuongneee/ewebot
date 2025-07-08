@@ -5,6 +5,7 @@
     @include('frontend.pages.about.meta')
 
     @include('frontend.pages.about.style')
+    @include('frontend.layouts.includes.style')
 
 </head>
 
@@ -12,18 +13,16 @@
     class="wp-singular page-template-default page page-id-623 wp-theme-ewebot wp-child-theme-ewebot-child theme-ewebot woocommerce-no-js woo-variation-swatches wvs-behavior-blur wvs-theme-ewebot-child wvs-show-label wvs-tooltip gt3_lenis_scroll gt3_enable_sticky_sidebar elementor-default elementor-kit-7 elementor-page elementor-page-623 elementor-page"
     data-theme-color="#6254e7">
 
-    <div data-elementor-type="wpda-header" data-elementor-id="4031"
-        class="elementor elementor-4031 wpda-builder-page-4031 wpda-builder wpda-header-builder">
-
-        @include('frontend.pages.about.header')
-
-        {{-- Menu --}}
-        @include('frontend.pages.about.menu')
-
+    {{-- Header --}}
+    <div data-elementor-type="wpda-header" data-elementor-id="7813"
+        class="elementor elementor-7813 wpda-builder-page-7813 wpda-builder wpda-header-builder header_over_bg header_over_bg_tablet header_over_bg_mobile">
+        @include('frontend.layouts.includes.header')
     </div>
+
     <div class="gt3-page-title_wrapper">
         @include('frontend.pages.about.theme')
     </div>
+
     <div class="site_wrapper fadeOnLoad">
         <div class="main_wrapper">
 
@@ -58,9 +57,10 @@
 
         </div><!-- .main_wrapper -->
     </div><!-- .site_wrapper -->
-    <div data-elementor-type="wpda-footer" data-elementor-id="4110"
-        class="elementor elementor-4110 wpda-builder-page-4110 wpda-builder wpda-footer-builder">
-        @include('frontend.pages.about.footer')
+    <div data-elementor-type="wpda-footer" data-elementor-id="7803"
+        class="elementor elementor-7803 wpda-builder-page-7803 wpda-builder wpda-footer-builder">
+        {{-- Footer --}}
+        @include('frontend.layouts.includes.footer')
     </div>
 
     <div class="wpda-builder__burger_sidebar burger-id-9b6c8d8">
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    
+
     <div id="yith-quick-view-modal" class="yith-quick-view yith-modal">
         <div class="yith-quick-view-overlay"></div>
         <div id="" class="yith-wcqv-wrapper">
@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class='bubbles_wrap'>
         <div class='bubble x1'></div>
         <div class='bubble x2'></div>
@@ -103,7 +103,7 @@
     <div class='back_to_top_container'><a href='javascript:void(0)' class='gt3_back2top' id='back_to_top'>Back
             to
             top</a></div>
-    
+
 
     <div class="pswp" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="pswp__bg"></div>
@@ -139,7 +139,7 @@
             </div>
         </div>
     </div>
-   
+
     @include('frontend.pages.about.script')
 </body>
 

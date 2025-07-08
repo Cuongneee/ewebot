@@ -4,11 +4,11 @@
         <div class='container'>
             <div class='gt3-page-title__content'>
                 <div class='page_title'>
-                    <h1>Giới thiệu</h1>
+                    <h1>Dịch vụ</h1>
                 </div>
                 <div class='gt3_breadcrumb'>
                     <div class="breadcrumbs"><a href="{{route('home')}}">Trang chủ</a><span
-                            class="gt3_pagination_delimiter"></span><span class="current">Giới thiệu</span></div>
+                            class="gt3_pagination_delimiter"></span><span class="current">Dịch vụ</span></div>
                 </div>
             </div>
         </div>

@@ -16,10 +16,7 @@
     <div data-elementor-type="wpda-header" data-elementor-id="4031"
         class="elementor elementor-4031 wpda-builder-page-4031 wpda-builder wpda-header-builder">
         @include('frontend.pages.about.header')
-
-
-        {{-- Menu --}}
-        @include('frontend.pages.about.menu')
+  
     </div>
     <div class="gt3-page-title_wrapper">
         <div class='gt3-page-title gt3-page-title_horiz_align_center gt3-page-title_vert_align_middle gt3-page-title_has_img_bg'
@@ -31,8 +28,8 @@
                             <h1>{{ $category->name }}</h1>
                         </div>
                         <div class='gt3_breadcrumb'>
-                            <div class="breadcrumbs"><a href="https://ewebotwp.com/">Home</a><span
-                                    class="gt3_pagination_delimiter"></span><span class="current">Category
+                            <div class="breadcrumbs"><a href="https://ewebotwp.com/">Trang chủ</a><span
+                                    class="gt3_pagination_delimiter"></span><span class="current">Danh mục
                                     "{{ $category->name }}"</span></div>
                         </div>
                     </div>

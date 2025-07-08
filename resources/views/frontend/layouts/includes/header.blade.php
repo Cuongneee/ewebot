@@ -44,29 +44,29 @@
                                                 <ul id="menu-main-menu" class="wpda-menu">
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('home') }}">Trang chủ</a>
+                                                        <a href="{{ route('home') }}">TRANG CHỦ</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('about') }}">Giới thiệu</a>
+                                                        <a href="{{ route('about') }}">GIỚI THIỆU</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('services') }}">Dịch vụ</a>
+                                                        <a href="{{ route('services') }}">DỊCH VỤ</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
                                                         <a
-                                                            href="{{ route('listNewsByCategory', ['slug' => 'tuyen-dung']) }}">Tuyển
-                                                            dụng</a>
+                                                            href="{{ route('listNewsByCategory', ['slug' => 'tuyen-dung']) }}">TUYỂN
+                                                            DỤNG</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('listNews') }}">Blog</a>
+                                                        <a href="{{ route('listNews') }}">BLOG</a>
                                                     </li>
                                                     <li id="menu-item-12047"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12047 wpda-menu-item-12047">
-                                                        <a href="{{ route('contact') }}">Liên hệ</a>
+                                                        <a href="{{ route('contact') }}">LIÊN HỆ</a>
                                                     </li>
 
                                                 </ul>

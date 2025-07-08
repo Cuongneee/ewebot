@@ -17,10 +17,16 @@
                 <section
                     class="elementor-section elementor-inner-section elementor-element elementor-element-36b79983 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="36b79983" data-element_type="section">
+                    <div class="widget-container">
+                        <img src="{{ showImage($setting->logo_footer) }}" alt="">
+                    </div>
                     <div class="elementor-container elementor-column-gap-extended">
+
                         <div class="elementor-column elementor-col-40 elementor-inner-column elementor-element elementor-element-415e9e5a"
                             data-id="415e9e5a" data-element_type="column">
+
                             <div class="elementor-widget-wrap elementor-element-populated">
+
                                 <div class="elementor-element elementor-element-3ee659aa elementor-widget elementor-widget-spacer"
                                     data-id="3ee659aa" data-element_type="widget" data-widget_type="spacer.default">
                                     <div class="elementor-widget-container">
@@ -29,12 +35,15 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element-custom_font_weight elementor-element-custom_color elementor-element elementor-element-46108c3a elementor-widget elementor-widget-text-editor"
                                     data-id="46108c3a" data-element_type="widget"
                                     data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
                                         <h4>Liên hệ với chúng tôi</h4>
                                     </div>
+
+
                                 </div>
                                 <div class="elementor-element-custom_font_size elementor-element-custom_line_height elementor-element-custom_color elementor-element elementor-element-7555758f elementor-widget elementor-widget-text-editor"
                                     data-id="7555758f" data-element_type="widget"
@@ -49,21 +58,27 @@
                                     @endphp
                                     <div class="elementor-widget-container">
                                         @foreach ($addresses as $line)
-                                            <li class="gt3-core-imagebox-description" style="margin: 0; font-weight: 400;">
+                                            <li class="gt3-core-imagebox-description"
+                                                style="margin: 0; font-weight: 400;">
                                                 {{ $line }}
                                             </li>
                                         @endforeach
-                                        <li class="gt3-core-imagebox-description mt-1" style="margin: 0; font-weight: 400;">
-                                            Điện thoại:{{$setting->hotline}} / Hotline: {{$setting->hotline_kinhdoanh}}
+                                        <li class="gt3-core-imagebox-description mt-1"
+                                            style="margin: 0; font-weight: 400;">
+                                            Điện thoại:{{ $setting->hotline }} / Hotline:
+                                            {{ $setting->hotline_kinhdoanh }}
                                         </li>
-                                         <li class="gt3-core-imagebox-description mt-1" style="margin: 0; font-weight: 400;">
-                                            Email:{{$setting->email}}
+                                        <li class="gt3-core-imagebox-description mt-1"
+                                            style="margin: 0; font-weight: 400;">
+                                            Email:{{ $setting->email }}
                                         </li>
-                                         <li class="gt3-core-imagebox-description mt-1" style="margin: 0; font-weight: 400;">
-                                            MST:{{$setting->mst}}
+                                        <li class="gt3-core-imagebox-description mt-1"
+                                            style="margin: 0; font-weight: 400;">
+                                            MST:{{ $setting->mst }}
                                         </li>
-                                         <li class="gt3-core-imagebox-description mt-1" style="margin: 0; font-weight: 400;">
-                                            STK:{{$setting->stk}} - {{$setting->bank}}
+                                        <li class="gt3-core-imagebox-description mt-1"
+                                            style="margin: 0; font-weight: 400;">
+                                            STK:{{ $setting->stk }} - {{ $setting->bank }}
                                         </li>
                                     </div>
 
@@ -257,3 +272,24 @@
         </div>
     </div>
 </section>
+<style>
+    .widget-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        /* căn giữa nếu cần */
+    }
+
+    .widget-container {
+        max-width: 220px;
+        /* hoặc điều chỉnh tùy bạn muốn nhỏ lại bao nhiêu */
+        width: 100%;
+    }
+
+    @media (max-width: 767px) {
+        .widget-container {
+            max-width: 160px;
+        }
+    }
+</style>

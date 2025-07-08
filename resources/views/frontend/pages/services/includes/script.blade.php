@@ -173,7 +173,7 @@
 <script type="text/javascript" src="/frontend/assets/js/appear.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/theme-woo.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/sourcebuster.min.js"></script>
-{{-- <script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script> --}}
+<script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/frontend-modules.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/core.min.js"></script>
 <script type="text/javascript" id="elementor-frontend-js-before">
@@ -313,10 +313,9 @@
 <script type="text/javascript" src="/frontend/assets/js/gt3-core-advanced-tabs.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/gt3-core-pricebox.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/toggle.js"></script>
-<script type="text/javascript" src="https://ewebotwp.com/wp-includes/js/comment-reply.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/core-gridlist-woo.js"></script>
 <script type="text/javascript" defer src="/frontend/assets/js/forms.js"></script>
-<script type="text/javascript" src="https://ewebotwp.com/wp-includes/js/underscore.min.js"></script>
+<script type="text/javascript" src="/frontend/assets/js/underscore.min.js"></script>
 <script type="text/javascript" id="wp-util-js-extra">
     /* <![CDATA[ */
     var _wpUtilSettings = {

@@ -6871,7 +6871,7 @@ ul.pagerblock li a.current:hover {
 }
 .gt3-page-title.gt3-page-title_vert_align_top .container {
   vertical-align: top;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .gt3-page-title.gt3-page-title_vert_align_bottom .container {
   vertical-align: bottom;
