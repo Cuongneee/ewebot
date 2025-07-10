@@ -31,8 +31,9 @@
                     <div class="content-container span12">
                         <section id='main_content'>
                             <div data-elementor-type="wp-post" data-elementor-id="623" class="elementor elementor-623">
-
-                               @include('frontend.pages.services.includes.price')
+                                @include('frontend.pages.services.includes.provided-ppc')
+                                @include('frontend.pages.services.includes.price')
+                                
 
                             </div>
                             <div class="clear"></div>
@@ -130,6 +131,7 @@
     </div>
 
     @include('frontend.pages.services.includes.script')
+    @include('frontend.pages.popup.index')
 </body>
 
 </html>

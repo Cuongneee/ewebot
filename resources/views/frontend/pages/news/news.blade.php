@@ -7,6 +7,7 @@
     @include('frontend.pages.news.includes.meta')
 
     @include('frontend.pages.news.includes.style')
+    @include('frontend.layouts.includes.style')
 
 </head>
 
@@ -14,10 +15,10 @@
     class="wp-singular page-template-default page page-id-15361 wp-theme-ewebot wp-child-theme-ewebot-child theme-ewebot woocommerce-no-js woo-variation-swatches wvs-behavior-blur wvs-theme-ewebot-child wvs-show-label wvs-tooltip gt3_lenis_scroll gt3_enable_sticky_sidebar elementor-default elementor-kit-7 elementor-page elementor-page-15361 gt3_blog_preset2 elementor-page"
     data-theme-color="#6254e7">
 
-    <div data-elementor-type="wpda-header" data-elementor-id="13522"
-        class="elementor elementor-13522 wpda-builder-page-13522 wpda-builder wpda-header-builder header_over_bg header_over_bg_tablet header_over_bg_mobile">
-        {{-- Menu --}}
-        @include('frontend.pages.news.includes.header')
+    {{-- Header --}}
+    <div data-elementor-type="wpda-header" data-elementor-id="7813"
+        class="elementor elementor-7813 wpda-builder-page-7813 wpda-builder wpda-header-builder header_over_bg header_over_bg_tablet header_over_bg_mobile">
+        @include('frontend.layouts.includes.header')
     </div>
     <div class="gt3-page-title_wrapper">
         {{-- Banner --}}
@@ -29,7 +30,7 @@
             <div class="container container-sidebar_right">
                 <div class="row sidebar_right">
                     <div class="content-container span9">
-                     @include('frontend.pages.news.includes.list-news')
+                        @include('frontend.pages.news.includes.list-news')
                     </div>
 
                     <div class="sidebar-container span3">
@@ -41,16 +42,16 @@
 
         </div><!-- .main_wrapper -->
     </div><!-- .site_wrapper -->
-    <div data-elementor-type="wpda-footer" data-elementor-id="12655"
-        class="elementor elementor-12655 wpda-builder-page-12655 wpda-builder wpda-footer-builder">
-        @include('frontend.pages.news.includes.footer')
-
+    <div data-elementor-type="wpda-footer" data-elementor-id="7803"
+        class="elementor elementor-7803 wpda-builder-page-7803 wpda-builder wpda-footer-builder">
+        {{-- Footer --}}
+        @include('frontend.layouts.includes.footer')
     </div>
     <div class="wpda-builder__burger_sidebar burger-id-bc91c40">
         <div class="wpda-builder__burger_sidebar-cover"></div>
         <div class="wpda-builder__burger_container">
-            @include('frontend.pages.about.sidebar')
-        </div>
+            {{-- @include('frontend.pages.about.sidebar')
+        </div> --}}
     </div>
 
 
@@ -60,8 +61,8 @@
             <div class="yith-wcqv-main">
                 <div class="yith-wcqv-head">
                     <a href="#" class="yith-quick-view-close">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
                     </a>

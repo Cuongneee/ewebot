@@ -157,4 +157,9 @@
          </div>
      </div>
  </section>
- 
+ <style>
+     .elementor-widget-container .gt3_styled_list {
+         padding-left: 0 !important;
+         margin-left: 0 !important;
+     }
+ </style>

@@ -2069,12 +2069,12 @@
     body .elementor-widget-gt3-core-blogboxed .gt3_module_blogboxed.module_type1 .item_wrapper .blogboxed_content .gt3_post_footer .gt3_module_button_list a,
     .wpcf7-form .gt3_contactform_home6 input[type="submit"]:hover,
     .elementor-widget-gt3-core-pricebox .gt3_pricebox_module_wrapper.type4 .price_button-elementor a {
-        color: #ff7426;
+        color: #fc372a;
     }
 
     .elementor-widget-gt3-core-pricebox.active-package-yes .gt3_pricebox_module_wrapper.type4 .price_button-elementor a.shortcode_button,
     .elementor-widget-gt3-core-pricebox.active-package-yes .gt3_pricebox_module_wrapper.type4 .price_button-elementor .shortcode_button {
-        color: #ff7426 !important;
+        color: #fc372a !important;
     }
 
     .elementor-widget-gt3-core-blogboxed .gt3_module_blogboxed.module_type1 .blogboxed_content .gt3_module_button_list a,
@@ -2093,18 +2093,18 @@
     .blog_post_media--quote .quote_text:before,
     .blog_post_media__link_text:before,
     #back_to_top.show:hover {
-        background: #ff7426;
+        background: #fc372a;
     }
 
     .active-package-yes.elementor-widget-gt3-core-pricebox .gt3_pricebox_module_wrapper.type1 .gt3_price_item-cost-elementor .inner_circle,
     #back_to_top,
     #back_to_top:hover,
     #back_to_top.show:hover {
-        border-color: #ff7426;
+        border-color: #fc372a;
     }
 
     .gt3_custom_tooltip:after {
-        border-color: #ff7426 transparent transparent transparent;
+        border-color: #fc372a transparent transparent transparent;
     }
 
     .woocommerce button.button.alt:hover,
