@@ -28,7 +28,7 @@
                            <img loading="lazy" decoding="async" width="832" height="690"
                                src="/frontend/assets/img/home10_ellipse2.png"
                                class="attachment-full size-full wp-image-7548" alt=""
-                               srcset="/frontend/assets/img/home10_ellipse2.png 832w, /frontend/assets/img/home10_ellipse2-300x249.png 300w, /frontend/assets/img/home10_ellipse2-768x637.png 768w, /frontend/assets/img/home10_ellipse2-480x398.png 480w"
+                               srcset="/frontend/assets/img/home10_ellipse2.png 832w"
                                sizes="auto, (max-width: 832px) 100vw, 832px" title="Ellipse" />
                        </div>
                    </div>

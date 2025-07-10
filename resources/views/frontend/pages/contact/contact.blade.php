@@ -5,19 +5,18 @@
     @include('frontend.pages.about.meta')
 
     @include('frontend.pages.about.style')
-
+    @include('frontend.layouts.includes.style')
 </head>
 
 <body
     class="wp-singular page-template-default page page-id-382 wp-theme-ewebot wp-child-theme-ewebot-child theme-ewebot woocommerce-no-js woo-variation-swatches wvs-behavior-blur wvs-theme-ewebot-child wvs-show-label wvs-tooltip gt3_lenis_scroll gt3_enable_sticky_sidebar elementor-default elementor-kit-7 elementor-page elementor-page-382 elementor-page"
     data-theme-color="#6254e7">
-    <div data-elementor-type="wpda-header" data-elementor-id="4031"
-        class="elementor elementor-4031 wpda-builder-page-4031 wpda-builder wpda-header-builder">
-        @include('frontend.pages.about.header')
-
-        {{-- Menu --}}
-        @include('frontend.pages.about.menu')
+    {{-- Header --}}
+    <div data-elementor-type="wpda-header" data-elementor-id="7813"
+        class="elementor elementor-7813 wpda-builder-page-7813 wpda-builder wpda-header-builder header_over_bg header_over_bg_tablet header_over_bg_mobile">
+        @include('frontend.layouts.includes.header')
     </div>
+
     <div class="gt3-page-title_wrapper">
         @include('frontend.pages.contact.includes.theme')
     </div>
@@ -47,14 +46,15 @@
 
         </div><!-- .main_wrapper -->
     </div><!-- .site_wrapper -->
-    <div data-elementor-type="wpda-footer" data-elementor-id="4110"
-        class="elementor elementor-4110 wpda-builder-page-4110 wpda-builder wpda-footer-builder">
-        @include('frontend.pages.about.footer')
+    <div data-elementor-type="wpda-footer" data-elementor-id="7803"
+        class="elementor elementor-7803 wpda-builder-page-7803 wpda-builder wpda-footer-builder">
+        {{-- Footer --}}
+        @include('frontend.layouts.includes.footer')
     </div>
     <div class="wpda-builder__burger_sidebar burger-id-9b6c8d8">
         <div class="wpda-builder__burger_sidebar-cover"></div>
         <div class="wpda-builder__burger_container">
-            @include('frontend.pages.about.sidebar')
+            {{-- @include('frontend.pages.about.sidebar') --}}
 
         </div>
     </div>

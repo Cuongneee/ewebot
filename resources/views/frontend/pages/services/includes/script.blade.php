@@ -55,9 +55,6 @@
             gt3_parallax();
         });
     });
-
-    
-    
 </script>
 <script>
     if (localStorage.getItem('gt3_gridlist_woo') === null) {
@@ -173,7 +170,7 @@
 <script type="text/javascript" src="/frontend/assets/js/appear.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/theme-woo.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/sourcebuster.min.js"></script>
-<script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script>
+{{-- <script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script> --}}
 <script type="text/javascript" src="/frontend/assets/js/frontend-modules.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/core.min.js"></script>
 <script type="text/javascript" id="elementor-frontend-js-before">
@@ -299,7 +296,19 @@
     };
     /* ]]> */
 </script>
-<script type="text/javascript" src="/frontend/assets/js/frontend.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.querySelector('.wpda-mobile-navigation-toggle');
+        const targetMenu = document.querySelector('.elementor-element-f89fc0c');
+
+        if (toggleBtn && targetMenu) {
+            toggleBtn.addEventListener('click', function() {
+                targetMenu.classList.toggle('mobile_menu_active');
+            });
+        }
+    });
+</script>
+{{-- <script type="text/javascript" src="/frontend/assets/js/frontend.min.js"></script> --}}
 <script type="text/javascript" src="/frontend/assets/js/mega-menu-frontend.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/gt3-core-imagebox.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/frontend.js"></script>

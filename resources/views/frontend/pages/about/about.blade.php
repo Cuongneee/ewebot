@@ -141,6 +141,7 @@
     </div>
 
     @include('frontend.pages.about.script')
+    
 </body>
 
 </html>

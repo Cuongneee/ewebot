@@ -5,6 +5,7 @@
     @include('frontend.pages.about.meta')
 
     @include('frontend.pages.about.style')
+    @include('frontend.layouts.includes.style')
 
 </head>
 
@@ -12,14 +13,29 @@
     class="wp-singular post-template-default single single-post postid-13143 single-format-standard wp-theme-ewebot wp-child-theme-ewebot-child theme-ewebot woocommerce-no-js woo-variation-swatches wvs-behavior-blur wvs-theme-ewebot-child wvs-show-label wvs-tooltip gt3_lenis_scroll gt3_enable_sticky_sidebar elementor-default elementor-kit-7 elementor-page elementor-page-13143 elementor-page"
     data-theme-color="#6254e7">
 
-
-    <div data-elementor-type="wpda-header" data-elementor-id="4031"
-        class="elementor elementor-4031 wpda-builder-page-4031 wpda-builder wpda-header-builder">
-        @include('frontend.pages.about.header')
-
-
-        {{-- Menu --}}
-        @include('frontend.pages.about.menu')
+    {{-- Header --}}
+    <div data-elementor-type="wpda-header" data-elementor-id="7813"
+        class="elementor elementor-7813 wpda-builder-page-7813 wpda-builder wpda-header-builder header_over_bg header_over_bg_tablet header_over_bg_mobile">
+        @include('frontend.layouts.includes.header')
+    </div>
+    <div class="gt3-page-title_wrapper">
+        <div class='gt3-page-title gt3-page-title_horiz_align_center gt3-page-title_vert_align_middle gt3-page-title_has_img_bg'
+            style="background-color:#423bb6;height:261px;color:#ffffff;margin-bottom:80px;background-image:url(/frontend/assets/img/bannerNew.png);background-size:cover;background-repeat:no-repeat;background-attachment:scroll;background-position:center center;">
+            <div class='gt3-page-title__inner '>
+                <div class='container'>
+                    <div class='gt3-page-title__content'>
+                        <div class='page_title'>
+                            <h1>{{ $news->title }}</h1>
+                        </div>
+                        <div class='gt3_breadcrumb'>
+                            <div class="breadcrumbs"><a href="{{ route('home') }}">Trang chủ</a><span
+                                    class="gt3_pagination_delimiter"></span><span class="current">Blog
+                                    "{{ $news->title }}"</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="site_wrapper fadeOnLoad">
         <div class="main_wrapper">
@@ -144,7 +160,7 @@
                             <div id="search-1" class="widget gt3_widget open widget_search">
 
                                 <form role="search" method="get" class="search_form gt3_search_form"
-                                    action="{{route('search')}}">
+                                    action="{{ route('search') }}">
                                     <label for="search-form-6851356d868ea">Tìm kiếm</label>
                                     <input class="search_text" id="search-form-6851356d868ea" type="text"
                                         name="s" placeholder="Search">
@@ -213,15 +229,15 @@
             </div>
         </div><!-- .main_wrapper -->
     </div><!-- .site_wrapper -->
-    <div data-elementor-type="wpda-footer" data-elementor-id="4110"
-        class="elementor elementor-4110 wpda-builder-page-4110 wpda-builder wpda-footer-builder">
-        @include('frontend.pages.about.footer')
-
+     <div data-elementor-type="wpda-footer" data-elementor-id="7803"
+        class="elementor elementor-7803 wpda-builder-page-7803 wpda-builder wpda-footer-builder">
+        {{-- Footer --}}
+        @include('frontend.layouts.includes.footer')
     </div>
     <div class="wpda-builder__burger_sidebar burger-id-9b6c8d8">
         <div class="wpda-builder__burger_sidebar-cover"></div>
         <div class="wpda-builder__burger_container">
-            @include('frontend.pages.about.sidebar')
+            {{-- @include('frontend.pages.about.sidebar') --}}
         </div>
     </div>
     <div id="yith-quick-view-modal" class="yith-quick-view yith-modal">

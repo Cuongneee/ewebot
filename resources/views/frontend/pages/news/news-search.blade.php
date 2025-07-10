@@ -5,7 +5,7 @@
     @include('frontend.pages.about.meta')
 
     @include('frontend.pages.about.style')
-
+    @include('frontend.layouts.includes.style')
 </head>
 
 <body
@@ -13,22 +13,19 @@
     data-theme-color="#6254e7">
 
 
-    <div data-elementor-type="wpda-header" data-elementor-id="4031"
-        class="elementor elementor-4031 wpda-builder-page-4031 wpda-builder wpda-header-builder">
-        @include('frontend.pages.about.header')
-
-        {{-- Menu --}}
-        @include('frontend.pages.about.menu')
+    {{-- Header --}}
+    <div data-elementor-type="wpda-header" data-elementor-id="7813"
+        class="elementor elementor-7813 wpda-builder-page-7813 wpda-builder wpda-header-builder header_over_bg header_over_bg_tablet header_over_bg_mobile">
+        @include('frontend.layouts.includes.header')
     </div>
-
     <div class="gt3-page-title_wrapper">
         <div class='gt3-page-title gt3-page-title_horiz_align_center gt3-page-title_vert_align_middle gt3-page-title_has_img_bg'
-            style="background-color:#423bb6;height:261px;color:#ffffff;margin-bottom:80px;background-image:url(/frontend/assets/img/pic_paralax_2.jpg);background-size:cover;background-repeat:no-repeat;background-attachment:scroll;background-position:center center;">
+            style="background-color:#423bb6;height:261px;color:#ffffff;margin-bottom:80px;background-image:url(/frontend/assets/img/bannerNew.png);background-size:cover;background-repeat:no-repeat;background-attachment:scroll;background-position:center center;">
             <div class='gt3-page-title__inner '>
                 <div class='container'>
                     <div class='gt3-page-title__content'>
                         <div class='page_title'>
-                            <h1>Kết qủa tìm kiếm với: {{ $keyword }}</h1>
+                            <h1>Kết quả tìm kiếm với: {{ $keyword }}</h1>
                         </div>
                         <div class='gt3_breadcrumb'>
                             <div class="breadcrumbs"><a href="{{ route('home') }}">Trang chủ</a><span

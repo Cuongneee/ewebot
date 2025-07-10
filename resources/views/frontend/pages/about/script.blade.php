@@ -55,9 +55,6 @@
             gt3_parallax();
         });
     });
-
-   
-   
 </script>
 <script>
     if (localStorage.getItem('gt3_gridlist_woo') === null) {
@@ -345,7 +342,18 @@
     };
     /* ]]> */
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.querySelector('.wpda-mobile-navigation-toggle');
+        const targetMenu = document.querySelector('.elementor-element-f89fc0c');
 
+        if (toggleBtn && targetMenu) {
+            toggleBtn.addEventListener('click', function() {
+                targetMenu.classList.toggle('mobile_menu_active');
+            });
+        }
+    });
+</script>
 
 <script src="/frontend/assets/js/jquery.min.js" id="jquery-core-js"></script>
 <script src="/frontend/assets/js/jquery-migrate.min.js"></script>
@@ -362,10 +370,8 @@
 <script type="text/javascript" src="/frontend/assets/js/theme-woo.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/sourcebuster.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/order-attribution.min.js"></script>
-<script type="text/javascript" src="/frontend/assets/js/webpack.runtime.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/frontend-modules.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/core.min.js"></script>
-<script type="text/javascript" src="/frontend/assets/js/frontend.min.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/mega-menu-frontend.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/gt3-core-imagebox.js"></script>
 <script type="text/javascript" src="/frontend/assets/js/frontend.js"></script>
@@ -398,4 +404,4 @@
 <script type="text/javascript" src="/frontend/assets/js/core-frontend.js"></script>
 <script id="gt3_custom_footer_js"></script>
 <!-- 404 -->
-<script type="text/javascript" src="https://ewebotwp.com/wp-includes/js/jquery/ui/tabs.min.justify-content"></script>
+{{-- <script type="text/javascript" src="https://ewebotwp.com/wp-includes/js/jquery/ui/tabs.min.justify-content"></script> --}}
