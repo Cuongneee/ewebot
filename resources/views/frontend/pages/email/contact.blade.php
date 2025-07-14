@@ -49,9 +49,9 @@
     <div class="email-wrapper">
         <h2>📩 Yêu cầu tư vấn mới từ khách hàng</h2>
 
-        <p><strong>Họ tên:</strong> {{ $data['name'] }}</p>
+        <p><strong>Họ tên:</strong> {{ $data['name'] ?? 'Không có❗' }}</p>
         <p><strong>Email:</strong> {{ $data['email'] }}</p>
-        <p><strong>Điện thoại:</strong> {{ $data['phone'] }}</p>
+        <p><strong>Điện thoại:</strong> {{ $data['phone'] ?? 'Không có❗' }}</p>
         <p><strong>Website:</strong> {{ $data['website'] ?? 'Không có❗' }}</p>
         @if (!empty($data['category_name']) || !empty($data['service_name']))
             <p><strong>Dịch vụ quan tâm:</strong> {{ $data['category_name'] ?? 'Không có' }} - {{ $data['service_name'] ?? 'Không có' }}

@@ -17,20 +17,20 @@ class EmailController extends Controller
         // dd($request->toArray());
 
         $data = $request->validate([
-            'name' => 'required|string|max:255',
+            'name' => 'nullable|string|max:255',
             'email' => 'required|email|max:255',
-            'phone' => 'required|string|max:20',
+            'phone' => 'nullable|string|max:20',
             'website' => 'nullable|string|max:255',
             'message' => 'nullable|string',
             'service_id' => 'nullable|exists:service_pricings,id',
         ]);
         // Lưu vào bảng contacts
         Contact::create([
-            'name' => $data['name'],
+            'name' => $data['name'] ?? '',
             'email' => $data['email'],
-            'phone' => $data['phone'],
-            'website' => $data['website'],
-            'message' => $data['message'],
+            'phone' => $data['phone'] ?? '',
+            'website' => $data['website'] ?? '',
+            'message' => $data['message'] ?? '',
             'service_id' => $data['service_id'] ?? null,
         ]);
         $emailAdmin = config('mail.to');

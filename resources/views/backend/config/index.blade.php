@@ -76,8 +76,7 @@
                             <div class=" mb-3 col-lg-4">
                                 <label for="hotline_kinhdoanh" class="form-label">Di động</label>
                                 <input value="{{ $config->hotline_kinhdoanh }}" id="hotline_kinhdoanh"
-                                    name="hotline_kinhdoanh"class="form-control" type="text"
-                                    placeholder="Di động">
+                                    name="hotline_kinhdoanh"class="form-control" type="text" placeholder="Di động">
                             </div>
                             <div class=" mb-3 col-lg-4">
                                 <label for="hotline_baotri" class="form-label">Di động bảo trì</label>
@@ -93,8 +92,9 @@
 
                             <div class=" mb-3 col-lg-12">
                                 <label for="small_text_footer" class="form-label">Mô tả ngắn footer </label>
-                                <input value="{{ $config->small_text_footer }}" id="small_text_footer" name="small_text_footer"class="form-control"
-                                    type="text" placeholder="Mô tả ngắn footer">
+                                <input value="{{ $config->small_text_footer }}" id="small_text_footer"
+                                    name="small_text_footer"class="form-control" type="text"
+                                    placeholder="Mô tả ngắn footer">
                             </div>
 
                             <div class=" mb-3">
@@ -184,7 +184,19 @@
                                     class="form-control" type="text" placeholder="Link Instagram">
                             </div>
 
-                             <div class="mb-3 col-lg-12">
+                             <div class="mb-3 col-lg-4">
+                                <label for="twitter_link" class="form-label">Link Twitter</label>
+                                <input value="{{ $config->twitter_link }}" id="twitter" name="twitter_link"
+                                    class="form-control" type="text" placeholder="Link Twitter">
+                            </div>
+
+                             <div class="mb-3 col-lg-4">
+                                <label for="linkedin_link" class="form-label">Link linkedin</label>
+                                <input value="{{ $config->linkedin_link }}" id="linkedin_link" name="linkedin_link"
+                                    class="form-control" type="text" placeholder="Link linkedin">
+                            </div>
+
+                            <div class="mb-3 col-lg-4">
                                 <label for="map_link" class="form-label">Link Map</label>
                                 <input value="{{ $config->map_link }}" id="map_link" name="map_link"
                                     class="form-control" type="text" placeholder="Link Map">
