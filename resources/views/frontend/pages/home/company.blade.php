@@ -57,7 +57,7 @@
             inset 0 1px 0 rgba(255, 255, 255, 0.6);
 
         /* Styling cơ bản */
-        border-radius: 25px;
+        border-radius: 30px;
         padding: 15px;
         background: rgb(252, 252, 252);
         border: 1px solid rgba(255, 255, 255, 0.8);

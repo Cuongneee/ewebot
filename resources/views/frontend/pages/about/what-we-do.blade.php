@@ -194,9 +194,9 @@
  </section>
  <style>
      :root {
-         --primary-gradient: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+         --primary-gradient: linear-gradient(135deg, #c4251e 0%, #fc372a 100%);
          --secondary-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-         --accent-gradient: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+         --accent-gradient: linear-gradient(135deg, #fc372a 0%, #ff6a3c 100%);
          --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.08);
          --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.12);
          --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -206,7 +206,7 @@
 
      /* Service Items */
      .service-item {
-         background: white;
+         background: rgb(255, 255, 255);
          border-radius: var(--border-radius);
          box-shadow: var(--shadow-light);
          border: 1px solid #e9ecef;

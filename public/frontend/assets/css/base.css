@@ -260,6 +260,7 @@ ul li {
   padding: 0 0 8px;
   margin: 0;
   font-size: 16px;
+  font-weight: 700;
 }
 ol li:last-child,
 ul li:last-child {
@@ -627,7 +628,7 @@ input[type="url"],
 select,
 textarea {
   max-width: 100%;
-  font-size: 0.78em;
+  font-size: 14px;
   line-height: 1.5;
   border: none;
   border-bottom: 1px solid;
