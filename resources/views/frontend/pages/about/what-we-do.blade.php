@@ -259,10 +259,6 @@
          margin: 0;
      }
 
-     .service-title:hover {
-         color: rgb(235, 235, 235)
-     }
-
      @media (min-width: 768px) {
          .service-title {
              font-size: 1rem;
@@ -418,6 +414,14 @@
 
      .service-content.active .service-description {
          animation: fadeInUp 0.4s ease 0.15s both;
+     }
+
+     .service-header:hover .service-title {
+         color: white;
+     }
+
+     .service-header:hover .dropdown-arrow i {
+         color: white;
      }
  </style>
  <script>
