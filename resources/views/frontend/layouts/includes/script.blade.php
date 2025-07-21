@@ -12,8 +12,8 @@
             }
         }
 
-       
-        
+
+
     })();
 </script>
 <script>
@@ -133,24 +133,36 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <script>
-    const swiperComment = new Swiper('.testimonials_rotator', {
-        loop: true, // Nếu bạn muốn lặp lại các slide
-        spaceBetween: 0, // Khoảng cách giữa các slide
-        slidesPerView: 1, // Hiển thị một slide cùng lúc
+    const swiperPortfolio = new Swiper('.portfolio_carousel_wrapper .swiper', {
+        loop: true,
+        spaceBetween: 30,
+        slidesPerView: 3,
         autoplay: {
-            delay: 10000, // Tự động chuyển slide sau 3 giây
-            disableOnInteraction: false, // Nếu người dùng tương tác, autoplay không dừng
+            delay: 5000,
+            disableOnInteraction: false,
         },
         pagination: {
             el: '.swiper-pagination',
-            clickable: true, // Cho phép người dùng click vào pagination để chuyển slide
+            clickable: true,
         },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            992: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 1,
+            },
+        },
     });
 </script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const toggleBtn = document.querySelector('.wpda-mobile-navigation-toggle');

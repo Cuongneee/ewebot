@@ -2585,7 +2585,7 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
+<link rel="stylesheet" href="/frontend/assets/css/sweetalert2.min.css">
 <link rel='stylesheet' href='/frontend/assets/css/column.css' />
 <link rel='stylesheet' href='/frontend/assets/css/single.css' />
 <link rel='stylesheet' href='/frontend/assets/css/gt3-core-imagebox.css' />
